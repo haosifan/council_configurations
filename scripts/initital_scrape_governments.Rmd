@@ -1,0 +1,197 @@
+---
+title: "initial scrape of governments"
+author: "Stefan Haußner"
+date: "12 Mai 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(rvest)
+library(janitor)
+```
+
+
+This script scrapes all government members from official or nonofficial webpages. The final lists should contain Name, Portfolio and the party s*he is affiliated to.
+
+# Austria
+
+
+
+
+# Belgium
+
+Source with party affiliations: https://en.wikipedia.org/wiki/Federal_Government_of_Belgium
+Official source: https://www.foderale-regierung.be/de
+
+```{r}
+url <- "https://en.wikipedia.org/wiki/Federal_Government_of_Belgium"
+
+html <- read_html(url)
+ministers_nl <- html %>% 
+  html_node(".wikitable") %>% 
+  html_table(fill = TRUE) %>% 
+  clean_names() %>% 
+  select(name = minister_2, everything(), -contains("na"), -minister) %>% 
+  filter(!grepl("Minister", name)) %>% 
+  mutate(name = str_remove(name,"[:blank:]\\[.*\\]"),
+         cntry = "NL")
+
+ministers_nl %>% tbl_df()
+```
+
+
+# Bulgaria
+
+Source with party affiliation: https://en.wikipedia.org/wiki/Government_of_Bulgaria
+Official source: https://www.gov.bg/en/Cabinet/CABINET-MEMBERS
+
+```{r}
+url <- "https://en.wikipedia.org/wiki/Government_of_Bulgaria"
+html <- read_html(url)
+
+ministers_bg <- html %>% 
+  html_node(".toccolours") %>% 
+  html_table(fill = TRUE) %>% 
+  clean_names() %>% 
+  tbl_df() %>% 
+  select(name = na, portfolio = ministry_2, party = na_2) %>% 
+  mutate(cntry = "BG")
+
+ministers_bg
+
+```
+
+
+# Croatia
+# Cyprus
+# Czech Republic
+# Denmark
+
+Source with party affiliation: https://www.thedanishparliament.dk/en/members/the-government
+Official Source: https //www.thedanishparliament.dk/en/members/the-government
+
+
+```{r}
+url <- "https://www.thedanishparliament.dk/en/members/the-government"
+html <- read_html(url)
+
+name <- html %>% 
+  html_nodes(".cellPic+ td") %>% 
+  html_node("a") %>% 
+  html_text()
+
+ministers_dk <- html %>% 
+  html_nodes(".cellPic+ td") %>% 
+  html_text() %>% 
+  tbl_df() %>% 
+  separate(value, into = c("x","portfolio","party","y","z"), sep = "\r\n") %>% 
+  mutate(name = name,
+         portfolio = str_remove(portfolio, name),
+         cntry = "DK") %>% 
+  select(name, portfolio, party, cntry)
+
+ministers_dk
+  
+```
+
+# Estonia
+
+Source with party affiliation: https://en.wikipedia.org/wiki/J%C3%BCri_Ratas%27_second_cabinet
+Official source: https://www.hm.ee/en
+
+
+```{r}
+url <- "https://en.wikipedia.org/wiki/J%C3%BCri_Ratas%27_second_cabinet"
+html <- read_html(url)
+
+ministers_ee <- html %>% html_node(".wikitable") %>% 
+  html_table(fill = TRUE) %>% 
+  clean_names() %>% 
+  tbl_df() %>% 
+  select(portfolio, name = minister_2, took_office, left_office, party) %>% 
+  filter(!grepl(name, pattern = "Ministry"), !grepl(name, pattern = "Office")) %>% 
+  mutate(name = str_remove(name,"\\[.*\\]"),
+         cntry = "EE")
+
+ministers_ee
+```
+
+
+# Finland
+
+Source with party affiliation: https //valtioneuvosto.fi/en/marin/ministers
+Official source: https://valtioneuvosto.fi/en/marin/ministers
+
+```{r}
+url <- "https://valtioneuvosto.fi/en/marin/ministers"
+html <- read_html(url)
+
+name <- html %>% html_nodes("#layout-column_column-5 .name") %>% html_text()
+portfolio <- html %>% html_nodes(".title") %>% html_text()
+links <- html %>% 
+  html_nodes(".minister-tile") %>% 
+  html_node("a") %>% 
+  html_attr("href") %>% 
+  paste0("https://valtioneuvosto.fi",.)
+
+f_getparty <- function(link){
+  p <- read_html(link) %>% html_node(".text p") %>% html_text()
+  return(p)
+}
+
+ministers_fi <- bind_cols(portfolio = portfolio, name = name,  links = links) %>% 
+  mutate(party = map_chr(links, f_getparty),
+         cntry = "FI") %>% 
+  select(-links)
+
+ministers_fi
+```
+
+
+# France
+
+Source with party affiliation: https://en.wikipedia.org/wiki/Second_Philippe_government
+Official Source: https://www.gouvernement.fr/en/composition-of-the-government
+
+```{r}
+url <- "https://en.wikipedia.org/wiki/Second_Philippe_government"
+html <- read_html(url)
+
+ministers_fr <- html %>% 
+  html_nodes(".wikitable") %>% 
+  .[[4]] %>% 
+  html_table(fill = TRUE) %>% 
+  clean_names() %>% 
+  tbl_df() %>% 
+  filter(party == "") %>%
+  mutate(cntry = "FR") %>% 
+  select(portfolio = post, name = name, party = party_2)
+
+ministers_fr
+
+```
+
+
+
+# Germany
+# Greece
+# Hungary
+# Ireland
+# Italy
+# Latvia
+# Lithuania
+# Luxembourg
+# Malta
+# Netherlands
+# Poland
+# Portugal
+# Romania
+# Slovakia
+# Slovenia
+# Spain
+# Sweden 
