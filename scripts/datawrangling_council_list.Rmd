@@ -1,0 +1,30 @@
+---
+title: "datawrangling_council_list"
+author: "Stefan Haußner"
+date: "9 2 2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+govmembers <- read_csv("../data/eu_gov_members_per_country.csv")
+```
+
+https://maximilian.schalch.de/2018/05/complete-list-of-european-special-characters/
+
+```{r}
+govmembers %>% 
+  mutate(gender = case_when(str_sub(name,1,2) == "Mr" ~ "m",
+                            str_sub(name,1,2) == "Ms" ~ "f",
+                            TRUE ~ NA_character_),
+         surname = str_extract(name, pattern = "[A-ZÄÀÁÂÃÅǍĄĂÆĀÇĆĈČĎĐÈÉÊËĚĘĖĒĜĢĞĤÌÍÎÏĪĮĴĶĹĺĻŁĽľĿÑŃŇŅÖÒÓÔÕŐØŒŔŘŚŜŞŠȘŤŢÞȚÜÙÚÛŰŨŲŮŪŴÝŸŶŹŽŻ]*[-'[:blank:]]*[A-ZÄÀÁÂÃÅǍĄĂÆĀÇĆĈČĎĐÈÉÊËĚĘĖĒĜĢĞĤÌÍÎÏĪĮĴĶĹĺĻŁĽľĿÑŃŇŅÖÒÓÔÕŐØŒŔŘŚŜŞŠȘŤŢÞȚÜÙÚÛŰŨŲŮŪŴÝŸŶŹŽŻ]+$")) %>% 
+  select(name, surname) %>% pull(name)
+```
+
