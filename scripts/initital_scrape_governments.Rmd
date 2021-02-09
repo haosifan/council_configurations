@@ -179,6 +179,12 @@ ministers_fr
 
 
 # Germany
+
+```{r}
+
+```
+
+
 # Greece
 # Hungary
 # Ireland
