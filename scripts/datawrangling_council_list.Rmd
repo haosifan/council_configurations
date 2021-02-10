@@ -10,7 +10,14 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r}
-library(tidyverse)
+#library(tidyverse)
+library(readr)
+library(tidyr)
+library(dplyr)
+library(stringr)
+library(ggplot2)
+library(forcats)
+library(scales)
 ```
 
 ```{r}
@@ -20,11 +27,21 @@ govmembers <- read_csv("../data/eu_gov_members_per_country.csv")
 https://maximilian.schalch.de/2018/05/complete-list-of-european-special-characters/
 
 ```{r}
+surname_pattern <- "[A-ZÄÀÁÂÃÅǍĄĂÆĀÇĆĈČĎĐÈÉÊËĚĘĖĒĜĢĞĤÌÍÎÏĪΙĮĴĶĹĺĻŁĽľĿÑŃŇŅÖÒÓÔÕŐØŒŔŘŚŜŞŠȘŤŢÞȚÜÙÚÛŰŨŲŮŪŴÝŸŶŹŽŻß]*[-'’[:blank:]]*[A-ZÄÀÁÂÃÅǍĄĂÆĀÇĆĈČĎĐÈÉÊËĚĘĖĒĜĢĞĤÌÍÎÏĪΙĮĴĶĹĺĻŁĽľĿÑŃŇŅÖÒÓÔÕŐØŒŔŘŚŜŞŠȘŤŢÞȚÜÙÚÛŰŨŲŮŪŴÝŸŶŹŽŻß]*[-'’[:blank:]]*[A-ZÄÀÁÂÃÅǍĄĂÆĀÇĆĆĈČĎĐÈÉÊËĚĘĖĒĜĢĞĤÌÍÎÏĪΙĮĴĶĹĺĻŁĽľĿÑŃŇŅÖÒÓÔÕŐØŒŔŘŚŜŞŠȘŤŢÞȚÜÙÚÛŰŨŲŮŪŴÝŸŶŹŽŻß]+$"
+
 govmembers %>% 
   mutate(gender = case_when(str_sub(name,1,2) == "Mr" ~ "m",
                             str_sub(name,1,2) == "Ms" ~ "f",
                             TRUE ~ NA_character_),
-         surname = str_extract(name, pattern = "[A-ZÄÀÁÂÃÅǍĄĂÆĀÇĆĈČĎĐÈÉÊËĚĘĖĒĜĢĞĤÌÍÎÏĪĮĴĶĹĺĻŁĽľĿÑŃŇŅÖÒÓÔÕŐØŒŔŘŚŜŞŠȘŤŢÞȚÜÙÚÛŰŨŲŮŪŴÝŸŶŹŽŻ]*[-'[:blank:]]*[A-ZÄÀÁÂÃÅǍĄĂÆĀÇĆĈČĎĐÈÉÊËĚĘĖĒĜĢĞĤÌÍÎÏĪĮĴĶĹĺĻŁĽľĿÑŃŇŅÖÒÓÔÕŐØŒŔŘŚŜŞŠȘŤŢÞȚÜÙÚÛŰŨŲŮŪŴÝŸŶŹŽŻ]+$")) %>% 
-  select(name, surname) %>% pull(name)
+         surname = str_extract(name, pattern = surname_pattern),
+         prename = name %>% 
+           str_remove(pattern = "(Ms )|(Mr )|(DR. )") %>% 
+           str_remove(pattern = surname) %>% 
+           str_squish()) %>%
+  group_by(country) %>% count(gender) %>% mutate(ratio = n/(sum(n)))
+  ggplot()+
+  geom_col(aes(x = country, y = ratio, fill = gender))+
+  coord_flip()+
+  scale_y_continuous(labels = percent_format())
 ```
 
