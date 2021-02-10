@@ -29,7 +29,7 @@ https://maximilian.schalch.de/2018/05/complete-list-of-european-special-characte
 ```{r}
 surname_pattern <- "[A-ZÄÀÁÂÃÅǍĄĂÆĀÇĆĈČĎĐÈÉÊËĚĘĖĒĜĢĞĤÌÍÎÏĪΙĮĴĶĹĺĻŁĽľĿÑŃŇŅÖÒÓÔÕŐØŒŔŘŚŜŞŠȘŤŢÞȚÜÙÚÛŰŨŲŮŪŴÝŸŶŹŽŻß]*[-'’[:blank:]]*[A-ZÄÀÁÂÃÅǍĄĂÆĀÇĆĈČĎĐÈÉÊËĚĘĖĒĜĢĞĤÌÍÎÏĪΙĮĴĶĹĺĻŁĽľĿÑŃŇŅÖÒÓÔÕŐØŒŔŘŚŜŞŠȘŤŢÞȚÜÙÚÛŰŨŲŮŪŴÝŸŶŹŽŻß]*[-'’[:blank:]]*[A-ZÄÀÁÂÃÅǍĄĂÆĀÇĆĆĈČĎĐÈÉÊËĚĘĖĒĜĢĞĤÌÍÎÏĪΙĮĴĶĹĺĻŁĽľĿÑŃŇŅÖÒÓÔÕŐØŒŔŘŚŜŞŠȘŤŢÞȚÜÙÚÛŰŨŲŮŪŴÝŸŶŹŽŻß]+$"
 
-govmembers %>% 
+govmembers_gg <- govmembers %>% 
   mutate(gender = case_when(str_sub(name,1,2) == "Mr" ~ "m",
                             str_sub(name,1,2) == "Ms" ~ "f",
                             TRUE ~ NA_character_),
@@ -38,10 +38,19 @@ govmembers %>%
            str_remove(pattern = "(Ms )|(Mr )|(DR. )") %>% 
            str_remove(pattern = surname) %>% 
            str_squish()) %>%
-  group_by(country) %>% count(gender) %>% mutate(ratio = n/(sum(n)))
-  ggplot()+
+  group_by(country) %>% 
+  count(gender) %>% 
+  mutate(ratio = n/(sum(n)),
+         country = factor(country))
+
+
+lvls <- names(sort(table(govmembers_gg[govmembers_gg$gender == "m", "country"])))
+
+ggplot(govmembers_gg)+
   geom_col(aes(x = country, y = ratio, fill = gender))+
+  geom_hline(yintercept = 0.5)+
   coord_flip()+
   scale_y_continuous(labels = percent_format())
+ggsave("../output/gfx/gender_balance_EUgovs.png", width = 13, height = 9)
 ```
 
