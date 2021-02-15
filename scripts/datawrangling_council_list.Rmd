@@ -18,6 +18,7 @@ library(stringr)
 library(ggplot2)
 library(forcats)
 library(scales)
+library(tm)
 ```
 
 ```{r}
@@ -29,7 +30,9 @@ https://maximilian.schalch.de/2018/05/complete-list-of-european-special-characte
 ```{r}
 surname_pattern <- "[A-ZÄÀÁÂÃÅǍĄĂÆĀÇĆĈČĎĐÈÉÊËĚĘĖĒĜĢĞĤÌÍÎÏĪΙĮĴĶĹĺĻŁĽľĿÑŃŇŅÖÒÓÔÕŐØŒŔŘŚŜŞŠȘŤŢÞȚÜÙÚÛŰŨŲŮŪŴÝŸŶŹŽŻß]*[-'’[:blank:]]*[A-ZÄÀÁÂÃÅǍĄĂÆĀÇĆĈČĎĐÈÉÊËĚĘĖĒĜĢĞĤÌÍÎÏĪΙĮĴĶĹĺĻŁĽľĿÑŃŇŅÖÒÓÔÕŐØŒŔŘŚŜŞŠȘŤŢÞȚÜÙÚÛŰŨŲŮŪŴÝŸŶŹŽŻß]*[-'’[:blank:]]*[A-ZÄÀÁÂÃÅǍĄĂÆĀÇĆĆĈČĎĐÈÉÊËĚĘĖĒĜĢĞĤÌÍÎÏĪΙĮĴĶĹĺĻŁĽľĿÑŃŇŅÖÒÓÔÕŐØŒŔŘŚŜŞŠȘŤŢÞȚÜÙÚÛŰŨŲŮŪŴÝŸŶŹŽŻß]+$"
 
-govmembers_gg <- govmembers %>% 
+stopwords_gov <- c("Minister","Secretary","for","Federal","the","within","Chancellery","Deputy","Ministry","State ","Chancellor","of", "Vice","Prime","with responsibility","Permanent","President","Central Office","Government Spokesperson","Directorate General","First","Chief","General","Staff","Office", "to","Parliamentary","responsible for","Head","Cabinet","Plenipotentiary","chief spokesperson","attached to")
+
+govmembers %>% 
   mutate(gender = case_when(str_sub(name,1,2) == "Mr" ~ "m",
                             str_sub(name,1,2) == "Ms" ~ "f",
                             TRUE ~ NA_character_),
@@ -37,7 +40,17 @@ govmembers_gg <- govmembers %>%
          prename = name %>% 
            str_remove(pattern = "(Ms )|(Mr )|(DR. )") %>% 
            str_remove(pattern = surname) %>% 
-           str_squish()) %>%
+           str_squish(),
+         portfolio = removeWords(position, stopwords_gov)) %>% 
+  select(position, portfolio)
+
+govmembers %>% pull(position)
+```
+
+# Gender Balance
+
+```{r}
+govmembers_gg <- govmembers_clean %>%
   group_by(country) %>% 
   count(gender) %>% 
   mutate(ratio = n/(sum(n)),
@@ -51,6 +64,6 @@ ggplot(govmembers_gg)+
   geom_hline(yintercept = 0.5)+
   coord_flip()+
   scale_y_continuous(labels = percent_format())
-ggsave("../output/gfx/gender_balance_EUgovs.png", width = 13, height = 9)
+#ggsave("../output/gfx/gender_balance_EUgovs.png", width = 13, height = 9)
 ```
 
