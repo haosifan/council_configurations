@@ -136,6 +136,25 @@ ministers_cy
 Source: https://en.wikipedia.org/wiki/Government_of_the_Czech_Republic
 Official Source: https://www.vlada.cz/en/vlada/
 
+```{r}
+url <- "https://en.wikipedia.org/wiki/Government_of_the_Czech_Republic"
+
+header_names <- read_html(url) %>% html_nodes(".toccolours") %>% html_table(fill = TRUE) %>% unlist() %>% .[c(1,32,63,94)] %>% unname() %>% as.character()
+
+t <- read_html(url) %>% html_nodes(".toccolours") %>% html_table(fill = TRUE) %>% as.data.frame() %>% as_tibble()
+
+names(t) <- header_names
+
+ministers_cz <- t %>% 
+  clean_names() %>% 
+  filter(office != "", office != "Office") %>% 
+  select(name, office, political_party)
+
+ministers_cz
+```
+
+
+
 # Denmark
 
 Source with party affiliation: https://www.thedanishparliament.dk/en/members/the-government
