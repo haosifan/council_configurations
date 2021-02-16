@@ -87,8 +87,55 @@ ministers_bg
 
 
 # Croatia
+
+Source: https://en.wikipedia.org/wiki/Government_of_Croatia
+Official Source: https://vlada.gov.hr/clanovi-vlade/66
+
+
+```{r}
+url <- "https://en.wikipedia.org/wiki/Government_of_Croatia"
+
+ministers_hr <- read_html(url) %>% 
+  html_nodes(".wikitable") %>% 
+  .[5] %>% 
+  html_table(fill = TRUE) %>% 
+  as.data.frame() %>% 
+  as_tibble() %>% 
+  clean_names() %>% 
+  filter(minister == "") %>% 
+  select(minister = minister_1, portfolio, took_office, party)
+
+ministers_hr
+```
+
+
 # Cyprus
+
+Source: https://en.wikipedia.org/wiki/Second_Anastasiades_government
+Official Source: https://presidency.gov.cy/en/council-of-ministers.html
+
+Auch hier die Frage: Was ist mit den Deputy ministers und government spokesman. Vermutlich raus weil irrelevant oder zumindest "parteiäquivalent".
+
+```{r}
+url <- "https://en.wikipedia.org/wiki/Second_Anastasiades_government"
+
+ministers_cy <- read_html(url) %>% 
+  html_node(".wikitable") %>% 
+  html_table() %>% 
+  clean_names() %>% 
+  filter(office != "") %>% 
+  select(name, office, period, party = party_2) %>% 
+  mutate(name = str_remove(name, "§"))
+
+ministers_cy
+```
+
+
 # Czech Republic
+
+Source: https://en.wikipedia.org/wiki/Government_of_the_Czech_Republic
+Official Source: https://www.vlada.cz/en/vlada/
+
 # Denmark
 
 Source with party affiliation: https://www.thedanishparliament.dk/en/members/the-government
