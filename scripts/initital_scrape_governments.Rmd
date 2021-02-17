@@ -265,8 +265,23 @@ ministers_fr
 
 # Germany
 
-```{r}
+Source: https://en.wikipedia.org/wiki/Cabinet_of_Germany
+Official Source: https://www.bundesregierung.de/breg-de/bundesregierung/bundeskabinett
 
+Gut hier: Direkte Zuordnung zum Ministerium der Staatsminister und Staatssekretäre
+
+```{r}
+url <- "https://en.wikipedia.org/wiki/Cabinet_of_Germany"
+
+read_html(url) %>% 
+  html_node(".wikitable") %>% 
+  html_table() %>% 
+  clean_names() %>% 
+  select(name = incumbent, 
+         portfolio = office, 
+         party, 
+         in_office, 
+         state_secs = parliamentary_state_secretaries_a_particular_field_of_responsibilities_where_applicable)
 ```
 
 
