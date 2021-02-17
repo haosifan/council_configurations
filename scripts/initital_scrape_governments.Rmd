@@ -273,7 +273,7 @@ Gut hier: Direkte Zuordnung zum Ministerium der Staatsminister und Staatssekret√
 ```{r}
 url <- "https://en.wikipedia.org/wiki/Cabinet_of_Germany"
 
-read_html(url) %>% 
+ministers_de <- read_html(url) %>% 
   html_node(".wikitable") %>% 
   html_table() %>% 
   clean_names() %>% 
@@ -282,10 +282,35 @@ read_html(url) %>%
          party, 
          in_office, 
          state_secs = parliamentary_state_secretaries_a_particular_field_of_responsibilities_where_applicable)
+
+ministers_de
 ```
 
 
 # Greece
+
+Source: https://en.wikipedia.org/wiki/Cabinet_of_Kyriakos_Mitsotakis
+Official: ??
+
+Auch hier Deputy Ministers alle drin. Ist aber eh alles NeaDemocratia, aufgrund Wahlsystem bzw. Sitzverteilungsbonus f√ºr Gewinner.
+
+```{r}
+url <- "https://en.wikipedia.org/wiki/Cabinet_of_Kyriakos_Mitsotakis"
+
+ministers_gr <- read_html(url) %>% 
+  html_nodes("table") %>% 
+  .[3] %>% 
+  html_table(fill = TRUE) %>%
+  as.data.frame() %>% 
+  as_tibble() %>% 
+  clean_names() %>% 
+  select(name = incumbent, ministry, portfolio = office, party = party_1, in_office = in_office_since) %>% 
+  mutate(ministry = str_remove(ministry, pattern = "^[:digit:][:digit:]*[.]"))
+
+ministers_gr
+```
+
+
 # Hungary
 # Ireland
 # Italy
