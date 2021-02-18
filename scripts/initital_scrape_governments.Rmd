@@ -344,6 +344,38 @@ ministers_hu <- t %>%
 
 
 # Ireland
+
+Source: https://en.wikipedia.org/wiki/Government_of_Ireland
+Official Source: https://www.finegael.ie/our-people/ministers/
+
+
+```{r}
+url <- "https://en.wikipedia.org/wiki/Government_of_Ireland"
+
+header_names <- read_html(url) %>% 
+  html_nodes(".wikitable:nth-child(53)") %>% 
+  html_table(fill = TRUE) %>% 
+  unlist() %>% 
+  .[names(.)=="Cabinet ministers1"] %>% 
+  unname()
+
+t <- read_html(url) %>% 
+  html_nodes(".wikitable:nth-child(53)") %>% 
+  html_table(fill = TRUE) %>% 
+  as.data.frame() %>% 
+  as_tibble()
+
+names(t) <- header_names
+
+ministers_ir <- t %>% 
+  clean_names() %>% 
+  select(name, portfolio = office_2, party = party_2, term) %>% 
+  filter(name != "Name", name != "Also attending Cabinet")
+
+ministers_ir
+```
+
+
 # Italy
 # Latvia
 # Lithuania
