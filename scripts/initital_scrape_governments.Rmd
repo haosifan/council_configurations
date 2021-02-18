@@ -409,6 +409,8 @@ ministers_lv <- read_html(url) %>% html_node("p+ .wikitable") %>%
   html_table(fill = TRUE) %>% 
   clean_names() %>% 
   select(name, portfolio = position, party = party_2, in_office = dates)
+
+ministers_lv
 ```
 
 
