@@ -377,6 +377,26 @@ ministers_ir
 
 
 # Italy
+
+Source: https://en.wikipedia.org/wiki/Council_of_Ministers_(Italy)
+Official Source: ???
+
+```{r}
+url <- "https://en.wikipedia.org/wiki/Council_of_Ministers_(Italy)"
+
+ministers_it <- read_html(url) %>% 
+  html_nodes(".wikitable:nth-child(33)") %>% 
+  html_table(fill = TRUE) %>% 
+  as.data.frame() %>% 
+  as_tibble() %>% 
+  clean_names() %>% 
+  filter(office != "") %>% 
+  select(name, portfolio = office, party = party_1, term, deputies = deputy_ministers_undersecretaries)
+
+ministers_it
+```
+
+
 # Latvia
 # Lithuania
 # Luxembourg
