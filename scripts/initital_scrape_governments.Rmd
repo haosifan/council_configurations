@@ -415,6 +415,38 @@ ministers_lv
 
 
 # Lithuania
+
+Source: https://en.wikipedia.org/wiki/%C5%A0imonyt%C4%97_Cabinet
+Official Source: https://lrv.lt/en/about-government/ministries-1
+
+```{r}
+url <- "https://en.wikipedia.org/wiki/%C5%A0imonyt%C4%97_Cabinet"
+
+header_names <- read_html(url) %>% 
+  html_nodes(".wikitable") %>% 
+  html_table(fill = TRUE) %>% 
+  unlist() %>% 
+  .[names(.) %in% c("Position1", "Name1", "Party1", "Office1")] %>% 
+  unname()
+
+t <- read_html(url) %>% 
+  html_nodes(".wikitable") %>% 
+  html_table(fill = TRUE) %>% 
+  as.data.frame() %>% 
+  as_tibble()
+
+names(t) <- header_names
+
+ministers_lt <- t %>% 
+  clean_names() %>% 
+  filter(party != "Party") %>% 
+  select(name, portfolio = position, party = party_2, took_office = office, left_office = start_date)
+
+ministers_lt
+```
+
+
+
 # Luxembourg
 # Malta
 # Netherlands
