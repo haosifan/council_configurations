@@ -60,7 +60,7 @@ ministers_be <- html %>%
   mutate(name = str_remove(name,"[:blank:]\\[.*\\]"),
          cntry = "NL")
 
-ministers_nl %>% tbl_df()
+ministers_be %>% tbl_df()
 ```
 
 
@@ -487,6 +487,30 @@ ministers_mt
 
 
 # Netherlands
+
+Source: https://en.wikipedia.org/wiki/Cabinet_of_the_Netherlands
+Official Source: https://www.rijksoverheid.nl/regering/bewindspersonen
+
+```{r}
+url <- "https://en.wikipedia.org/wiki/Cabinet_of_the_Netherlands"
+
+ministers_nl <- read_html(url) %>% 
+  html_nodes("h2+ .wikitable") %>% 
+  html_table(fill = TRUE) %>% 
+  as.data.frame() %>% 
+  as_tibble() %>% 
+  clean_names() %>% 
+  filter(grepl(pattern = "Incumbent", term_of_office)) %>% 
+  select(name = ministers_2, portfolio = title, party, term_of_office) %>% 
+  group_by(name) %>% 
+  mutate(party = case_when(party == portfolio ~ lag(party),
+                           TRUE ~ party),
+         name = str_remove(name, pattern = "\\(born 19[:digit:][:digit:]\\)$"))
+
+ministers_nl
+```
+
+
 # Poland
 # Portugal
 # Romania
