@@ -446,8 +446,26 @@ ministers_lt
 ```
 
 
-
 # Luxembourg
+
+Source: https://en.wikipedia.org/wiki/Bettel%E2%80%93Schneider_Ministry_II
+Official Source: https://gouvernement.lu/de/gouvernement.html
+
+```{r}
+url <- "https://en.wikipedia.org/wiki/Bettel%E2%80%93Schneider_Ministry_II"
+
+ministers_lu <- read_html(url) %>% 
+  html_nodes(".wikitable") %>% 
+  html_table(fill = TRUE) %>% 
+  as.data.frame() %>% 
+  as_tibble() %>% 
+  clean_names() %>% 
+  select(name = name_1_1, portfolio = office, party)
+
+ministers_lu
+```
+
+
 # Malta
 # Netherlands
 # Poland
