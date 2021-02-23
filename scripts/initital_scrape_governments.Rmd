@@ -467,6 +467,25 @@ ministers_lu
 
 
 # Malta
+
+Source: https://en.wikipedia.org/wiki/Maltese_Government_2017%E2%80%932022
+Official Source: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx
+
+```{r}
+url <- "https://en.wikipedia.org/wiki/Maltese_Government_2017%E2%80%932022"
+
+ministers_mt <- read_html(url) %>% 
+  html_nodes(".wikitable~ .wikitable") %>% 
+  html_table() %>% 
+  as.data.frame() %>% 
+  as_tibble() %>% 
+  clean_names() %>% 
+  select(name = minister, portfolio, party = political_party, took_office = assumed_office, left_office)
+
+ministers_mt
+```
+
+
 # Netherlands
 # Poland
 # Portugal
