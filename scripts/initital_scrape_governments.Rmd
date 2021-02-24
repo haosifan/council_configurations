@@ -531,6 +531,35 @@ ministers_pl
 
 
 # Portugal
+
+Source: https://en.wikipedia.org/wiki/Council_of_Ministers_(Portugal)
+Official Source: https://www.portugal.gov.pt/en/gc21/government/composition
+
+```{r}
+url <- "https://en.wikipedia.org/wiki/Council_of_Ministers_(Portugal)"
+
+t_ministers <- read_html(url) %>% 
+  html_node(".wikitable+ .wikitable") %>% 
+  html_table(fill = TRUE) %>% 
+  clean_names() %>% 
+  select(name = incumbent_2, portfolio = ministry, in_office = term) %>% 
+  rownames_to_column("id")
+
+t_party <- read_html(url) %>% 
+  html_nodes(".wikitable+ .wikitable td:nth-child(2)") %>% 
+  html_attr("style") %>% 
+  as_tibble_col("attr") %>% 
+  mutate(party = case_when(str_detect(attr, pattern = "#FF66FF") ~ "Socialist Party",
+                           str_detect(attr, pattern = "#DDDDDD") ~ "Independent")) %>% 
+  rownames_to_column("id")
+
+ministers_pt <- left_join(t_ministers, t_party, by = "id") %>% 
+  select(name, portfolio, party, in_office)
+
+ministers_pt
+```
+
+
 # Romania
 # Slovakia
 # Slovenia
