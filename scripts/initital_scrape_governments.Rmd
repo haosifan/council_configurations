@@ -561,6 +561,29 @@ ministers_pt
 
 
 # Romania
+
+Source: https://en.wikipedia.org/wiki/C%C3%AE%C8%9Bu_Cabinet
+Official Source: https://gov.ro/en/government/the-cabinet-of-ministers
+
+```{r}
+url <- "https://en.wikipedia.org/wiki/C%C3%AE%C8%9Bu_Cabinet"
+
+ministers_ro <- read_html(url, encoding = "UTF-8") %>% 
+  html_node(".wikitable") %>% 
+  html_table(fill = TRUE) %>% 
+  clean_names() %>% 
+  select(name = minister,
+         portfolio = position, 
+         party = party_2,
+         took_office = date_sworn_in,
+         left_office) %>% 
+  mutate(portfolio = str_remove(portfolio, pattern = "\\(Romanian:.+\\)$"))
+
+ministers_ro
+```
+
+
+
 # Slovakia
 # Slovenia
 # Spain
