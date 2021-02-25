@@ -582,9 +582,36 @@ ministers_ro <- read_html(url, encoding = "UTF-8") %>%
 ministers_ro
 ```
 
-
-
 # Slovakia
+
+Source: https://en.wikipedia.org/wiki/Government_of_Slovakia
+Offical Source: https://www.vlada.gov.sk/members-of-the-government/
+
+```{r}
+url <- "https://en.wikipedia.org/wiki/Government_of_Slovakia"
+
+header_names <- read_html(url) %>% 
+  html_nodes(".wikitable") %>% 
+  html_table(fill = TRUE) %>% 
+  unlist() %>% 
+  .[names(.) %in% c("11th Government of the Slovak Republic1")] %>% 
+  unname()
+
+t <- read_html(url) %>% 
+  html_nodes(".wikitable") %>% 
+  html_table(fill = TRUE) %>% 
+  as.data.frame() %>% 
+  as_tibble()
+
+names(t) <- header_names
+
+ministers_sk <- t %>% 
+  clean_names() %>% 
+  filter(position != name, party == "") %>% 
+  select(name, portfolio = position, party = party_2, took_office, left_office)
+```
+
+
 # Slovenia
 # Spain
 # Sweden 
