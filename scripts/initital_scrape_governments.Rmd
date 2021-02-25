@@ -628,6 +628,8 @@ ministers_si <- read_html(url) %>%
   clean_names() %>% 
   select(name, portfolio = position, party = party_1, took_office) %>% 
   mutate(name = str_remove(name, pattern = "\\(born 19[:digit:][:digit:]\\)$"))
+
+ministers_si
 ```
 
 
