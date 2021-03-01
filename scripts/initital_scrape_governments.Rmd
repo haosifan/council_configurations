@@ -35,8 +35,9 @@ ministers_at <- read_html(url) %>%
   html_node(".wikitable") %>% 
   html_table(fill = TRUE) %>% 
   clean_names() %>% 
-  filter(portrait == "") %>% 
-  select(name, office, took_office, left_office, party)
+  filter(portrait == "", name != "") %>% 
+  select(name, portfolio = office, took_office, left_office, party) %>% 
+  mutate(cntry = "AT")
 
 ministers_at
 ```
@@ -58,7 +59,7 @@ ministers_be <- html %>%
   select(name = minister_2, everything(), -contains("na"), -minister) %>% 
   filter(!grepl("Minister", name)) %>% 
   mutate(name = str_remove(name,"[:blank:]\\[.*\\]"),
-         cntry = "NL")
+         cntry = "BE")
 
 ministers_be %>% tbl_df()
 ```
@@ -103,7 +104,8 @@ ministers_hr <- read_html(url) %>%
   as_tibble() %>% 
   clean_names() %>% 
   filter(minister == "") %>% 
-  select(minister = minister_1, portfolio, took_office, party)
+  select(name = minister_1, portfolio, took_office, party) %>% 
+  mutate(cntry = "HR")
 
 ministers_hr
 ```
@@ -124,8 +126,9 @@ ministers_cy <- read_html(url) %>%
   html_table() %>% 
   clean_names() %>% 
   filter(office != "") %>% 
-  select(name, office, period, party = party_2) %>% 
-  mutate(name = str_remove(name, "§"))
+  select(name, portfolio = office, period, party = party_2) %>% 
+  mutate(name = str_remove(name, "§"),
+         cntry = "CY")
 
 ministers_cy
 ```
@@ -148,7 +151,8 @@ names(t) <- header_names
 ministers_cz <- t %>% 
   clean_names() %>% 
   filter(office != "", office != "Office") %>% 
-  select(name, office, political_party)
+  select(name, portfolio = office, party = political_party) %>% 
+  mutate(cntry = "CZ")
 
 ministers_cz
 ```
@@ -281,7 +285,8 @@ ministers_de <- read_html(url) %>%
          portfolio = office, 
          party, 
          in_office, 
-         state_secs = parliamentary_state_secretaries_a_particular_field_of_responsibilities_where_applicable)
+         state_secs = parliamentary_state_secretaries_a_particular_field_of_responsibilities_where_applicable) %>% 
+  mutate(cntry = "DE")
 
 ministers_de
 ```
@@ -307,7 +312,8 @@ ministers_gr <- read_html(url) %>%
   as_tibble() %>% 
   clean_names() %>% 
   select(name = incumbent, ministry, portfolio = office, party = party_1, in_office = in_office_since) %>% 
-  mutate(ministry = str_remove(ministry, pattern = "^[:digit:][:digit:]*[.]"))
+  mutate(ministry = str_remove(ministry, pattern = "^[:digit:][:digit:]*[.]"),
+         cntry = "GR")
 
 ministers_gr
 ```
@@ -339,7 +345,8 @@ names(t) <- header_names
 ministers_hu <- t %>% 
   clean_names() %>% 
   filter(office != "Office") %>% 
-  select(name = incumbent, portfolio = office, party = political_party_2, in_office)
+  select(name = incumbent, portfolio = office, party = political_party_2, in_office) %>% 
+  mutate(cntry = "HU")
 ```
 
 
@@ -370,7 +377,8 @@ names(t) <- header_names
 ministers_ir <- t %>% 
   clean_names() %>% 
   select(name, portfolio = office_2, party = party_2, term) %>% 
-  filter(name != "Name", name != "Also attending Cabinet")
+  filter(name != "Name", name != "Also attending Cabinet") %>% 
+  mutate(cntry = "IR")
 
 ministers_ir
 ```
@@ -404,7 +412,7 @@ td <- read_html(url) %>%
   filter(portrait != "") %>% 
   select(portfolio = office, deputies = name)
 
-ministers_it <- left_join(tm, td, by ="portfolio")
+ministers_it <- left_join(tm, td, by ="portfolio") %>% mutate(cntry = "IT")
 ```
 
 
@@ -419,7 +427,8 @@ url <- "https://en.wikipedia.org/wiki/Government_of_Latvia"
 ministers_lv <- read_html(url) %>% html_node("p+ .wikitable") %>% 
   html_table(fill = TRUE) %>% 
   clean_names() %>% 
-  select(name, portfolio = position, party = party_2, in_office = dates)
+  select(name, portfolio = position, party = party_2, in_office = dates) %>% 
+  mutate(cntry = "LV")
 
 ministers_lv
 ```
@@ -451,7 +460,8 @@ names(t) <- header_names
 ministers_lt <- t %>% 
   clean_names() %>% 
   filter(party != "Party") %>% 
-  select(name, portfolio = position, party = party_2, took_office = office, left_office = start_date)
+  select(name, portfolio = position, party = party_2, took_office = office, left_office = start_date) %>% 
+  mutate(cntry = "LT")
 
 ministers_lt
 ```
@@ -471,7 +481,8 @@ ministers_lu <- read_html(url) %>%
   as.data.frame() %>% 
   as_tibble() %>% 
   clean_names() %>% 
-  select(name = name_1_1, portfolio = office, party)
+  select(name = name_1_1, portfolio = office, party) %>% 
+  mutate(cntry = "LU")
 
 ministers_lu
 ```
@@ -491,7 +502,8 @@ ministers_mt <- read_html(url) %>%
   as.data.frame() %>% 
   as_tibble() %>% 
   clean_names() %>% 
-  select(name = minister, portfolio, party = political_party, took_office = assumed_office, left_office)
+  select(name = minister, portfolio, party = political_party, took_office = assumed_office, left_office) %>% 
+  mutate(cntry = "MT")
 
 ministers_mt
 ```
@@ -516,7 +528,8 @@ ministers_nl <- read_html(url) %>%
   group_by(name) %>% 
   mutate(party = case_when(party == portfolio ~ lag(party),
                            TRUE ~ party),
-         name = str_remove(name, pattern = "\\(born 19[:digit:][:digit:]\\)$"))
+         name = str_remove(name, pattern = "\\(born 19[:digit:][:digit:]\\)$"),
+         cntry = "NL")
 
 ministers_nl
 ```
@@ -535,7 +548,8 @@ ministers_pl <- read_html(url) %>%
   html_table(fill = TRUE) %>% 
   clean_names() %>% 
   filter(image == "") %>% 
-  select(name, portfolio = office, party = party_2, took_office = in_office, left_office = in_office_2)
+  select(name, portfolio = office, party = party_2, took_office = in_office, left_office = in_office_2) %>% 
+  mutate(cntry = "PL")
 
 ministers_pl
 ```
@@ -565,7 +579,8 @@ t_party <- read_html(url) %>%
   rownames_to_column("id")
 
 ministers_pt <- left_join(t_ministers, t_party, by = "id") %>% 
-  select(name, portfolio, party, in_office)
+  select(name, portfolio, party, in_office) %>% 
+  mutate(cntry = "PT")
 
 ministers_pt
 ```
@@ -588,7 +603,8 @@ ministers_ro <- read_html(url, encoding = "UTF-8") %>%
          party = party_2,
          took_office = date_sworn_in,
          left_office) %>% 
-  mutate(portfolio = str_remove(portfolio, pattern = "\\(Romanian:.+\\)$"))
+  mutate(portfolio = str_remove(portfolio, pattern = "\\(Romanian:.+\\)$"),
+         cntry = "RO")
 
 ministers_ro
 ```
@@ -619,7 +635,8 @@ names(t) <- header_names
 ministers_sk <- t %>% 
   clean_names() %>% 
   filter(position != name, party == "") %>% 
-  select(name, portfolio = position, party = party_2, took_office, left_office)
+  select(name, portfolio = position, party = party_2, took_office, left_office) %>% 
+  mutate(cntry = "SK")
 ```
 
 
@@ -638,7 +655,8 @@ ministers_si <- read_html(url) %>%
   as_tibble() %>% 
   clean_names() %>% 
   select(name, portfolio = position, party = party_1, took_office) %>% 
-  mutate(name = str_remove(name, pattern = "\\(born 19[:digit:][:digit:]\\)$"))
+  mutate(name = str_remove(name, pattern = "\\(born 19[:digit:][:digit:]\\)$"),
+         cntry = "SI")
 
 ministers_si
 ```
@@ -672,7 +690,8 @@ names(t) <- header_names
 ministers_es <- t %>% 
   clean_names() %>% 
   filter(row_number()!=c(1,26,27)) %>% 
-  select(name, portfolio, party = party_2, took_office, left_office)
+  select(name, portfolio, party = party_2, took_office, left_office) %>% 
+  mutate(cntry = "ES")
 
 ministers_es
 ```
@@ -694,12 +713,27 @@ ministers_se <- read_html(url) %>%
   as_tibble() %>% 
   clean_names() %>% 
   filter(minister == "") %>% 
-  select(name = minister_1, portfolio, party, took_office, left_office)
+  select(name = minister_1, portfolio, party, took_office, left_office) %>% 
+  mutate(cntry = "SE")
 
 ministers_se
 ```
 
 ```{r}
 ls(pattern = "ministers_") %>% length() == 27
+```
+
+
+# bind together
+
+```{r}
+ministers_all <- mget(ls(pattern="ministers_")) %>%
+              bind_rows() %>% 
+  arrange(cntry) %>% 
+  select(cntry, everything())
+
+ministers_all
+
+write_csv2(ministers_all, file = "../data/list_scraped_gov_with_party.csv")
 ```
 
