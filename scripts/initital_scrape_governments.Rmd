@@ -384,16 +384,27 @@ Official Source: ???
 ```{r}
 url <- "https://en.wikipedia.org/wiki/Council_of_Ministers_(Italy)"
 
-ministers_it <- read_html(url) %>% 
+# ministers
+tm <- read_html(url) %>% 
   html_nodes(".wikitable:nth-child(33)") %>% 
   html_table(fill = TRUE) %>% 
   as.data.frame() %>% 
   as_tibble() %>% 
   clean_names() %>% 
-  filter(office != "") %>% 
-  select(name, portfolio = office, party = party_1, term = term_of_office, deputies = deputy_ministers_undersecretaries)
+  filter(office != "", portrait == "") %>% 
+  select(name, portfolio = office, party = party_1, term = term_of_office)
 
-ministers_it
+# deputies
+td <- read_html(url) %>% 
+  html_nodes(".wikitable:nth-child(33)") %>% 
+  html_table(fill = TRUE) %>% 
+  as.data.frame() %>% 
+  as_tibble() %>% 
+  clean_names() %>% 
+  filter(portrait != "") %>% 
+  select(portfolio = office, deputies = name)
+
+ministers_it <- left_join(tm, td, by ="portfolio")
 ```
 
 
@@ -689,6 +700,6 @@ ministers_se
 ```
 
 ```{r}
-ls(pattern = "ministers_")
+ls(pattern = "ministers_") %>% length() == 27
 ```
 
