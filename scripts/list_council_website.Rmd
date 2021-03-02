@@ -44,3 +44,10 @@ if (equal_govmembers == TRUE) {
 }
 ```
 
+
+```{r}
+read_html("https://europeelects.eu/germany/") %>% 
+  html_nodes(".wp-block-media-text__content") %>% .[1] %>% html_nodes("br")
+```
+
+

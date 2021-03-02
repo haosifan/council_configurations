@@ -181,7 +181,8 @@ ministers_dk <- html %>%
   separate(value, into = c("x","portfolio","party","y","z"), sep = "\r\n") %>% 
   mutate(name = name,
          portfolio = str_remove(portfolio, name),
-         cntry = "DK") %>% 
+         cntry = "DK") %>%
+  mutate_all(str_trim) %>% 
   select(name, portfolio, party, cntry)
 
 ministers_dk
@@ -257,9 +258,8 @@ ministers_fr <- html %>%
   html_table(fill = TRUE) %>% 
   clean_names() %>% 
   tbl_df() %>% 
-  filter(party == "") %>%
-  mutate(cntry = "FR") %>% 
-  select(portfolio = post, name = name, party = party_2)
+  select(portfolio = post, name = name, party = party_2) %>% 
+  mutate(cntry = "FR")
 
 ministers_fr
 
@@ -313,6 +313,8 @@ ministers_gr <- read_html(url) %>%
   clean_names() %>% 
   select(name = incumbent, ministry, portfolio = office, party = party_1, in_office = in_office_since) %>% 
   mutate(ministry = str_remove(ministry, pattern = "^[:digit:][:digit:]*[.]"),
+         party = case_when(party == "" ~ "Independent",
+                           TRUE ~ party),
          cntry = "GR")
 
 ministers_gr
@@ -634,9 +636,14 @@ names(t) <- header_names
 
 ministers_sk <- t %>% 
   clean_names() %>% 
-  filter(position != name, party == "") %>% 
+  filter(position != name, party == "") %>%
+  mutate(position = case_when(position == "" ~ lag(position),
+                              TRUE ~ position)) %>%  
   select(name, portfolio = position, party = party_2, took_office, left_office) %>% 
   mutate(cntry = "SK")
+
+ministers_sk
+
 ```
 
 
@@ -689,7 +696,7 @@ names(t) <- header_names
 
 ministers_es <- t %>% 
   clean_names() %>% 
-  filter(row_number()!=c(1,26,27)) %>% 
+  filter(row_number()!=c(1,26,27), name != "") %>% 
   select(name, portfolio, party = party_2, took_office, left_office) %>% 
   mutate(cntry = "ES")
 
@@ -727,13 +734,13 @@ ls(pattern = "ministers_") %>% length() == 27
 # bind together
 
 ```{r}
-ministers_all <- mget(ls(pattern="ministers_")) %>%
+all_ministers <- mget(ls(pattern="ministers_")) %>%
               bind_rows() %>% 
   arrange(cntry) %>% 
   select(cntry, everything())
 
-ministers_all
+all_ministers
 
-write_csv2(ministers_all, file = "../data/list_scraped_gov_with_party.csv")
+write_csv2(all_ministers, file = "../data/list_scraped_gov_with_party.csv")
 ```
 
