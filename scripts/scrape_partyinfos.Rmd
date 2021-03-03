@@ -1,0 +1,65 @@
+---
+title: "scrape_partyinfos"
+author: "Stefan Haußner"
+date: "3 3 2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(rvest)
+```
+
+# Infos from EuropeElects.eu (maybe we should ask them at some point)
+
+```{r}
+url <- "https://europeelects.eu/france/"
+```
+
+```{r}
+partyinfo_raw <- read_html(url) %>% 
+  html_nodes(".wp-block-media-text__content") %>% 
+  .[1] %>% 
+  html_nodes("p") %>% 
+  as.character() %>% 
+  as_tibble_col(column_name = "text") %>% 
+  separate(text, sep = "<br>", into = c("s1","s2","s3","s4","s5","s6","s7","s8")) %>% 
+  select(s1:s6)
+```
+
+```{r}
+name <- partyinfo_raw$s1 %>% read_html() %>% html_nodes("strong") %>% html_text()
+
+abbr <- partyinfo_raw$s1 %>% 
+  str_extract(pattern = "\\(.+\\)") %>% 
+  str_remove_all(pattern = "[\\(\\)]")
+
+name_en <- partyinfo_raw$s2
+
+leader <- partyinfo_raw$s3 %>% 
+  str_remove(pattern = "<strong>Leader:</strong> ")
+
+orientation <- partyinfo_raw$s4 %>% 
+  str_remove(pattern = "<strong>Orientation:</strong> ")
+
+ep_affiliation <- partyinfo_raw$s5 %>% 
+  read_html() %>% 
+  html_text() %>% 
+  str_remove_all(pattern = "EP Affiliation: ") %>% 
+  str_remove(pattern = " \\(.+\\)")
+
+eu_stance <- partyinfo_raw$s6 %>% 
+  read_html() %>% 
+  html_text() %>% 
+  str_remove("EU Stance: ") %>% 
+  str_remove(" \\(Chapel Hill data\\) ")
+
+bind_cols(name = name, abbr = abbr, name_en = name_en, leader = leader, orientation = orientation, ep_affiliation = ep_affiliation, eu_stance = eu_stance)
+
+```
+
+
