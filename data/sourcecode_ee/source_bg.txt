@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en-US">
+
+	<head>
+
+		<meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+
+		
+	<!-- This site is optimized with the Yoast SEO plugin v15.9 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Bulgaria - Europe Elects</title>
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://europeelects.eu/bulgaria/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Bulgaria - Europe Elects" />
+	<meta property="og:description" content="National Parliament Composition National Poll Average This poll average is the result of a smoothing cubic spline fitted to our dataset of all national polls collected in Bulgaria.&hellip;" />
+	<meta property="og:url" content="https://europeelects.eu/bulgaria/" />
+	<meta property="og:site_name" content="Europe Elects" />
+	<meta property="article:publisher" content="https://www.facebook.com/europeelects" />
+	<meta property="article:modified_time" content="2021-03-03T20:36:35+00:00" />
+	<meta property="og:image" content="https://europeelects.eu/wp-content/uploads/2018/11/Flag_of_Bulgaria-e1576424635279.png" />
+	<meta property="og:image:width" content="667" />
+	<meta property="og:image:height" content="400" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@EuropeElects" />
+	<meta name="twitter:label1" content="Est. reading time">
+	<meta name="twitter:data1" content="10 minutes">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://europeelects.eu/#organization","name":"Europe Elects","url":"https://europeelects.eu/","sameAs":["https://www.facebook.com/europeelects","https://www.instagram.com/europe_elects/","https://www.youtube.com/channel/UCFnqDrOtYZ0KbL60rQuW7xA","https://twitter.com/EuropeElects"],"logo":{"@type":"ImageObject","@id":"https://europeelects.eu/#logo","inLanguage":"en-US","url":"https://europeelects.eu/wp-content/uploads/2018/05/ee-logotype.png","width":2500,"height":1250,"caption":"Europe Elects"},"image":{"@id":"https://europeelects.eu/#logo"}},{"@type":"WebSite","@id":"https://europeelects.eu/#website","url":"https://europeelects.eu/","name":"Europe Elects","description":"Polls and elections in Europe","publisher":{"@id":"https://europeelects.eu/#organization"},"potentialAction":[{"@type":"SearchAction","target":"https://europeelects.eu/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://europeelects.eu/bulgaria/#primaryimage","inLanguage":"en-US","url":"https://europeelects.eu/wp-content/uploads/2018/11/Flag_of_Bulgaria-e1576424635279.png","width":667,"height":400},{"@type":"WebPage","@id":"https://europeelects.eu/bulgaria/#webpage","url":"https://europeelects.eu/bulgaria/","name":"Bulgaria - Europe Elects","isPartOf":{"@id":"https://europeelects.eu/#website"},"primaryImageOfPage":{"@id":"https://europeelects.eu/bulgaria/#primaryimage"},"datePublished":"2018-05-17T20:22:14+00:00","dateModified":"2021-03-03T20:36:35+00:00","breadcrumb":{"@id":"https://europeelects.eu/bulgaria/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://europeelects.eu/bulgaria/"]}]},{"@type":"BreadcrumbList","@id":"https://europeelects.eu/bulgaria/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://europeelects.eu/","url":"https://europeelects.eu/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://europeelects.eu/bulgaria/","url":"https://europeelects.eu/bulgaria/","name":"Bulgaria"}}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//secure.gravatar.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='dns-prefetch' href='//c0.wp.com' />
+<link rel="alternate" type="application/rss+xml" title="Europe Elects &raquo; Feed" href="https://europeelects.eu/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Europe Elects &raquo; Comments Feed" href="https://europeelects.eu/comments/feed/" />
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v7.16.2 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=UA-127107953-1"  type="text/javascript" data-cfasync="false"></script>
+			<script type="text/javascript" data-cfasync="false">
+				var mi_version = '7.16.2';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+				
+								var disableStr = 'ga-disable-UA-127107953-1';
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					return document.cookie.indexOf( disableStr + '=true' ) > - 1;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if ( __gtagTrackerIsOptedOut() ) {
+					window[disableStr] = true;
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+					window[disableStr] = true;
+				}
+
+				if ( 'undefined' === typeof gaOptout ) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+				if ( mi_track_user ) {
+					function __gtagTracker() {dataLayer.push( arguments );}
+					__gtagTracker( 'js', new Date() );
+					__gtagTracker( 'set', {
+						'developer_id.dZGIzZG' : true,
+						                    });
+					__gtagTracker( 'config', 'UA-127107953-1', {
+						forceSSL:true,					} );
+										window.gtag = __gtagTracker;										(
+						function () {
+							/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+							/* ga and __gaTracker compatibility shim. */
+							var noopfn = function () {
+								return null;
+							};
+							var newtracker = function () {
+								return new Tracker();
+							};
+							var Tracker = function () {
+								return null;
+							};
+							var p = Tracker.prototype;
+							p.get = noopfn;
+							p.set = noopfn;
+							p.send = function (){
+								var args = Array.prototype.slice.call(arguments);
+								args.unshift( 'send' );
+								__gaTracker.apply(null, args);
+							};
+							var __gaTracker = function () {
+								var len = arguments.length;
+								if ( len === 0 ) {
+									return;
+								}
+								var f = arguments[len - 1];
+								if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+									if ( 'send' === arguments[0] ) {
+										var hitConverted, hitObject = false, action;
+										if ( 'event' === arguments[1] ) {
+											if ( 'undefined' !== typeof arguments[3] ) {
+												hitObject = {
+													'eventAction': arguments[3],
+													'eventCategory': arguments[2],
+													'eventLabel': arguments[4],
+													'value': arguments[5] ? arguments[5] : 1,
+												}
+											}
+										}
+										if ( typeof arguments[2] === 'object' ) {
+											hitObject = arguments[2];
+										}
+										if ( 'undefined' !== typeof (
+											arguments[1].hitType
+										) ) {
+											hitObject = arguments[1];
+										}
+										if ( hitObject ) {
+											action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+											hitConverted = mapArgs( hitObject );
+											__gtagTracker( 'event', action, hitConverted );
+										}
+									}
+									return;
+								}
+
+								function mapArgs( args ) {
+									var gaKey, hit = {};
+									var gaMap = {
+										'eventCategory': 'event_category',
+										'eventAction': 'event_action',
+										'eventLabel': 'event_label',
+										'eventValue': 'event_value',
+										'nonInteraction': 'non_interaction',
+										'timingCategory': 'event_category',
+										'timingVar': 'name',
+										'timingValue': 'value',
+										'timingLabel': 'event_label',
+									};
+									for ( gaKey in gaMap ) {
+										if ( 'undefined' !== typeof args[gaKey] ) {
+											hit[gaMap[gaKey]] = args[gaKey];
+										}
+									}
+									return hit;
+								}
+
+								try {
+									f.hitCallback();
+								} catch ( ex ) {
+								}
+							};
+							__gaTracker.create = newtracker;
+							__gaTracker.getByName = newtracker;
+							__gaTracker.getAll = function () {
+								return [];
+							};
+							__gaTracker.remove = noopfn;
+							__gaTracker.loaded = true;
+							window['__gaTracker'] = __gaTracker;
+						}
+					)();
+									} else {
+										console.log( "" );
+					( function () {
+							function __gtagTracker() {
+								return null;
+							}
+							window['__gtagTracker'] = __gtagTracker;
+							window['gtag'] = __gtagTracker;
+					} )();
+									}
+			</script>
+				<!-- / Google Analytics by MonsterInsights -->
+				<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/europeelects.eu\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	
+
+<style type="text/css" media="all">
+.wpautoterms-footer{background-color:#ffffff;text-align:center;}
+.wpautoterms-footer a{color:#000000;font-family:Arial, sans-serif;font-size:14px;}
+.wpautoterms-footer .separator{color:#cccccc;font-family:Arial, sans-serif;font-size:14px;}</style>
+<style class='custom-scrollbar' type='text/css'>@media only screen and (min-width: 1px) {ul.sub-menu { max-height: 800%; overflow-y: auto; overflow-x: hidden;}}</style><link rel='stylesheet' id='atomic-blocks-fontawesome-css'  href='https://europeelects.eu/wp-content/plugins/atomic-blocks/dist/assets/fontawesome/css/all.min.css?ver=1610234614' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://c0.wp.com/c/5.6.2/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<style id='wp-block-library-inline-css' type='text/css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel='stylesheet' id='atomic-blocks-style-css-css'  href='https://europeelects.eu/wp-content/plugins/atomic-blocks/dist/blocks.style.build.css?ver=1610234614' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='https://c0.wp.com/c/5.6.2/wp-includes/css/dashicons.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpautoterms_css-css'  href='https://europeelects.eu/wp-content/plugins/auto-terms-of-service-and-privacy-policy/css/wpautoterms.css?ver=5.6.2' type='text/css' media='all' />
+<link rel='stylesheet' id='patreon-wordpress-css-css'  href='https://europeelects.eu/wp-content/plugins/patreon-connect/assets/css/app.css?ver=5.6.2' type='text/css' media='all' />
+<link rel='stylesheet' id='malihu-custom-scrollbar-css-css'  href='https://europeelects.eu/wp-content/plugins/custom-scrollbar/asset/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css?ver=5.6.2' type='text/css' media='all' />
+<link rel='stylesheet' id='monsterinsights-popular-posts-style-css'  href='https://europeelects.eu/wp-content/plugins/google-analytics-for-wordpress/assets/css/frontend.min.css?ver=7.16.2' type='text/css' media='all' />
+<link rel='stylesheet' id='chaplin-font-awesome-css'  href='https://europeelects.eu/wp-content/themes/chaplin/assets/css/font-awesome.css?ver=5.15.1' type='text/css' media='all' />
+<link rel='stylesheet' id='chld_thm_cfg_parent-css'  href='https://europeelects.eu/wp-content/themes/chaplin/style.css?ver=5.6.2' type='text/css' media='all' />
+<link rel='stylesheet' id='chaplin-google-fonts-css'  href='//fonts.googleapis.com/css?family=Alegreya+Sans%3A400%2C700%2C400italic%2C700italic%2C600%2C600italic%7CAlegreya+Sans%3A400%2C500%2C600%2C700%2C400italic%2C700italic&#038;ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='chaplin-style-css'  href='https://europeelects.eu/wp-content/themes/chaplin/style.css?ver=2.6.1' type='text/css' media='all' />
+<style id='chaplin-style-inline-css' type='text/css'>
+:root{--body-font:Alegreya Sans,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,sans-serif;--headings-font:Alegreya Sans,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,sans-serif;--headings-weight:600;--border-color:#f9f9f9}body,.ff-body{font-family:Alegreya Sans,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,sans-serif}h1,h2,h3,h4,h5,h6,.faux-heading,.ff-headings{font-family:Alegreya Sans,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,sans-serif}h1,h2,h3,h4,h5,h6,.faux-heading,.fw-headings{font-weight:600}.bg-border,.bg-border-hover:hover,:root .has-border-background-color,caption{background-color:#f9f9f9}@supports ( color:color( display-p3 0 0 0 / 1 ) ){.bg-border,.bg-border-hover:hover,:root .has-border-background-color,caption{background-color:color( display-p3 0.976 0.976 0.976 / 1 )}}.border-color-border,.border-color-border-hover:hover,pre,th,td,input,textarea,fieldset,.main-menu li,button.sub-menu-toggle,.wp-block-latest-posts.is-grid li,.wp-block-calendar,.footer-menu li,.comment .comment,.post-navigation,.related-posts,.widget,.select2-container .select2-selection--single{border-color:#f9f9f9}@supports ( color:color( display-p3 0 0 0 / 1 ) ){.border-color-border,.border-color-border-hover:hover,pre,th,td,input,textarea,fieldset,.main-menu li,button.sub-menu-toggle,.wp-block-latest-posts.is-grid li,.wp-block-calendar,.footer-menu li,.comment .comment,.post-navigation,.related-posts,.widget,.select2-container .select2-selection--single{border-color:color( display-p3 0.976 0.976 0.976 / 1 )}}.color-border,.color-border-hover:hover,:root .has-border-color,hr{color:#f9f9f9}@supports ( color:color( display-p3 0 0 0 / 1 ) ){.color-border,.color-border-hover:hover,:root .has-border-color,hr{color:color( display-p3 0.976 0.976 0.976 / 1 )}}.fill-children-border,.fill-children-border *{fill:#f9f9f9}@supports ( color:color( display-p3 0 0 0 / 1 ) ){.fill-children-border,.fill-children-border *{fill:color( display-p3 0.976 0.976 0.976 / 1 )}}
+</style>
+<link rel='stylesheet' id='chaplin-print-styles-css'  href='https://europeelects.eu/wp-content/themes/chaplin/assets/css/print.css?ver=2.6.1' type='text/css' media='print' />
+<link rel='stylesheet' id='tablepress-default-css'  href='https://europeelects.eu/wp-content/tablepress-combined.min.css?ver=38' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-responsive-tables-css'  href='https://europeelects.eu/wp-content/plugins/tablepress-responsive-tables/css/tablepress-responsive.min.css?ver=1.7' type='text/css' media='all' />
+<link rel='stylesheet' id='tmm-css'  href='https://europeelects.eu/wp-content/plugins/team-members/inc/css/tmm_style.css?ver=5.6.2' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='https://c0.wp.com/p/jetpack/9.5/css/jetpack.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://c0.wp.com/c/5.6.2/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://c0.wp.com/c/5.6.2/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://c0.wp.com/c/5.6.2/wp-includes/js/dist/vendor/wp-polyfill.min.js' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='wp-polyfill-js-after'>
+( 'fetch' in window ) || document.write( '<script src="https://europeelects.eu/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://europeelects.eu/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://europeelects.eu/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://europeelects.eu/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://europeelects.eu/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://europeelects.eu/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );
+</script>
+<script type='text/javascript' src='https://c0.wp.com/c/5.6.2/wp-includes/js/dist/dom-ready.min.js' id='wp-dom-ready-js'></script>
+<script type='text/javascript' src='https://europeelects.eu/wp-content/plugins/auto-terms-of-service-and-privacy-policy/js/base.js?ver=2.4.4' id='wpautoterms_base-js'></script>
+<script type='text/javascript' id='monsterinsights-frontend-script-js-extra'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[]","home_url":"https:\/\/europeelects.eu","hash_tracking":"false","ua":"UA-127107953-1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://europeelects.eu/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=7.16.2' id='monsterinsights-frontend-script-js'></script>
+<script type='text/javascript' src='https://c0.wp.com/c/5.6.2/wp-includes/js/imagesloaded.min.js' id='imagesloaded-js'></script>
+<script type='text/javascript' src='https://europeelects.eu/wp-content/themes/chaplin/assets/js/modernizr-touchevents.min.js?ver=3.6.0' id='chaplin-modernizr-js'></script>
+<script type='text/javascript' id='chaplin-construct-js-extra'>
+/* <![CDATA[ */
+var chaplin_ajax_load_more = {"ajaxurl":"https:\/\/europeelects.eu\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://europeelects.eu/wp-content/themes/chaplin/assets/js/construct.js?ver=2.6.1' id='chaplin-construct-js'></script>
+<link rel="https://api.w.org/" href="https://europeelects.eu/wp-json/" /><link rel="alternate" type="application/json" href="https://europeelects.eu/wp-json/wp/v2/pages/34" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://europeelects.eu/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://europeelects.eu/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.6.2" />
+<link rel='shortlink' href='https://europeelects.eu/?p=34' />
+		<!-- Custom Logo: hide header text -->
+		<style id="custom-logo-css" type="text/css">
+			.site-title, .site-description {
+				position: absolute;
+				clip: rect(1px, 1px, 1px, 1px);
+			}
+		</style>
+		<link rel="alternate" type="application/json+oembed" href="https://europeelects.eu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Feuropeelects.eu%2Fbulgaria%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://europeelects.eu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Feuropeelects.eu%2Fbulgaria%2F&#038;format=xml" />
+          <style>
+          .has-post-thumbnail img.wp-post-image, 
+          .attachment-twentyseventeen-featured-image.wp-post-image { display: none !important; }          
+          </style><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2115814575815093",
+          enable_page_level_ads: true
+     });
+</script>
+<style>
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #000;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style><style>@font-face {
+			font-family: 'Libre Franklin Extra Bold';
+			src: url('https://europeelects.eu/wp-content/plugins/patreon-connect/assets/fonts/librefranklin-extrabold-webfont.woff2') format('woff2'),
+				 url('https://europeelects.eu/wp-content/plugins/patreon-connect/assets/fonts/librefranklin-extrabold-webfont.woff') format('woff');
+			font-weight: bold;
+			}</style><style type='text/css'>img#wpstats{display:none}</style>		<script>document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );</script>
+		<style type="text/css">.blue-message {
+background: none repeat scroll 0 0 #3399ff;
+color: #ffffff;
+text-shadow: none;
+font-size: 14px;
+line-height: 24px;
+padding: 10px;
+} 
+.green-message {
+background: none repeat scroll 0 0 #8cc14c;
+color: #ffffff;
+text-shadow: none;
+font-size: 14px;
+line-height: 24px;
+padding: 10px;
+} 
+.orange-message {
+background: none repeat scroll 0 0 #faa732;
+color: #ffffff;
+text-shadow: none;
+font-size: 14px;
+line-height: 24px;
+padding: 10px;
+} 
+.red-message {
+background: none repeat scroll 0 0 #da4d31;
+color: #ffffff;
+text-shadow: none;
+font-size: 14px;
+line-height: 24px;
+padding: 10px;
+} 
+.grey-message {
+background: none repeat scroll 0 0 #53555c;
+color: #ffffff;
+text-shadow: none;
+font-size: 14px;
+line-height: 24px;
+padding: 10px;
+} 
+.left-block {
+background: none repeat scroll 0 0px, radial-gradient(ellipse at center center, #ffffff 0%, #f2f2f2 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+color: #8b8e97;
+padding: 10px;
+margin: 10px;
+float: left;
+} 
+.right-block {
+background: none repeat scroll 0 0px, radial-gradient(ellipse at center center, #ffffff 0%, #f2f2f2 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+color: #8b8e97;
+padding: 10px;
+margin: 10px;
+float: right;
+} 
+.blockquotes {
+background: none;
+border-left: 5px solid #f1f1f1;
+color: #8B8E97;
+font-size: 14px;
+font-style: italic;
+line-height: 22px;
+padding-left: 15px;
+padding: 10px;
+width: 60%;
+float: left;
+} 
+</style><link rel="icon" href="https://europeelects.eu/wp-content/uploads/2018/05/cropped-Europe-elects-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://europeelects.eu/wp-content/uploads/2018/05/cropped-Europe-elects-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://europeelects.eu/wp-content/uploads/2018/05/cropped-Europe-elects-180x180.png" />
+<meta name="msapplication-TileImage" content="https://europeelects.eu/wp-content/uploads/2018/05/cropped-Europe-elects-270x270.png" />
+			<link rel="stylesheet" type="text/css" id="wp-custom-css" href="https://europeelects.eu/?custom-css=e1f7bf06d7" />
+			</head>
+
+	<body class="page-template-default page page-id-34 wp-custom-logo pagination-type-button disable-menu-modal-on-desktop has-post-thumbnail has-no-pagination not-showing-comments">
+
+		
+		<a class="skip-link faux-button" href="#site-content">Skip to the content</a>
+
+		
+			<header id="site-header">
+
+				<div class="header-inner">
+
+					<div class="section-inner">
+
+						<div class="header-titles">
+
+															<div class="site-logo faux-heading">
+		<a href="https://europeelects.eu/" rel="home" class="custom-logo-link custom-logo">
+			<img src="https://europeelects.eu/wp-content/uploads/2018/05/cropped-ee-logotype-11.png" width="1666" height="1250"  />
+		</a>
+
+		<span class="screen-reader-text">Europe Elects</span></div>
+							
+							
+								<div class="site-description">Polls and elections in Europe</div><!-- .site-description -->
+
+							
+						</div><!-- .header-titles -->
+
+						<div class="header-navigation-wrapper">
+
+							<div class="main-menu-alt-container hide-js">
+
+								<ul class="main-menu-alt dropdown-menu reset-list-style">
+									<li id="menu-item-6006955" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6006955"><a href="https://europeelects.eu/team/">About Us</a></li>
+<li id="menu-item-2005017" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2005017"><a href="https://europeelects.eu/ep2024/">EU Election Projection 2024</a></li>
+<li id="menu-item-6007194" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6007194"><a href="https://europeelects.eu/europeancouncil/">European Council</a></li>
+<li id="menu-item-6007236" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6007236"><a href="https://europeelects.eu/calendar/">Electoral Calendar</a></li>
+<li id="menu-item-7011958" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7011958"><a href="https://europeelects.eu/articles/">Articles</a></li>
+<li id="menu-item-7011957" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7011957"><a href="https://europeelects.eu/podcast/">Podcast</a></li>
+								</ul><!-- .main-menu-alt -->
+
+							</div><!-- .main-menu-alt-container -->
+
+							<div class="header-toggles hide-no-js">
+
+								
+									<a href="#" class="toggle search-toggle" data-toggle-target=".search-modal" data-toggle-screen-lock="true" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-pressed="false">
+										<div class="toggle-text">
+											Search										</div>
+										<svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="" d="M1148.0319,95.6176858 L1151.70711,99.2928932 C1152.09763,99.6834175 1152.09763,100.316582 1151.70711,100.707107 C1151.31658,101.097631 1150.68342,101.097631 1150.29289,100.707107 L1146.61769,97.0318993 C1145.07801,98.2635271 1143.12501,99 1141,99 C1136.02944,99 1132,94.9705627 1132,90 C1132,85.0294372 1136.02944,81 1141,81 C1145.97056,81 1150,85.0294372 1150,90 C1150,92.1250137 1149.26353,94.078015 1148.0319,95.6176858 Z M1146.04139,94.8563911 C1147.25418,93.5976949 1148,91.8859456 1148,90 C1148,86.1340067 1144.86599,83 1141,83 C1137.13401,83 1134,86.1340067 1134,90 C1134,93.8659933 1137.13401,97 1141,97 C1142.88595,97 1144.59769,96.2541764 1145.85639,95.0413859 C1145.88271,95.0071586 1145.91154,94.9742441 1145.94289,94.9428932 C1145.97424,94.9115423 1146.00716,94.8827083 1146.04139,94.8563911 Z" transform="translate(-1132 -81)" /></svg>									</a><!-- .search-toggle -->
+
+								
+								<a href="#" class="toggle nav-toggle" data-toggle-target=".menu-modal" data-toggle-screen-lock="true" data-toggle-body-class="showing-menu-modal" aria-pressed="false" data-set-focus=".menu-modal">
+									<div class="toggle-text">
+										Menu									</div>
+									<div class="bars">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+									</div><!-- .bars -->
+								</a><!-- .nav-toggle -->
+
+							</div><!-- .header-toggles -->
+
+						</div><!-- .header-navigation-wrapper -->
+
+					</div><!-- .section-inner -->
+
+				</div><!-- .header-inner -->
+
+				<div class="search-modal cover-modal" data-modal-target-string=".search-modal" aria-expanded="false">
+
+	<div class="search-modal-inner modal-inner bg-body-background">
+
+		<div class="section-inner">
+
+			
+			<form role="search" method="get" class="modal-search-form" action="https://europeelects.eu/">
+				<label class="screen-reader-text" for="search-form-604088cb59b28">
+					Search for:				</label>
+				<input type="search" id="search-form-604088cb59b28" class="search-field" placeholder="Search for&hellip;" value="" name="s" />
+				<button type="submit" class="search-submit">Search</button>
+			</form><!-- .search-form -->
+
+			<a href="#" class="toggle search-untoggle fill-children-primary" data-toggle-target=".search-modal" data-toggle-screen-lock="true" data-toggle-body-class="showing-search-modal" data-set-focus="#site-header .search-toggle">
+				<span class="screen-reader-text">Close search</span>
+				<svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><polygon fill="" fill-rule="evenodd" points="6.852 7.649 .399 1.195 1.445 .149 7.899 6.602 14.352 .149 15.399 1.195 8.945 7.649 15.399 14.102 14.352 15.149 7.899 8.695 1.445 15.149 .399 14.102" /></svg>			</a><!-- .search-toggle -->
+
+		</div><!-- .section-inner -->
+
+	</div><!-- .search-modal-inner -->
+
+</div><!-- .menu-modal -->
+				
+
+
+			</header><!-- #site-header -->
+
+			<div class="menu-modal cover-modal" data-modal-target-string=".menu-modal" aria-expanded="false">
+
+	<div class="menu-modal-inner modal-inner bg-body-background">
+
+		<div class="menu-wrapper section-inner">
+
+			<div class="menu-top">
+
+				<div class="menu-modal-toggles header-toggles">
+
+					<a href="#" class="toggle nav-toggle nav-untoggle" data-toggle-target=".menu-modal" data-toggle-screen-lock="true" data-toggle-body-class="showing-menu-modal" aria-pressed="false" data-set-focus="#site-header .nav-toggle">
+						<div class="toggle-text">
+							Close						</div>
+						<div class="bars">
+							<div class="bar"></div>
+							<div class="bar"></div>
+							<div class="bar"></div>
+						</div><!-- .bars -->
+					</a><!-- .nav-toggle -->
+
+				</div><!-- .menu-modal-toggles -->
+
+				
+				<ul class="main-menu reset-list-style">
+					<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6006955"><div class="ancestor-wrapper"><a href="https://europeelects.eu/team/">About Us</a></div><!-- .ancestor-wrapper --></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2005017"><div class="ancestor-wrapper"><a href="https://europeelects.eu/ep2024/">EU Election Projection 2024</a></div><!-- .ancestor-wrapper --></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6007194"><div class="ancestor-wrapper"><a href="https://europeelects.eu/europeancouncil/">European Council</a></div><!-- .ancestor-wrapper --></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6007236"><div class="ancestor-wrapper"><a href="https://europeelects.eu/calendar/">Electoral Calendar</a></div><!-- .ancestor-wrapper --></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7011958"><div class="ancestor-wrapper"><a href="https://europeelects.eu/articles/">Articles</a></div><!-- .ancestor-wrapper --></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7011957"><div class="ancestor-wrapper"><a href="https://europeelects.eu/podcast/">Podcast</a></div><!-- .ancestor-wrapper --></li>
+				</ul><!-- .main-menu -->
+
+				
+			</div><!-- .menu-top -->
+
+			<div class="menu-bottom">
+
+				
+				<p class="menu-copyright">&copy; 2021 <a href="https://europeelects.eu">Europe Elects</a></p>
+
+				<ul id="menu-social" class="social-menu reset-list-style social-icons s-icons"><li id="menu-item-794" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-794"><a target="_blank" rel="noopener" href="https://twitter.com/europeelects"><span class="screen-reader-text">Twitter</span></a></li>
+<li id="menu-item-795" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-795"><a target="_blank" rel="noopener" href="https://facebook.com/europeelects"><span class="screen-reader-text">Facebook</span></a></li>
+<li id="menu-item-1245" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1245"><a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCFnqDrOtYZ0KbL60rQuW7xA?sub_confirmation=1"><span class="screen-reader-text">YouTube</span></a></li>
+<li id="menu-item-1246" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1246"><a target="_blank" rel="noopener" href="https://www.instagram.com/europe_elects/"><span class="screen-reader-text">Instagram</span></a></li>
+<li id="menu-item-7011733" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7011733"><a href="https://www.patreon.com/bePatron?u=11962411"><span class="screen-reader-text">Patreon</span></a></li>
+</ul>
+			</div><!-- .menu-bottom -->
+
+		</div><!-- .menu-wrapper -->
+
+	</div><!-- .menu-modal-inner -->
+
+</div><!-- .menu-modal -->
+
+<html><div class="menu2name"><h3>Parties, Parliaments and Polling Averages</h3></div></html>
+
+				<div class="custom-menu-class"><ul id="menu-countries" class="menu"><li id="menu-item-5006867" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006867"><a href="https://europeelects.eu/european-union/">🇪🇺<span class="tag">EU</span></a></li>
+<li id="menu-item-6008596" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6008596"><a href="https://europeelects.eu/albania/">🇦🇱<span class="tag">Albania</span></a></li>
+<li id="menu-item-6009116" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6009116"><a href="https://europeelects.eu/andorra/">🇦🇩<span class="tag">Andorra</span></a></li>
+<li id="menu-item-7009592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7009592"><a href="https://europeelects.eu/armenia/">🇦🇲<span class="tag">Armenia</span></a></li>
+<li id="menu-item-5006706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006706"><a href="https://europeelects.eu/austria/">🇦🇹<span class="tag">Austria</span></a></li>
+<li id="menu-item-7009361" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7009361"><a href="https://europeelects.eu/azerbaijan/">🇦🇿<span class="tag">Azerbaijan</span></a></li>
+<li id="menu-item-6008098" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6008098"><a href="https://europeelects.eu/belarus/">🇧🇾<span class="tag">Belarus</span></a></li>
+<li id="menu-item-5006707" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006707"><a href="https://europeelects.eu/belgium/">🇧🇪<span class="tag">Belgium</span></a></li>
+<li id="menu-item-7010068" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7010068"><a href="https://europeelects.eu/bosnia-and-herzegovina/">🇧🇦<span class="tag">Bosnia and Herzegovina</span></a></li>
+<li id="menu-item-5006708" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-34 current_page_item menu-item-5006708"><a href="https://europeelects.eu/bulgaria/" aria-current="page">🇧🇬<span class="tag">Bulgaria</span></a></li>
+<li id="menu-item-5006709" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006709"><a href="https://europeelects.eu/croatia/">🇭🇷<span class="tag">Croatia</span></a></li>
+<li id="menu-item-5006710" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006710"><a href="https://europeelects.eu/cyprus/">🇨🇾<span class="tag">Cyprus</span></a></li>
+<li id="menu-item-5006711" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006711"><a href="https://europeelects.eu/czechia/">🇨🇿<span class="tag">Czechia</span></a></li>
+<li id="menu-item-5006712" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006712"><a href="https://europeelects.eu/denmark/">🇩🇰<span class="tag">Denmark</span></a></li>
+<li id="menu-item-5006713" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006713"><a href="https://europeelects.eu/estonia/">🇪🇪<span class="tag">Estonia</span></a></li>
+<li id="menu-item-5006714" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006714"><a href="https://europeelects.eu/finland/">🇫🇮<span class="tag">Finland</span></a></li>
+<li id="menu-item-5006716" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006716"><a href="https://europeelects.eu/france/">🇫🇷<span class="tag">France</span></a></li>
+<li id="menu-item-7009547" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7009547"><a href="https://europeelects.eu/georgia/">🇬🇪<span class="tag">Georgia</span></a></li>
+<li id="menu-item-5006717" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006717"><a href="https://europeelects.eu/germany/">🇩🇪<span class="tag">Germany</span></a></li>
+<li id="menu-item-6008183" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6008183"><a href="https://europeelects.eu/greece/">🇬🇷<span class="tag">Greece</span></a></li>
+<li id="menu-item-5006719" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006719"><a href="https://europeelects.eu/hungary/">🇭🇺<span class="tag">Hungary</span></a></li>
+<li id="menu-item-6007508" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6007508"><a href="https://europeelects.eu/iceland/">🇮🇸<span class="tag">Iceland</span></a></li>
+<li id="menu-item-5006720" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006720"><a href="https://europeelects.eu/ireland/">🇮🇪<span class="tag">Ireland</span></a></li>
+<li id="menu-item-5006721" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006721"><a href="https://europeelects.eu/italy/">🇮🇹<span class="tag">Italy</span></a></li>
+<li id="menu-item-7009607" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7009607"><a href="https://europeelects.eu/kosovo/">🇽🇰<span class="tag">Kosovo</span></a></li>
+<li id="menu-item-5006722" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006722"><a href="https://europeelects.eu/latvia/">🇱🇻<span class="tag">Latvia</span></a></li>
+<li id="menu-item-6007967" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6007967"><a href="https://europeelects.eu/liechtenstein/">🇱🇮<span class="tag">Liechtenstein</span></a></li>
+<li id="menu-item-5006723" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006723"><a href="https://europeelects.eu/lithuania/">🇱🇹<span class="tag">Lithuania</span></a></li>
+<li id="menu-item-5006724" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006724"><a href="https://europeelects.eu/luxembourg/">🇱🇺<span class="tag">Luxembourg</span></a></li>
+<li id="menu-item-5006725" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006725"><a href="https://europeelects.eu/malta/">🇲🇹<span class="tag">Malta</span></a></li>
+<li id="menu-item-7009717" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7009717"><a href="https://europeelects.eu/moldova/">🇲🇩<span class="tag">Moldova</span></a></li>
+<li id="menu-item-6008011" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6008011"><a href="https://europeelects.eu/monaco/">🇲🇨<span class="tag">Monaco</span></a></li>
+<li id="menu-item-6007986" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6007986"><a href="https://europeelects.eu/montenegro/">🇲🇪<span class="tag">Montenegro</span></a></li>
+<li id="menu-item-5006726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006726"><a href="https://europeelects.eu/netherlands/">🇳🇱<span class="tag">Netherlands</span></a></li>
+<li id="menu-item-6008170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6008170"><a href="https://europeelects.eu/northmacedonia/">🇲🇰<span class="tag">North Macedonia</span></a></li>
+<li id="menu-item-5006727" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006727"><a href="https://europeelects.eu/norway/">🇳🇴<span class="tag">Norway</span></a></li>
+<li id="menu-item-5006728" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006728"><a href="https://europeelects.eu/poland/">🇵🇱<span class="tag">Poland</span></a></li>
+<li id="menu-item-5006729" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006729"><a href="https://europeelects.eu/portugal/">🇵🇹<span class="tag">Portugal</span></a></li>
+<li id="menu-item-5006730" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006730"><a href="https://europeelects.eu/romania/">🇷🇴<span class="tag">Romania</span></a></li>
+<li id="menu-item-6008022" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6008022"><a href="https://europeelects.eu/russia/">🇷🇺<span class="tag">Russia</span></a></li>
+<li id="menu-item-7009563" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7009563"><a href="https://europeelects.eu/san-marino/">🇸🇲<span class="tag">San Marino</span></a></li>
+<li id="menu-item-6007948" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6007948"><a href="https://europeelects.eu/serbia/">🇷🇸<span class="tag">Serbia</span></a></li>
+<li id="menu-item-5006731" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006731"><a href="https://europeelects.eu/slovakia/">🇸🇰<span class="tag">Slovakia</span></a></li>
+<li id="menu-item-5006732" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006732"><a href="https://europeelects.eu/slovenia/">🇸🇮<span class="tag">Slovenia</span></a></li>
+<li id="menu-item-5006733" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006733"><a href="https://europeelects.eu/spain/">🇪🇸<span class="tag">Spain</span></a></li>
+<li id="menu-item-5006734" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006734"><a href="https://europeelects.eu/sweden/">🇸🇪<span class="tag">Sweden</span></a></li>
+<li id="menu-item-7010073" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7010073"><a href="https://europeelects.eu/switzerland/">🇨🇭<span class="tag">Switzerland</span></a></li>
+<li id="menu-item-6008829" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6008829"><a href="https://europeelects.eu/turkey/">🇹🇷<span class="tag">Turkey</span></a></li>
+<li id="menu-item-6008226" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6008226"><a href="https://europeelects.eu/ukraine/">🇺🇦<span class="tag">Ukraine</span></a></li>
+<li id="menu-item-5006735" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5006735"><a href="https://europeelects.eu/uk/">🇬🇧<span class="tag">UK</span></a></li>
+<li id="menu-item-7009362" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7009362"><a href="https://europeelects.eu/vatican/">🇻🇦<span class="tag">Vatican City</span></a></li>
+</ul></div>
+
+
+
+
+
+
+
+			<html><div class="patreonButton"><a href="https://www.patreon.com/bePatron?u=11962411" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script></div></html>
+		
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Page Caching using disk: enhanced
+
+Served from: staging.europeelects.eu @ 2020-04-02 07:23:57 by W3 Total Cache
+-->
+<main id="site-content">
+
+	<article class="section-inner post-34 page type-page status-publish has-post-thumbnail hentry" id="post-34">
+
+	<header class="entry-header">
+
+	<h1 class="entry-title">Bulgaria</h1>
+</header><!-- .entry-header -->
+
+			<figure class="featured-media">
+
+				<figure class="wp-caption featured"><img width="667" height="400" src="https://europeelects.eu/wp-content/uploads/2018/11/Flag_of_Bulgaria-e1576424635279.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy" /></figure>
+			</figure><!-- .featured-media -->
+
+			
+	<div class="post-inner" id="post-inner">
+
+		<div class="entry-content">
+
+			
+<div class="wp-block-image"><figure class="aligncenter is-resized"><img loading="lazy" src="https://europeelects.eu/wp-content/uploads/2018/11/Flag_of_Bulgaria.png" alt="" class="wp-image-1873" width="300" height="599"/></figure></div>
+
+
+
+<h2>National Parliament Composition</h2>
+
+
+
+<iframe src="https://public.flourish.studio/visualisation/1425961/embed" scrolling="no" style="width:900px;height:900px;" frameborder="0"></iframe><div style="width:100%!;margin-top:4px!important;text-align:right!important;"><a class="flourish-credit" href="https://public.flourish.studio/visualisation/1425961/?utm_source=embed&amp;utm_campaign=visualisation/1425961" target="_top" style="text-decoration:none!important" rel="noopener noreferrer"><img alt="Made with Flourish" src="https://public.flourish.studio/resources/made_with_flourish.svg" style="width:105px!important;height:16px!important;border:none!important;margin:0!important;"> </a></div>
+
+
+
+<h2>National Poll Average</h2>
+
+
+
+<iframe scrolling="no" src="//plot.ly/~amksarti/9.embed?showlink=false&amp;modebar=false" width="800vw" height="500vh" frameborder="0"></iframe>
+
+
+
+<p>This poll average is the result of a smoothing cubic spline fitted to our dataset of all national polls collected in Bulgaria. You can access the complete database of polls at <a href="https://europeelects.eu/data/">https://europeelects.eu/data/</a> </p>
+
+
+
+<h2>Government</h2>
+
+
+
+<figure class="wp-block-table is-style-stripes"><table><tbody><tr><td><strong>Head of State</strong> <strong>(President)</strong></td><td>Rumen Radev (*-S&amp;D)</td></tr><tr><td><strong>Head of Government</strong> <strong>(PM)</strong></td><td>Boyko Borisov (GERB-EPP)</td></tr><tr><td><strong>Parties in Government</strong></td><td>GERB &#8211; Citizens for European Development of Bulgaria (GERB-EPP)<br>IMRO &#8211; Bulgarian National Movement (IMRO-ECR)<br>National Front for the Salvation of Bulgaria (NFSB-*)<br></td></tr></tbody></table></figure>
+
+
+
+<h2>Electoral Coalitions</h2>
+
+
+
+<figure class="wp-block-table"><table><tbody>
+
+<tr style="background-color: lightgrey;"><td><strong>Electoral</strong> <strong>Coalition</strong></td><td><strong>Parties</strong></td></tr>
+
+<tr><td>Patriotic Coalition-Volya and NFSB (ID)</td>
+<td>Volya (ID)
+<br>
+National Front for the Salvation of Bulgaria (NFSB-*)
+<br>
+Bulgarian Agrarian National Union (BZNS-*)
+</td></tr>
+
+<!--<tr style="background-color: whitesmoke;"><td>Democratic Bulgaria</td>
+<td>Democratic Montenegro (DCG→EPP)<br>DEMOS-*</td></tr>
+
+<tr><td>Albanian List (AL-*)</td><td>New Democratic Force (Focus-*)<br>Albanian Alternative (AA-*)</td></tr></tbody>-->
+</table></figure>
+
+
+
+<h2>Parties</h2>
+
+
+
+<div class="wp-block-media-text alignwide has-pale-cyan-blue-background-color has-background" style="grid-template-columns:23% auto"><figure class="wp-block-media-text__media"><img loading="lazy" width="249" height="118" src="https://europeelects.eu/wp-content/uploads/2018/08/word-image-180.png" alt="" class="wp-image-556 size-full"/></figure><div class="wp-block-media-text__content">
+<p><strong>Граждани за европейско развитие на България</strong> (GERB)<br><em>Grazhdani za evropeĭsko razvitie na Bŭlgariya</em><br>Citizens for European Development of Bulgaria<br><strong>Leader:</strong> Boyko Borisov<br><strong>Orientation:</strong> Centre-right <br><strong>EP Affiliation:</strong> EPP (<a href="https://www.eppgroup.eu/about-us/members/alexander-alexandrov-yordanov" target="_blank" rel="noreferrer noopener">EPP-EP</a>, <a aria-label="undefined (opens in a new tab)" href="http://eppgroup.eu/about-us/members#mep:s1UAL6sanR5/vTSpeTooHoDBjx072gabFEI8636uDe/p16kSc6ehjSoIuSgw5h1g94Iqbpg9EVe2tXs6I3hZQQ" target="_blank" rel="noreferrer noopener">EPP Party</a>, <a href="https://www.idu.org/members/" target="_blank" rel="noreferrer noopener">IDU</a>, <a aria-label="undefined (opens in a new tab)" href="https://pace.coe.int/en/members/6497?lang=EN" target="_blank" rel="noreferrer noopener">EPP-PACE</a>)<br><strong>EU Stance:</strong> Strongly in favour of EU integration (<a aria-label="undefined (opens in a new tab)" href="https://europeelects.eu/european-union/" target="_blank" rel="noreferrer noopener">Chapel-Hill data</a>) </p>
+
+
+
+<p>Note: GERB is part of GERB-SDS, electoral alliance and shared electoral list for the 2021 national parliamentary election.</p>
+</div></div>
+
+
+
+<div class="wp-block-media-text alignwide has-background" style="background-color:#FF7A7A;grid-template-columns:23% auto"><figure class="wp-block-media-text__media"><img loading="lazy" width="252" height="395" src="https://europeelects.eu/wp-content/uploads/2018/08/word-image-182.png" alt="" class="wp-image-558 size-full" srcset="https://europeelects.eu/wp-content/uploads/2018/08/word-image-182.png 252w, https://europeelects.eu/wp-content/uploads/2018/08/word-image-182-191x300.png 191w" sizes="(max-width: 252px) 100vw, 252px" /></figure><div class="wp-block-media-text__content">
+<p><strong>Българска социалистическа партия (BSP)<br></strong><em>Bulgarska sotsialisticheska partiya</em><br>Bulgarian Socialist Party<br><strong>Leader:</strong> Korneliya Ninova<br><strong>Orientation:</strong> Centre-left<br><strong>EP Affiliation:</strong> S&amp;D (<a aria-label="undefined (opens in a new tab)" href="https://www.socialistsanddemocrats.eu/who-we-are/our-members/national-parties" target="_blank" rel="noreferrer noopener">S&amp;D</a>, <a aria-label="undefined (opens in a new tab)" href="https://www.pes.eu/en/members/parties-map/#list" target="_blank" rel="noreferrer noopener">PES</a>, <a href="https://progressive-alliance.info/network/parties-and-organisations/" target="_blank" rel="noreferrer noopener">PA</a>, <a href="https://www.socialistinternational.org/about-us/members/" target="_blank" rel="noreferrer noopener">SI</a>, <a aria-label="undefined (opens in a new tab)" href="https://pace.coe.int/en/members/8274?lang=EN" target="_blank" rel="noreferrer noopener">SOC</a>)<br><strong>EU Stance:</strong> Somewhat in favour of EU integration (<a href="https://europeelects.eu/european-union/" target="_blank" rel="noreferrer noopener">Chapel-Hill data</a>)</p>
+
+
+
+<p>Note: BSP is the major party in the alliance <em>БСП за България</em> <em>(BSP za Bŭlgariya</em>, BSP for Bulgaria. </p>
+</div></div>
+
+
+
+<div class="wp-block-media-text alignwide has-background" style="background-color:#6eabf2;grid-template-columns:23% auto"><figure class="wp-block-media-text__media"><img loading="lazy" width="450" height="188" src="https://europeelects.eu/wp-content/uploads/2020/11/450px-IMRO-BNM_political_logo.svg.png" alt="" class="wp-image-7010775 size-full" srcset="https://europeelects.eu/wp-content/uploads/2020/11/450px-IMRO-BNM_political_logo.svg.png 450w, https://europeelects.eu/wp-content/uploads/2020/11/450px-IMRO-BNM_political_logo.svg-300x125.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></figure><div class="wp-block-media-text__content">
+<p><strong>ВМРО &#8211; Българско Национално Движение</strong> (VMRO)<br><em>VMRO</em> &#8211; <em>Bŭlgarsko Natsionalno Dvizhenie</em><br>IMRO &#8211; Bulgarian National Movement<br><strong>Leader:</strong> Krasimir Karakachanov<br><strong>Orientation:</strong> National-conservative<br><strong>EP Affiliation:</strong> ECR (<a aria-label="undefined (opens in a new tab)" href="https://ecrgroup.eu/countries/bulgaria" target="_blank" rel="noreferrer noopener">ECR-EP</a>, <a aria-label="undefined (opens in a new tab)" href="https://ecrparty.eu/about#family" target="_blank" rel="noreferrer noopener">ECR Party</a>, <a href="https://pace.coe.int/en/members/7739?lang=EN" target="_blank" rel="noreferrer noopener">EC/DA</a>)<br><strong>EU Stance:</strong> Neutral towards EU integration (<a href="https://europeelects.eu/european-union/" target="_blank" rel="noreferrer noopener">Chapel-Hill data</a>)</p>
+
+
+
+<p>Note: VMRO representatives sit with <em>Обединени патриоти</em> (Obedineni Patrioti) group in the national parliament.<br><br></p>
+</div></div>
+
+
+
+<div class="wp-block-media-text alignwide has-background" style="background-color:#ffd700;grid-template-columns:23% auto"><figure class="wp-block-media-text__media"><img loading="lazy" width="500" height="350" src="https://europeelects.eu/wp-content/uploads/2021/01/DPS.png" alt="" class="wp-image-8012386 size-full" srcset="https://europeelects.eu/wp-content/uploads/2021/01/DPS.png 500w, https://europeelects.eu/wp-content/uploads/2021/01/DPS-300x210.png 300w" sizes="(max-width: 500px) 100vw, 500px" /></figure><div class="wp-block-media-text__content">
+<p><strong>Движение за права и свободи</strong> (DPS)<strong><br></strong><em>Dvizhenie za prava i svobodi</em><br>Movement for Rights and Freedoms <br><strong>Leader:</strong> Mustafa Karadayŭ<br><strong>Orientation:</strong> Liberal<br><strong>EP Affiliation:</strong> RE (<a href="https://reneweuropegroup.eu/en/about-us/our-meps/">RE</a>, <a aria-label="undefined (opens in a new tab)" href="https://www.aldeparty.eu/alde_member_parties" target="_blank" rel="noreferrer noopener">ALDE Party</a>, <a href="https://libseen.tumblr.com/members" target="_blank" rel="noreferrer noopener">LIBSEEN</a>, <a href="https://liberal-international.org/our-members/regions/europe/" target="_blank" rel="noreferrer noopener">LI</a>, <a aria-label="undefined (opens in a new tab)" href="https://pace.coe.int/en/members/7152?lang=EN" target="_blank" rel="noreferrer noopener">ALDE-PACE</a>)<br><strong>EU Stance:</strong> In favour of EU integration (<a href="https://europeelects.eu/european-union/" target="_blank" rel="noreferrer noopener">Chapel-Hill data</a>)</p>
+</div></div>
+
+
+
+<div class="wp-block-media-text alignwide has-pale-cyan-blue-background-color has-background" style="grid-template-columns:23% auto"><figure class="wp-block-media-text__media"><img loading="lazy" width="288" height="288" src="https://europeelects.eu/wp-content/uploads/2020/11/SDS_logo.jpg" alt="" class="wp-image-7011272 size-full" srcset="https://europeelects.eu/wp-content/uploads/2020/11/SDS_logo.jpg 288w, https://europeelects.eu/wp-content/uploads/2020/11/SDS_logo-150x150.jpg 150w" sizes="(max-width: 288px) 100vw, 288px" /></figure><div class="wp-block-media-text__content">
+<p><strong>Съюз на демократичните сили</strong> (SDS)<br><em>Sŭyuz na demokratichnite sili</em><br>Union of Democratic Forces<br><strong>Leader:</strong> Rumen Hristov<br><strong>Orientation:</strong> Centre-right <br><strong>EP Affiliation:</strong> EPP (<a aria-label="undefined (opens in a new tab)" href="https://www.eppgroup.eu/about-us/members/alexander-alexandrov-yordanov" target="_blank" rel="noreferrer noopener">EPP-EP</a>, <a aria-label="undefined (opens in a new tab)" href="http://eppgroup.eu/about-us/members#mep:s1UAL6sanR5/vTSpeTooHoDBjx072gabFEI8636uDe/p16kSc6ehjSoIuSgw5h1g94Iqbpg9EVe2tXs6I3hZQQ" target="_blank" rel="noreferrer noopener">EPP Party</a>, <a href="https://www.idu.org/members/" target="_blank" rel="noreferrer noopener">IDU</a>, <a aria-label="undefined (opens in a new tab)" href="https://www.idc-cdi.com/parties/" target="_blank" rel="noreferrer noopener">CDI</a>)<br><strong>EU Stance:</strong> In favour of EU integration</p>
+
+
+
+<p>Note: SDS is part of GERB-SDS, electoral alliance and shared electoral list for the 2021 national parliamentary election.</p>
+</div></div>
+
+
+
+<div class="wp-block-media-text alignwide has-background" style="background-color:#999a9b;grid-template-columns:23% auto"><figure class="wp-block-media-text__media"><img loading="lazy" width="504" height="140" src="https://europeelects.eu/wp-content/uploads/2018/08/word-image-193.png" alt="" class="wp-image-569 size-full" srcset="https://europeelects.eu/wp-content/uploads/2018/08/word-image-193.png 504w, https://europeelects.eu/wp-content/uploads/2018/08/word-image-193-300x83.png 300w" sizes="(max-width: 504px) 100vw, 504px" /></figure><div class="wp-block-media-text__content">
+<p><strong>Воля</strong> (VOLYA)<br><em>Volya</em><br>Will<br><strong>Leader:</strong> Veselin Mareshki<br><strong>Orientation:</strong> Right-wing<br><strong>EP Affiliation:</strong> ID (<a href="https://www.id-party.eu/" target="_blank" rel="noreferrer noopener">ID Party</a>, <a aria-label="undefined (opens in a new tab)" href="https://pace.coe.int/en/members/7876?lang=EN" target="_blank" rel="noreferrer noopener">NI-PACE</a>)<br><strong>EU Stance:</strong> Neutral towards EU integration (<a href="https://europeelects.eu/european-union/" target="_blank" rel="noreferrer noopener">Chapel-Hill data</a>) </p>
+
+
+
+<p></p>
+
+
+
+<p>Note: Volya is part of the <em>Патриотична Коалиция-Воля и НФСБ, </em>Patriotic Coalition-Volya and NFSB<em> </em>electoral alliance and shared electoral list for the 2021 national parliamentary election.</p>
+</div></div>
+
+
+
+<div class="wp-block-media-text alignwide has-pale-cyan-blue-background-color has-background" style="grid-template-columns:23% auto"><figure class="wp-block-media-text__media"><img loading="lazy" width="350" height="173" src="https://europeelects.eu/wp-content/uploads/2020/11/DSB_logo_2018-1.png" alt="" class="wp-image-7011275 size-full" srcset="https://europeelects.eu/wp-content/uploads/2020/11/DSB_logo_2018-1.png 350w, https://europeelects.eu/wp-content/uploads/2020/11/DSB_logo_2018-1-300x148.png 300w" sizes="(max-width: 350px) 100vw, 350px" /></figure><div class="wp-block-media-text__content">
+<p><strong>Демократи за силна България</strong> (DSB)<strong><br></strong><em>Demokrati za silna Bŭlgariya</em><br>Democrats for a Strong Bulgaria<br><strong>Leader:</strong> Atanas Atanasov<br><strong>Orientation:</strong> Centre-right <br><strong>EP Affiliation:</strong> EPP (<a aria-label="undefined (opens in a new tab)" href="https://www.eppgroup.eu/about-us/members/alexander-alexandrov-yordanov" target="_blank" rel="noreferrer noopener">EPP-EP</a>, <a aria-label="undefined (opens in a new tab)" href="https://www.eppgroup.eu/about-us/members/radan-kanev" target="_blank" rel="noreferrer noopener">EPP Party</a>)<br><strong>EU Stance:</strong> Strongly in favour of EU integration (<a href="https://europeelects.eu/european-union/" target="_blank" rel="noreferrer noopener">Chapel-Hill data</a>)<br><br>Note: Part of the <em>Demokratichna Bŭlgariya</em> (DB-EPP|Greens/EFA) alliance.</p>
+</div></div>
+
+
+
+<div class="wp-block-media-text alignwide has-very-light-gray-background-color has-background" style="grid-template-columns:23% auto"><figure class="wp-block-media-text__media"><img loading="lazy" width="715" height="400" src="https://europeelects.eu/wp-content/uploads/2018/08/word-image-204.png" alt="" class="wp-image-580 size-full" srcset="https://europeelects.eu/wp-content/uploads/2018/08/word-image-204.png 715w, https://europeelects.eu/wp-content/uploads/2018/08/word-image-204-300x168.png 300w" sizes="(max-width: 715px) 100vw, 715px" /></figure><div class="wp-block-media-text__content">
+<p><strong>Алтернатива за българско възраждане</strong> (ABV)<strong><br></strong><em>Alternativa za bŭlgarsko vŭzrazhdane</em><br>Alternative for Bulgarian Revival<br><strong>Leader:</strong> Rumen Petkov<br><strong>Orientation:</strong> Centre-left<br><strong>EP Affiliation:</strong> *<br><strong>EU Stance:</strong> In favour of EU integration</p>
+</div></div>
+
+
+
+<div class="wp-block-media-text alignwide has-light-background-background-color has-background" style="grid-template-columns:24% auto"><figure class="wp-block-media-text__media"><img loading="lazy" width="297" height="226" src="https://europeelects.eu/wp-content/uploads/2020/11/NFSB_Bulgaria_Logo.png" alt="" class="wp-image-7010776 size-full"/></figure><div class="wp-block-media-text__content">
+<p><strong>Национален фронт за спасение на България</strong> (NFSB)<br><em>Natsionalen front za spasenie na Bŭlgariya</em><br>National Front for the Salvation of Bulgaria<br><strong>Leader:</strong> Valeri Simeonov<br><strong>Orientation:</strong> Right-wing<br><strong>EP Affiliation:</strong> *<br><strong>EU Stance:</strong> Neutral towards EU integration (<a href="https://europeelects.eu/european-union/" target="_blank" rel="noreferrer noopener">Chapel-Hill data</a>)  <br><br>Note:  NFSB is part of <em>Патриотична Коалиция-Воля и НФСБ, </em>Patriotic Coalition-Volya and NFSB<em> </em>electoral alliance and shared electoral list for the 2021 national parliamentary election.</p>
+</div></div>
+
+
+
+<div class="wp-block-media-text alignwide has-very-light-gray-background-color has-background" style="grid-template-columns:24% auto"><figure class="wp-block-media-text__media"><img loading="lazy" width="162" height="192" src="https://europeelects.eu/wp-content/uploads/2020/11/Ataka_logo_transparent.png" alt="" class="wp-image-7010778 size-full"/></figure><div class="wp-block-media-text__content">
+<p><strong>Атака </strong>(ATAKA)<strong><br></strong><em>Ataka</em><br>Attack<br><strong>Leader:</strong> Volen Siderov<br><strong>Orientation:</strong> Far-right<br><strong>EP Affiliation:</strong> ~NI (<a aria-label="undefined (opens in a new tab)" href="https://www.europarl.europa.eu/meps/en/34254/DIMITAR_STOYANOV/history/7" target="_blank" rel="noreferrer noopener">history with NI-EP</a>)<br><strong>EU Stance:</strong> Opposed to EU integration (<a href="https://europeelects.eu/european-union/" target="_blank" rel="noreferrer noopener">Chapel-Hill data</a>)</p>
+</div></div>
+
+
+
+<div class="wp-block-media-text alignwide has-light-background-background-color has-background" style="grid-template-columns:24% auto"><figure class="wp-block-media-text__media"><img loading="lazy" width="500" height="500" src="https://europeelects.eu/wp-content/uploads/2021/01/itn-removebg-preview.png" alt="" class="wp-image-8012388 size-full" srcset="https://europeelects.eu/wp-content/uploads/2021/01/itn-removebg-preview.png 500w, https://europeelects.eu/wp-content/uploads/2021/01/itn-removebg-preview-300x300.png 300w, https://europeelects.eu/wp-content/uploads/2021/01/itn-removebg-preview-150x150.png 150w" sizes="(max-width: 500px) 100vw, 500px" /></figure><div class="wp-block-media-text__content">
+<p><strong>Има такъв народ</strong> (ITN)<strong><br></strong><em>Ima Takŭv Narod</em><br>There Are Such People<br><strong>Leader:</strong> Slavi Trifonov<br><strong>Orientation:</strong> Centrist<br><strong>EP Affiliation:</strong> *<br><strong>EU Stance:</strong> Neutral towards EU integration (<a href="https://europeelects.eu/european-union/" target="_blank" rel="noreferrer noopener">Chapel-Hill data</a>)<br><br>Watch&nbsp;<a href="https://www.youtube.com/watch?v=lK3rVb_yIao&amp;t=6s" target="_blank" rel="noreferrer noopener">here</a>&nbsp;our video from 2021 about the party.</p>
+</div></div>
+
+
+
+<div class="wp-block-media-text alignwide has-light-background-background-color has-background" style="grid-template-columns:24% auto"><figure class="wp-block-media-text__media"><img loading="lazy" width="180" height="210" src="https://europeelects.eu/wp-content/uploads/2021/01/v-removebg-preview.png" alt="" class="wp-image-8012389 size-full"/></figure><div class="wp-block-media-text__content">
+<p><strong>Възраждане</strong> (V)<strong><br></strong><em>Vŭzrazhdane</em><br>Revival<br><strong>Leader:</strong> Kostadin Kostadinov<br><strong>Orientation:</strong> Right-wing<br><strong>EP Affiliation:</strong> *<br><strong>EU Stance:</strong> Opposed to EU integration</p>
+</div></div>
+
+
+
+<div class="wp-block-media-text alignwide has-very-light-gray-background-color has-background" style="grid-template-columns:23% auto"><figure class="wp-block-media-text__media"><img loading="lazy" width="338" height="149" src="https://europeelects.eu/wp-content/uploads/2021/01/kzt-removebg-preview.png" alt="" class="wp-image-8012390 size-full" srcset="https://europeelects.eu/wp-content/uploads/2021/01/kzt-removebg-preview.png 338w, https://europeelects.eu/wp-content/uploads/2021/01/kzt-removebg-preview-300x132.png 300w" sizes="(max-width: 338px) 100vw, 338px" /></figure><div class="wp-block-media-text__content">
+<p><strong>Коалиция за теб България</strong> (KtB)<br><em>Koalitsiya za teb Bŭlgariya</em><br>Coalition for you Bulgaria<br><strong>Leader:</strong> Valeri Grigorov<br><strong>Orientation:</strong> National-conservative<br><strong>EP Affiliation:</strong> *<br><strong>EU Stance:</strong> Somewhat opposed to EU integration<br><br>N0te: KtB is part of the Ние Гражданите/Nie Grazhdanite (NG) electoral alliance.</p>
+</div></div>
+
+
+
+<div class="wp-block-media-text alignwide has-very-light-gray-background-color has-background" style="grid-template-columns:23% auto"><figure class="wp-block-media-text__media"><img loading="lazy" width="655" height="381" src="https://europeelects.eu/wp-content/uploads/2021/01/koy-removebg-preview.png" alt="" class="wp-image-8012391 size-full" srcset="https://europeelects.eu/wp-content/uploads/2021/01/koy-removebg-preview.png 655w, https://europeelects.eu/wp-content/uploads/2021/01/koy-removebg-preview-300x175.png 300w, https://europeelects.eu/wp-content/uploads/2021/01/koy-removebg-preview-540x314.png 540w" sizes="(max-width: 655px) 100vw, 655px" /></figure><div class="wp-block-media-text__content">
+<p><strong>КОЙ-Компетентност, Отговорност, Истина</strong> (KOY)<br><em>KOY-Kompetentnost, Otgovornost, Istina </em><br>CRT-Competence, Responsibility, Truth<br><strong>Leader:</strong> Svetozar Sŭev<br><strong>Orientation:</strong> Right-wing<br><strong>EP Affiliation:</strong> *<br><strong>EU Stance:</strong> Opposed to EU integration<br><br>N0te: KOY is part of the Ние Гражданите/Nie Grazhdanite (NG) electoral alliance.</p>
+</div></div>
+
+
+
+<div class="wp-block-media-text alignwide has-very-light-gray-background-color has-background" style="grid-template-columns:23% auto"><figure class="wp-block-media-text__media"><img loading="lazy" width="938" height="190" src="https://europeelects.eu/wp-content/uploads/2021/01/d21.png" alt="" class="wp-image-8012392 size-full" srcset="https://europeelects.eu/wp-content/uploads/2021/01/d21.png 938w, https://europeelects.eu/wp-content/uploads/2021/01/d21-300x61.png 300w, https://europeelects.eu/wp-content/uploads/2021/01/d21-768x156.png 768w, https://europeelects.eu/wp-content/uploads/2021/01/d21-540x109.png 540w" sizes="(max-width: 938px) 100vw, 938px" /></figure><div class="wp-block-media-text__content">
+<p><strong>Движение 21</strong> (D21)<br><em>Dvizhenie 21</em><br>Movement 21<br><strong>Leader:</strong> Tatyana Doncheva<br><strong>Orientation:</strong> Centre-left<br><strong>EP Affiliation:</strong> *<br><strong>EU Stance:</strong> In favour of EU integration<br><br>N0te: Alongside other minor parties, D21 is part of the <em>IS</em>MV (EPP|Greens/EFA) electoral alliance.</p>
+</div></div>
+
+
+
+<div class="wp-block-media-text alignwide has-background" style="background-color:#8ed1fc;grid-template-columns:23% auto"><figure class="wp-block-media-text__media"><img loading="lazy" width="334" height="115" src="https://europeelects.eu/wp-content/uploads/2020/12/Movement_Bulgaria_of_the_Citizens_logo.png" alt="" class="wp-image-7011996 size-full" srcset="https://europeelects.eu/wp-content/uploads/2020/12/Movement_Bulgaria_of_the_Citizens_logo.png 334w, https://europeelects.eu/wp-content/uploads/2020/12/Movement_Bulgaria_of_the_Citizens_logo-300x103.png 300w" sizes="(max-width: 334px) 100vw, 334px" /></figure><div class="wp-block-media-text__content">
+<p><strong>Движение &#8220;България на Гражданите&#8221;</strong> (DBG)<br><em>Dvizhenie &#8220;Bŭlgariya na Grazhdanite&#8221;</em><br>Movement &#8220;Bulgaria to the Citizens&#8221;<br><strong>Leader:</strong> Dimitûr Delchev<br><strong>Orientation:</strong> Centre-right<br><strong>EP Affiliation:</strong> EPP (<a href="https://www.epp.eu/parties-and-partners/">EPP Party</a>)<br><strong>EU Stance:</strong> In favour of EU integration<br><br>N0te: Alongside other minor parties, DBG is part of the <em>IS</em>MV (EPP|Greens/EFA) electoral alliance.</p>
+</div></div>
+
+
+
+<div class="wp-block-media-text alignwide has-background" style="background-color:#7bdcb5;grid-template-columns:23% auto"><figure class="wp-block-media-text__media"><img loading="lazy" width="1024" height="610" src="https://europeelects.eu/wp-content/uploads/2020/12/1920px-Zelenite_BulgarianGreens_Logo.svg-1024x610.png" alt="" class="wp-image-7012071 size-full" srcset="https://europeelects.eu/wp-content/uploads/2020/12/1920px-Zelenite_BulgarianGreens_Logo.svg-1024x610.png 1024w, https://europeelects.eu/wp-content/uploads/2020/12/1920px-Zelenite_BulgarianGreens_Logo.svg-300x179.png 300w, https://europeelects.eu/wp-content/uploads/2020/12/1920px-Zelenite_BulgarianGreens_Logo.svg-768x457.png 768w, https://europeelects.eu/wp-content/uploads/2020/12/1920px-Zelenite_BulgarianGreens_Logo.svg-1536x914.png 1536w, https://europeelects.eu/wp-content/uploads/2020/12/1920px-Zelenite_BulgarianGreens_Logo.svg-540x321.png 540w, https://europeelects.eu/wp-content/uploads/2020/12/1920px-Zelenite_BulgarianGreens_Logo.svg-1080x643.png 1080w, https://europeelects.eu/wp-content/uploads/2020/12/1920px-Zelenite_BulgarianGreens_Logo.svg.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure><div class="wp-block-media-text__content">
+<p><strong>Зелено движение</strong> (Zelenite)<br><em><em>Zeleno dvizhenie</em></em><br>Green Movement<br><strong>Leader:</strong> Borislav Sandov and Vladislav Penev<br><strong>Orientation:</strong> Green politics<br><strong>EP Affiliation:</strong> Greens/EFA (<a href="https://europeangreens.eu/map">EGP</a>, <a href="https://www.globalgreens.org/member-parties">GG</a>)<br><strong>EU Stance:</strong> Strongly in favour of EU integration<br><br>Note: Part of the <em>Demokratichna Bŭlgariya</em> (DB-EPP|Greens/EFA) alliance.</p>
+</div></div>
+
+
+
+<div class="wp-block-media-text alignwide has-background" style="background-color:#7bdcb5;grid-template-columns:23% auto"><figure class="wp-block-media-text__media"><img loading="lazy" width="1024" height="1024" src="https://europeelects.eu/wp-content/uploads/2020/12/50268148_233454390764907_8948634485147041792_o-1024x1024.png" alt="" class="wp-image-7012069 size-full" srcset="https://europeelects.eu/wp-content/uploads/2020/12/50268148_233454390764907_8948634485147041792_o-1024x1024.png 1024w, https://europeelects.eu/wp-content/uploads/2020/12/50268148_233454390764907_8948634485147041792_o-300x300.png 300w, https://europeelects.eu/wp-content/uploads/2020/12/50268148_233454390764907_8948634485147041792_o-150x150.png 150w, https://europeelects.eu/wp-content/uploads/2020/12/50268148_233454390764907_8948634485147041792_o-768x768.png 768w, https://europeelects.eu/wp-content/uploads/2020/12/50268148_233454390764907_8948634485147041792_o-1536x1536.png 1536w, https://europeelects.eu/wp-content/uploads/2020/12/50268148_233454390764907_8948634485147041792_o-600x600.png 600w, https://europeelects.eu/wp-content/uploads/2020/12/50268148_233454390764907_8948634485147041792_o-540x540.png 540w, https://europeelects.eu/wp-content/uploads/2020/12/50268148_233454390764907_8948634485147041792_o-1080x1080.png 1080w, https://europeelects.eu/wp-content/uploads/2020/12/50268148_233454390764907_8948634485147041792_o-1980x1980.png 1980w, https://europeelects.eu/wp-content/uploads/2020/12/50268148_233454390764907_8948634485147041792_o.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure><div class="wp-block-media-text__content">
+<p><strong>Волт България</strong> (Volt)<br><em>Volt Bŭlgariya</em><br>Volt Bulgaria<br><strong>Leader:</strong> Nastimir Ananiev<br><strong>Orientation:</strong> Eurofederalist<br><strong>EP Affiliation:</strong> Greens/EFA (<a aria-label="undefined (opens in a new tab)" href="https://www.epp.eu/parties-and-partners/" target="_blank" rel="noreferrer noopener">Volt Europa</a>)<br><strong>EU Stance:</strong> Strongly in favour of EU integration<br><br>N0te: Alongside other minor parties, Volt is part of the <em>IS</em>MV &#8211; <em>Izpravi se. Bg. Mutri vŭn</em> (EPP|Greens/EFA) electoral alliance.</p>
+</div></div>
+
+
+
+<div class="wp-block-media-text alignwide has-very-light-gray-background-color has-background" style="grid-template-columns:23% auto"><figure class="wp-block-media-text__media"><img loading="lazy" width="640" height="360" src="https://europeelects.eu/wp-content/uploads/2021/01/rzb.png" alt="" class="wp-image-8012393 size-full" srcset="https://europeelects.eu/wp-content/uploads/2021/01/rzb.png 640w, https://europeelects.eu/wp-content/uploads/2021/01/rzb-300x169.png 300w, https://europeelects.eu/wp-content/uploads/2021/01/rzb-540x304.png 540w" sizes="(max-width: 640px) 100vw, 640px" /></figure><div class="wp-block-media-text__content">
+<p><strong>Републиканци за България </strong> (RzB)<br><em>Republikantsi za Bŭlgariya</em><br>Republicans for Bulgaria<br><strong>Leader:</strong> Tsvetan Tsvetanov<br><strong>Orientation:</strong> Centre-right<br><strong>EP Affiliation:</strong> *<br><strong>EU Stance:</strong> In favour of EU integration<br><br></p>
+</div></div>
+
+
+
+<div class="wp-block-media-text alignwide has-very-light-gray-background-color has-background" style="grid-template-columns:23% auto"><figure class="wp-block-media-text__media"><img loading="lazy" width="300" height="154" src="https://europeelects.eu/wp-content/uploads/2021/01/12333.png" alt="" class="wp-image-8012441 size-full"/></figure><div class="wp-block-media-text__content">
+<p><strong>Българско Лято 2020 </strong> (BL2020)<br><em>Bŭlgar</em>sko Lyato 2020<br>Bulgarian Summer 2020<br><strong>Leader:</strong> Boril Sokolov<br><strong>Orientation:</strong> Centrist<br><strong>EP Affiliation:</strong> *<br><strong>EU Stance:</strong> Somewhat in favour of EU integration<br><br></p>
+</div></div>
+
+
+
+<div class="wp-block-media-text alignwide has-very-light-gray-background-color has-background" style="grid-template-columns:23% auto"><figure class="wp-block-media-text__media"><img loading="lazy" width="194" height="200" src="https://europeelects.eu/wp-content/uploads/2021/02/122-1.jpg" alt="" class="wp-image-8012607 size-full"/></figure><div class="wp-block-media-text__content">
+<p><strong>Българска Прогресивна Линия </strong> (BPL)<br><em>Bŭlgarska Progresivna Liniya</em><br>Bulgarian Progressive Line<br><strong>Leader:</strong> Krasimir Yankov<br><strong>Orientation:</strong> Centre-left<br><strong>EP Affiliation:</strong> *<br><strong>EU Stance:</strong> Somewhat in favour of EU integration</p>
+
+
+
+<p>Note: BPL is still not a fully registered party in the legal sense in Bulgaria, however, it does have five national MPs.<br><br></p>
+</div></div>
+
+
+
+<div class="wp-block-media-text alignwide has-very-light-gray-background-color has-background" style="grid-template-columns:23% auto"><figure class="wp-block-media-text__media"><img loading="lazy" width="291" height="105" src="https://europeelects.eu/wp-content/uploads/2021/02/9.png" alt="" class="wp-image-8013238 size-full"/></figure><div class="wp-block-media-text__content">
+<p><strong>Единна Народна Партия </strong> (ENP)<br><em>Edinna Narodna Partiya</em><br>United People&#8217;s Party<br><strong>Leader:</strong> Valentina Vasileva-Filadelfevs<br><strong>Orientation:</strong> Liberal<br><strong>EP Affiliation:</strong> *<br><strong>EU Stance:</strong> In favour of EU integration</p>
+
+
+
+<p>Note: Alongside other minor parties, ENP is part of the <em>ISMV</em> (EPP|Greens/EFA) alliance.<br><br></p>
+</div></div>
+
+
+
+<div class="wp-block-media-text alignwide has-very-light-gray-background-color has-background" style="grid-template-columns:23% auto"><figure class="wp-block-media-text__media"><img loading="lazy" width="486" height="291" src="https://europeelects.eu/wp-content/uploads/2021/03/Flag_of_the_Bulgarian_Agrarian_Peoples_Union.png" alt="" class="wp-image-8013321 size-full" srcset="https://europeelects.eu/wp-content/uploads/2021/03/Flag_of_the_Bulgarian_Agrarian_Peoples_Union.png 486w, https://europeelects.eu/wp-content/uploads/2021/03/Flag_of_the_Bulgarian_Agrarian_Peoples_Union-300x180.png 300w" sizes="(max-width: 486px) 100vw, 486px" /></figure><div class="wp-block-media-text__content">
+<p><strong>Бъгарски Земеделски Народен Съюз</strong> (BZNS)<br><em>Bŭlgarski Zemedelski Naroden Sŭiuz</em><br>Bulgarian Agrarian National Union<br><strong>Leader:</strong> Nikolay Nenchev<br><strong>Orientation:</strong> Agrarianism<br><strong>EP Affiliation:</strong> *<br><strong>EU Stance:</strong> Neutral towards EU integration</p>
+
+
+
+<p>N0te: BZNS is a former member of Reformist Bloc (EPP). Now BZNS is a part of the electoral coalition <em>Патриотична коалиция Воля-НФСБ</em> Patriotic coalition Volya-NFSB.</p>
+</div></div>
+
+
+
+<div class="wp-block-media-text alignwide has-very-light-gray-background-color has-background" style="grid-template-columns:23% auto"><figure class="wp-block-media-text__media"><img loading="lazy" width="225" height="225" src="https://europeelects.eu/wp-content/uploads/2021/03/655-removebg-preview.png" alt="" class="wp-image-8013350 size-full" srcset="https://europeelects.eu/wp-content/uploads/2021/03/655-removebg-preview.png 225w, https://europeelects.eu/wp-content/uploads/2021/03/655-removebg-preview-150x150.png 150w" sizes="(max-width: 225px) 100vw, 225px" /></figure><div class="wp-block-media-text__content">
+<p><strong>Консервативно Обединение на Десницата</strong> (KOD)<br><em>Konservativno Obedinenie na Desnitsata</em><br>Conservative Alliance of the Right<br><strong>Leader:</strong> Petŭr Moskov<br><strong>Orientation:</strong> Right-wing<br><strong>EP Affiliation:</strong> *<br><strong>EU Stance:</strong> Neutral towards EU integration</p>
+
+
+
+<p></p>
+</div></div>
+
+
+
+<h2>Recent Polls</h2>
+
+
+
+<div class="wp-block-button"><a class="wp-block-button__link" href="https://filipvanlaenen.github.io/eopaod/bg.csv">Download</a></div>
+
+
+<div id="tablepress-24-scroll-wrapper" class="tablepress-scroll-wrapper">
+
+<table id="tablepress-24" class="tablepress tablepress-id-24 tablepress-responsive">
+<thead>
+<tr class="row-1">
+	<th class="column-1">Polling Firm</th><th class="column-2">Commissioners</th><th class="column-3">Fieldwork Start</th><th class="column-4">Fieldwork End</th><th class="column-5">Scope</th><th class="column-6">Sample Size</th><th class="column-7">Sample Size Qualification</th><th class="column-8">Participation</th><th class="column-9">Precision</th><th class="column-10">GERB</th><th class="column-11">Bulgarian Socialist Party</th><th class="column-12">United Patriots</th><th class="column-13">IMRO – Bulgarian National Movement</th><th class="column-14">National Front for the Salvation of Bulgaria</th><th class="column-15">Attack</th><th class="column-16">Alternative for Bulgarian Revival</th><th class="column-17">Movement for Rights and Freedoms</th><th class="column-18">Volya</th><th class="column-19">Reformist Bloc</th><th class="column-20">Democratic Bulgaria</th><th class="column-21">Democrats for a Strong Bulgaria</th><th class="column-22">Yes, Bulgaria!</th><th class="column-23">There Are Such People</th><th class="column-24">Stand Up.BG</th><th class="column-25">Revival</th><th class="column-26">Republicans for Bulgaria</th><th class="column-27">Volya–National Front for the Salvation of Bulgaria</th><th class="column-28">Other</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2">
+	<td class="column-1">AFIS</td><td class="column-2"></td><td class="column-3">2021-02-12</td><td class="column-4">2021-02-17</td><td class="column-5">National</td><td class="column-6">1000</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">25.2%</td><td class="column-11">22.5%</td><td class="column-12">Not Available</td><td class="column-13">3.2%</td><td class="column-14">Not Available</td><td class="column-15">1.6%</td><td class="column-16">1.6%</td><td class="column-17">11.5%</td><td class="column-18">Not Available</td><td class="column-19">Not Available</td><td class="column-20">5.6%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">14.2%</td><td class="column-24">4.1%</td><td class="column-25">2.2%</td><td class="column-26">Not Available</td><td class="column-27">2.0%</td><td class="column-28">Not Available</td>
+</tr>
+<tr class="row-3">
+	<td class="column-1">Gallup International</td><td class="column-2"></td><td class="column-3">2021-02-04</td><td class="column-4">2021-02-12</td><td class="column-5">National</td><td class="column-6">1011</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">25.8%</td><td class="column-11">21.9%</td><td class="column-12">Not Available</td><td class="column-13">4.2%</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">12.4%</td><td class="column-18">Not Available</td><td class="column-19">Not Available</td><td class="column-20">6.8%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">13.1%</td><td class="column-24">4.7%</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">2.7%</td><td class="column-28">8.4%</td>
+</tr>
+<tr class="row-4">
+	<td class="column-1">Sova Harris</td><td class="column-2"></td><td class="column-3">2020-01-26</td><td class="column-4">2021-01-31</td><td class="column-5">National</td><td class="column-6">1000</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">27.1%</td><td class="column-11">24.9%</td><td class="column-12">Not Available</td><td class="column-13">4.4%</td><td class="column-14">1.7%</td><td class="column-15">1.3%</td><td class="column-16">1.7%</td><td class="column-17">9.3%</td><td class="column-18">2.8%</td><td class="column-19">Not Available</td><td class="column-20">4.1%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">15.5%</td><td class="column-24">4.7%</td><td class="column-25">1.1%</td><td class="column-26">1.6%</td><td class="column-27">Not Available</td><td class="column-28">Not Available</td>
+</tr>
+<tr class="row-5">
+	<td class="column-1">Market LINKS</td><td class="column-2"></td><td class="column-3">2021-01-23</td><td class="column-4">2021-01-31</td><td class="column-5">National</td><td class="column-6">1000</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">28.6%</td><td class="column-11">20.9%</td><td class="column-12">3.4%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">11.9%</td><td class="column-18">Not Available</td><td class="column-19">Not Available</td><td class="column-20">10.7%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">15.5%</td><td class="column-24">5.3%</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">3.8%</td>
+</tr>
+<tr class="row-6">
+	<td class="column-1">Trend</td><td class="column-2">24 hours</td><td class="column-3">2021-01-12</td><td class="column-4">2021-01-19</td><td class="column-5">National</td><td class="column-6">1008</td><td class="column-7">Provided</td><td class="column-8">100%</td><td class="column-9">0.1%</td><td class="column-10">27.6%</td><td class="column-11">24.9%</td><td class="column-12">4%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">0.7%</td><td class="column-16">0.5%</td><td class="column-17">10.3%</td><td class="column-18">1.3%</td><td class="column-19">Not Available</td><td class="column-20">6%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">11.8%</td><td class="column-24">4.1%</td><td class="column-25">1.1%</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">7.7%</td>
+</tr>
+<tr class="row-7">
+	<td class="column-1">Gallup International</td><td class="column-2"></td><td class="column-3">2021-01-07</td><td class="column-4">2021-01-15</td><td class="column-5">National</td><td class="column-6">1010</td><td class="column-7">Provided</td><td class="column-8">89.6%</td><td class="column-9">0.1%</td><td class="column-10">25.6%</td><td class="column-11">21.4%</td><td class="column-12">5.1%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">12.2%</td><td class="column-18">2.3%</td><td class="column-19">Not Available</td><td class="column-20">6.9%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">13.8%</td><td class="column-24">5%</td><td class="column-25">1.6%</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">6%</td>
+</tr>
+<tr class="row-8">
+	<td class="column-1">Alpha Research</td><td class="column-2"></td><td class="column-3">2020-12-15</td><td class="column-4">2020-12-21</td><td class="column-5">National</td><td class="column-6">504</td><td class="column-7">Provided</td><td class="column-8">83.7%</td><td class="column-9">0.1%</td><td class="column-10">29%</td><td class="column-11">26.2%</td><td class="column-12">3.2%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">8.6%</td><td class="column-18">Not Available</td><td class="column-19">Not Available</td><td class="column-20">7.3%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">12.2%</td><td class="column-24">5.9%</td><td class="column-25">0.6%</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">7.0%</td>
+</tr>
+<tr class="row-9">
+	<td class="column-1">Mediana</td><td class="column-2"></td><td class="column-3">2020-12-12</td><td class="column-4">2020-12-17</td><td class="column-5">National</td><td class="column-6">954</td><td class="column-7">Provided</td><td class="column-8">76.6%</td><td class="column-9">0.1%</td><td class="column-10">24.2%</td><td class="column-11">25.7%</td><td class="column-12">4.7%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">10.8%</td><td class="column-18">1.6%</td><td class="column-19">Not Available</td><td class="column-20">3.4%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">17%</td><td class="column-24">4.8%</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">7.8%</td>
+</tr>
+<tr class="row-10">
+	<td class="column-1">Exacta</td><td class="column-2"></td><td class="column-3">2020-12-05</td><td class="column-4">2020-12-12</td><td class="column-5">National</td><td class="column-6">1025</td><td class="column-7">Provided</td><td class="column-8">64.5%</td><td class="column-9">0.1%</td><td class="column-10">28.8%</td><td class="column-11">25.6%</td><td class="column-12">5.4%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">8.4%</td><td class="column-18">Not Available</td><td class="column-19">Not Available</td><td class="column-20">6%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">14%</td><td class="column-24">3.7%</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">8.1%</td>
+</tr>
+<tr class="row-11">
+	<td class="column-1">Barometer Bulgaria</td><td class="column-2"></td><td class="column-3">2020-11-24</td><td class="column-4">2020-11-29</td><td class="column-5">National</td><td class="column-6">847</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">33.5%</td><td class="column-11">20.8%</td><td class="column-12">12.7%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">13.2%</td><td class="column-18">1.2%</td><td class="column-19">Not Available</td><td class="column-20">5.2%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">6.2%</td><td class="column-24">2.5%</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">4.8%</td>
+</tr>
+<tr class="row-12">
+	<td class="column-1">Barometer Bulgaria</td><td class="column-2"></td><td class="column-3">2020-11-06</td><td class="column-4">2020-11-11</td><td class="column-5">National</td><td class="column-6">882</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">33.6%</td><td class="column-11">21.6%</td><td class="column-12">12%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">12.3%</td><td class="column-18">1.1%</td><td class="column-19">Not Available</td><td class="column-20">5.1%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">6.1%</td><td class="column-24">2.6%</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">5.7%</td>
+</tr>
+<tr class="row-13">
+	<td class="column-1">Sova Harris</td><td class="column-2"></td><td class="column-3">2020-10-27</td><td class="column-4">2020-11-03</td><td class="column-5">National</td><td class="column-6">1000</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">26.6%</td><td class="column-11">25.1%</td><td class="column-12">5.5%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">8.7%</td><td class="column-18">3.2%</td><td class="column-19">Not Available</td><td class="column-20">8.4%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">11.4%</td><td class="column-24">5.7%</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">5.4%</td>
+</tr>
+<tr class="row-14">
+	<td class="column-1">Rego</td><td class="column-2"></td><td class="column-3">2020-10-21</td><td class="column-4">2020-10-27</td><td class="column-5">National</td><td class="column-6">2000</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">27.1%</td><td class="column-11">26.3%</td><td class="column-12">2.8%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">8.3%</td><td class="column-18">1.1%</td><td class="column-19">Not Available</td><td class="column-20">7.6%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">18.6%</td><td class="column-24">3.9%</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">4.3%</td>
+</tr>
+<tr class="row-15">
+	<td class="column-1">Barometer Bulgaria</td><td class="column-2"></td><td class="column-3">2020-10-10</td><td class="column-4">2020-10-16</td><td class="column-5">National</td><td class="column-6">866</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">32.7%</td><td class="column-11">23.6%</td><td class="column-12">11.3%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">12.4%</td><td class="column-18">1.1%</td><td class="column-19">Not Available</td><td class="column-20">4.7%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">6.1%</td><td class="column-24">2.7%</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">5.3%</td>
+</tr>
+<tr class="row-16">
+	<td class="column-1">Trend</td><td class="column-2"></td><td class="column-3">2020-10-03</td><td class="column-4">2020-10-10</td><td class="column-5">National</td><td class="column-6">1008</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">24.1%</td><td class="column-11">23.6%</td><td class="column-12">3.8%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">10.2%</td><td class="column-18">1.6%</td><td class="column-19">Not Available</td><td class="column-20">8.8%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">15.9%</td><td class="column-24">3.9%</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">8.1%</td>
+</tr>
+<tr class="row-17">
+	<td class="column-1">Gallup International</td><td class="column-2"></td><td class="column-3">2020-10-01</td><td class="column-4">2020-10-09</td><td class="column-5">National</td><td class="column-6">803</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">19.1%</td><td class="column-11">19.8%</td><td class="column-12">3.4%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">10.1%</td><td class="column-18">2.6%</td><td class="column-19">Not Available</td><td class="column-20">7.3%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">12.6%</td><td class="column-24">3.7%</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">21.4%</td>
+</tr>
+<tr class="row-18">
+	<td class="column-1">Alpha Research</td><td class="column-2"></td><td class="column-3">2020-09-21</td><td class="column-4">2020-09-30</td><td class="column-5">National</td><td class="column-6">1031</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">22.8%</td><td class="column-11">21.8%</td><td class="column-12">4.2%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">11%</td><td class="column-18">0.3%</td><td class="column-19">Not Available</td><td class="column-20">10.5%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">16.6%</td><td class="column-24">5.1%</td><td class="column-25">0.9%</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">6.8%</td>
+</tr>
+<tr class="row-19">
+	<td class="column-1">Market LINKS</td><td class="column-2"></td><td class="column-3">2020-09-18</td><td class="column-4">2020-09-26</td><td class="column-5">National</td><td class="column-6">544</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">27.4%</td><td class="column-11">27.2%</td><td class="column-12">2.7%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">9.9%</td><td class="column-18">Not Available</td><td class="column-19">Not Available</td><td class="column-20">11.8%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">13.5%</td><td class="column-24">3.1%</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">4.4%</td>
+</tr>
+<tr class="row-20">
+	<td class="column-1">Gallup International</td><td class="column-2"></td><td class="column-3">2020-09-03</td><td class="column-4">2020-09-11</td><td class="column-5">National</td><td class="column-6">515</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">20.7%</td><td class="column-11">21.2%</td><td class="column-12">2.7%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">7.6%</td><td class="column-18">1.8%</td><td class="column-19">Not Available</td><td class="column-20">5.2%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">16.4%</td><td class="column-24">4.1%</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">Not Available</td>
+</tr>
+<tr class="row-21">
+	<td class="column-1">Trend</td><td class="column-2">24 hours</td><td class="column-3">2020-08-29</td><td class="column-4">2020-09-05</td><td class="column-5">National</td><td class="column-6">1008</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">23.8%</td><td class="column-11">23.4%</td><td class="column-12">3.9%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">1.1%</td><td class="column-16">0.2%</td><td class="column-17">10.4%</td><td class="column-18">1.2%</td><td class="column-19">Not Available</td><td class="column-20">9.9%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">15.9%</td><td class="column-24">4%</td><td class="column-25">1.2%</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">Not Available</td>
+</tr>
+<tr class="row-22">
+	<td class="column-1">Sova Harris</td><td class="column-2"></td><td class="column-3">2020-08-19</td><td class="column-4">2020-08-25</td><td class="column-5">National</td><td class="column-6">1000</td><td class="column-7">Provided</td><td class="column-8">64.2%</td><td class="column-9">0.1%</td><td class="column-10">27.7%</td><td class="column-11">24.5%</td><td class="column-12">Not Available</td><td class="column-13">3.7%</td><td class="column-14">0.6%</td><td class="column-15">0.9%</td><td class="column-16">1.1%</td><td class="column-17">9.2%</td><td class="column-18">3.0%</td><td class="column-19">Not Available</td><td class="column-20">7.0%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">15.7%</td><td class="column-24">4.5%</td><td class="column-25">0.6%</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">1.0%</td>
+</tr>
+<tr class="row-23">
+	<td class="column-1">Barometer Bulgaria</td><td class="column-2"></td><td class="column-3">2020-08-03</td><td class="column-4">2020-08-11</td><td class="column-5">National</td><td class="column-6">842</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">38.9%</td><td class="column-11">18.9%</td><td class="column-12">11.7%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">12.2%</td><td class="column-18">1.7%</td><td class="column-19">Not Available</td><td class="column-20">4.8%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">5.3%</td><td class="column-24">1.9%</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">4.5%</td>
+</tr>
+<tr class="row-24">
+	<td class="column-1">Trend</td><td class="column-2">24 hours</td><td class="column-3">2020-08-03</td><td class="column-4">2020-08-10</td><td class="column-5">National</td><td class="column-6">1010</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">24.2%</td><td class="column-11">22.9%</td><td class="column-12">4.1%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">1.1%</td><td class="column-16">0.2%</td><td class="column-17">9.8%</td><td class="column-18">1.2%</td><td class="column-19">Not Available</td><td class="column-20">10.1%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">14.9%</td><td class="column-24">4.4%</td><td class="column-25">0.8%</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">2.8%</td>
+</tr>
+<tr class="row-25">
+	<td class="column-1">Gallup International</td><td class="column-2"></td><td class="column-3">2020-07-30</td><td class="column-4">2020-08-07</td><td class="column-5">National</td><td class="column-6">811</td><td class="column-7">Provided</td><td class="column-8">66.0%</td><td class="column-9">0.1%</td><td class="column-10">22.0%</td><td class="column-11">21.1%</td><td class="column-12">3.5%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">10.3%</td><td class="column-18">Not Available</td><td class="column-19">Not Available</td><td class="column-20">8.6%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">12.0%</td><td class="column-24">3.6%</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">16.5%</td>
+</tr>
+<tr class="row-26">
+	<td class="column-1">CAM</td><td class="column-2"></td><td class="column-3">2020-08-01</td><td class="column-4">2020-08-05</td><td class="column-5">National</td><td class="column-6">1021</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">30.1%</td><td class="column-11">19.7%</td><td class="column-12">4.3%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">10.8%</td><td class="column-18">2.1%</td><td class="column-19">Not Available</td><td class="column-20">10.1%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">13.9%</td><td class="column-24">5%</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">3.9%</td>
+</tr>
+<tr class="row-27">
+	<td class="column-1">Market LINKS</td><td class="column-2"></td><td class="column-3">2020-07-28</td><td class="column-4">2020-08-03</td><td class="column-5">National</td><td class="column-6">1093</td><td class="column-7">Provided</td><td class="column-8">65.3%</td><td class="column-9">0.1%</td><td class="column-10">23.3%</td><td class="column-11">20.7%</td><td class="column-12">4.6%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">9.6%</td><td class="column-18">Not Available</td><td class="column-19">Not Available</td><td class="column-20">10.1%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">23.0%</td><td class="column-24">4.0%</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">4.7%</td>
+</tr>
+<tr class="row-28">
+	<td class="column-1">Gallup International</td><td class="column-2"></td><td class="column-3">2020-07-01</td><td class="column-4">2020-07-31</td><td class="column-5">National</td><td class="column-6">Not Available</td><td class="column-7">N/A</td><td class="column-8">Not Available</td><td class="column-9">0.01%</td><td class="column-10">27.36%</td><td class="column-11">25.75%</td><td class="column-12">4.45%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">8.49%</td><td class="column-18">2.43%</td><td class="column-19">Not Available</td><td class="column-20">3.23%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">8.63%</td><td class="column-24">1.75%</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">17.92%</td>
+</tr>
+<tr class="row-29">
+	<td class="column-1">Alpha Research</td><td class="column-2">Dnevnik</td><td class="column-3">2020-07-23</td><td class="column-4">2020-07-30</td><td class="column-5">National</td><td class="column-6">1017</td><td class="column-7">Provided</td><td class="column-8">54.3%</td><td class="column-9">0.1%</td><td class="column-10">26.7%</td><td class="column-11">19.2%</td><td class="column-12">4.1%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">8.3%</td><td class="column-18">0.9%</td><td class="column-19">Not Available</td><td class="column-20">12.3%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">18.8%</td><td class="column-24">5.9%</td><td class="column-25">0.6%</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">3.3%</td>
+</tr>
+<tr class="row-30">
+	<td class="column-1">Sova Harris</td><td class="column-2"></td><td class="column-3">2020-06-26</td><td class="column-4">2020-07-01</td><td class="column-5">National</td><td class="column-6">1000</td><td class="column-7">Provided</td><td class="column-8">57.0%</td><td class="column-9">0.1%</td><td class="column-10">37.4%</td><td class="column-11">21.4%</td><td class="column-12">Not Available</td><td class="column-13">6.8%</td><td class="column-14">0.7%</td><td class="column-15">1.2%</td><td class="column-16">1.8%</td><td class="column-17">7.7%</td><td class="column-18">4.2%</td><td class="column-19">Not Available</td><td class="column-20">4.2%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">9.1%</td><td class="column-24">2.6%</td><td class="column-25">2.8%</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">Not Available</td>
+</tr>
+<tr class="row-31">
+	<td class="column-1">Gallup International</td><td class="column-2"></td><td class="column-3">2020-06-01</td><td class="column-4">2020-06-30</td><td class="column-5">National</td><td class="column-6">Not Available</td><td class="column-7">N/A</td><td class="column-8">Not Available</td><td class="column-9">0.01%</td><td class="column-10">29.04%</td><td class="column-11">23.13%</td><td class="column-12">3.81%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">7.88%</td><td class="column-18">2.37%</td><td class="column-19">Not Available</td><td class="column-20">3.15%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">6.96%</td><td class="column-24">2.37%</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">21.29%</td>
+</tr>
+<tr class="row-32">
+	<td class="column-1">Barometer Bulgaria</td><td class="column-2"></td><td class="column-3">2020-06-20</td><td class="column-4">2020-06-25</td><td class="column-5">National</td><td class="column-6">828</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.01%</td><td class="column-10">37.48%</td><td class="column-11">20.43%</td><td class="column-12">10.01%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">11.23%</td><td class="column-18">1.49%</td><td class="column-19">Not Available</td><td class="column-20">3.38%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">3.79%</td><td class="column-24">1.62%</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">10.55%</td>
+</tr>
+<tr class="row-33">
+	<td class="column-1">Market LINKS</td><td class="column-2"></td><td class="column-3">2020-05-27</td><td class="column-4">2020-06-03</td><td class="column-5">National</td><td class="column-6">995</td><td class="column-7">Provided</td><td class="column-8">82.0%</td><td class="column-9">0.1%</td><td class="column-10">34.1%</td><td class="column-11">25.6%</td><td class="column-12">Not Available</td><td class="column-13">3.7%</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">9.8%</td><td class="column-18">Not Available</td><td class="column-19">Not Available</td><td class="column-20">8.5%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">9.8%</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">8.5%</td>
+</tr>
+<tr class="row-34">
+	<td class="column-1">Alpha Research</td><td class="column-2">Dnevnik</td><td class="column-3">2020-04-28</td><td class="column-4">2020-05-05</td><td class="column-5">National</td><td class="column-6">1000</td><td class="column-7">Provided</td><td class="column-8">62.2%</td><td class="column-9">0.1%</td><td class="column-10">33.4%</td><td class="column-11">19.6%</td><td class="column-12">6.3%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">1.4%</td><td class="column-16">Not Available</td><td class="column-17">10.3%</td><td class="column-18">1.6%</td><td class="column-19">Not Available</td><td class="column-20">5.9%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">14.6%</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">6.8%</td>
+</tr>
+<tr class="row-35">
+	<td class="column-1">Mediana</td><td class="column-2"></td><td class="column-3">2020-02-21</td><td class="column-4">2020-02-28</td><td class="column-5">National</td><td class="column-6">1008</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">29.4%</td><td class="column-11">25.74%</td><td class="column-12">5.83%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">13.28%</td><td class="column-18">1.9%</td><td class="column-19">Not Available</td><td class="column-20">2.71%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">12.87%</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">8.26%</td>
+</tr>
+<tr class="row-36">
+	<td class="column-1">Barometer Bulgaria</td><td class="column-2"></td><td class="column-3">2020-02-27</td><td class="column-4">2020-02-27</td><td class="column-5">National</td><td class="column-6">Not Available</td><td class="column-7">N/A</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">35.2%</td><td class="column-11">24%</td><td class="column-12">9%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">10.5%</td><td class="column-18">1.4%</td><td class="column-19">Not Available</td><td class="column-20">3.1%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">3.7%</td><td class="column-24">1.6%</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">11.5%</td>
+</tr>
+<tr class="row-37">
+	<td class="column-1">Trend</td><td class="column-2">24 hours</td><td class="column-3">2020-02-03</td><td class="column-4">2020-02-10</td><td class="column-5">National</td><td class="column-6">1007</td><td class="column-7">Provided</td><td class="column-8">63.9%</td><td class="column-9">0.1%</td><td class="column-10">31.8%</td><td class="column-11">28.3%</td><td class="column-12">Not Available</td><td class="column-13">4.1%</td><td class="column-14">Not Available</td><td class="column-15">1.6%</td><td class="column-16">Not Available</td><td class="column-17">10.5%</td><td class="column-18">2.0%</td><td class="column-19">Not Available</td><td class="column-20">6.3%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">11.1%</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">2.7%</td>
+</tr>
+<tr class="row-38">
+	<td class="column-1">Barometer Bulgaria</td><td class="column-2"></td><td class="column-3">2020-01-09</td><td class="column-4">2020-01-13</td><td class="column-5">National</td><td class="column-6">873</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">35.5%</td><td class="column-11">28.2%</td><td class="column-12">11%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">11%</td><td class="column-18">Not Available</td><td class="column-19">Not Available</td><td class="column-20">3.2%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">3.6%</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">7.5%</td>
+</tr>
+<tr class="row-39">
+	<td class="column-1">Alpha Research</td><td class="column-2">Dnevnik</td><td class="column-3">2019-12-05</td><td class="column-4">2019-12-12</td><td class="column-5">National</td><td class="column-6">1017</td><td class="column-7">Provided</td><td class="column-8">72.7%</td><td class="column-9">0.1%</td><td class="column-10">29.8%</td><td class="column-11">25.0%</td><td class="column-12">7.3%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">1.9%</td><td class="column-16">Not Available</td><td class="column-17">10.7%</td><td class="column-18">2.1%</td><td class="column-19">Not Available</td><td class="column-20">7.0%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">11.8%</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">4.3%</td>
+</tr>
+<tr class="row-40">
+	<td class="column-1">Market LINKS</td><td class="column-2"></td><td class="column-3">2019-11-21</td><td class="column-4">2019-11-28</td><td class="column-5">National</td><td class="column-6">980</td><td class="column-7">Provided</td><td class="column-8">63.0%</td><td class="column-9">0.1%</td><td class="column-10">28.6%</td><td class="column-11">25.4%</td><td class="column-12">6.3%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">12.7%</td><td class="column-18">1.6%</td><td class="column-19">Not Available</td><td class="column-20">7.9%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">12.7%</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">3.2%</td>
+</tr>
+<tr class="row-41">
+	<td class="column-1">Trend</td><td class="column-2">24 hours</td><td class="column-3">2019-11-07</td><td class="column-4">2019-11-15</td><td class="column-5">National</td><td class="column-6">1008</td><td class="column-7">Provided</td><td class="column-8">64.3%</td><td class="column-9">0.1%</td><td class="column-10">37.0%</td><td class="column-11">28.6%</td><td class="column-12">Not Available</td><td class="column-13">5.3%</td><td class="column-14">Not Available</td><td class="column-15">1.7%</td><td class="column-16">Not Available</td><td class="column-17">10.7%</td><td class="column-18">1.9%</td><td class="column-19">Not Available</td><td class="column-20">4.8%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">7.9%</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">2.0%</td>
+</tr>
+<tr class="row-42">
+	<td class="column-1">Alpha Research</td><td class="column-2">Dnevnik</td><td class="column-3">2019-09-10</td><td class="column-4">2019-09-16</td><td class="column-5">National</td><td class="column-6">1023</td><td class="column-7">Provided</td><td class="column-8">72.6%</td><td class="column-9">0.1%</td><td class="column-10">29.6%</td><td class="column-11">25.8%</td><td class="column-12">6.6%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">2.6%</td><td class="column-16">Not Available</td><td class="column-17">11.8%</td><td class="column-18">2.8%</td><td class="column-19">Not Available</td><td class="column-20">5.6%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">11.4%</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">3.7%</td>
+</tr>
+<tr class="row-43">
+	<td class="column-1">Trend</td><td class="column-2">24 hours</td><td class="column-3">2019-07-05</td><td class="column-4">2019-07-12</td><td class="column-5">National</td><td class="column-6">1008</td><td class="column-7">Provided</td><td class="column-8">62.5%</td><td class="column-9">0.1%</td><td class="column-10">38.1%</td><td class="column-11">30.2%</td><td class="column-12">Not Available</td><td class="column-13">5.8%</td><td class="column-14">2.1%</td><td class="column-15">1.8%</td><td class="column-16">Not Available</td><td class="column-17">11.4%</td><td class="column-18">1.9%</td><td class="column-19">Not Available</td><td class="column-20">5.3%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">3.5%</td>
+</tr>
+<tr class="row-44">
+	<td class="column-1">Market LINKS</td><td class="column-2"></td><td class="column-3">2019-06-11</td><td class="column-4">2019-06-19</td><td class="column-5">National</td><td class="column-6">1001</td><td class="column-7">Provided</td><td class="column-8">87.7%</td><td class="column-9">0.1%</td><td class="column-10">34.9%</td><td class="column-11">33.0%</td><td class="column-12">6.8%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">9.1%</td><td class="column-18">3.8%</td><td class="column-19">Not Available</td><td class="column-20">6.0%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">6.4%</td>
+</tr>
+<tr class="row-45">
+	<td class="column-1">Trend</td><td class="column-2"></td><td class="column-3">2019-06-05</td><td class="column-4">2019-06-12</td><td class="column-5">National</td><td class="column-6">1008</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">36.7%</td><td class="column-11">29.1%</td><td class="column-12">7.4%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">10.9%</td><td class="column-18">2%</td><td class="column-19">Not Available</td><td class="column-20">5.1%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">8.8%</td>
+</tr>
+<tr class="row-46">
+	<td class="column-1">Mediana</td><td class="column-2"></td><td class="column-3">2019-05-02</td><td class="column-4">2019-05-07</td><td class="column-5">European</td><td class="column-6">1008</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">1%</td><td class="column-10">30%</td><td class="column-11">32%</td><td class="column-12">Not Available</td><td class="column-13">5%</td><td class="column-14">4%</td><td class="column-15">3%</td><td class="column-16">4%</td><td class="column-17">11%</td><td class="column-18">5%</td><td class="column-19">Not Available</td><td class="column-20">3%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">Not Available</td>
+</tr>
+<tr class="row-47">
+	<td class="column-1">Alpha Research</td><td class="column-2">Dnevnik</td><td class="column-3">2019-04-20</td><td class="column-4">2019-04-30</td><td class="column-5">European</td><td class="column-6">1015</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">1%</td><td class="column-10">33%</td><td class="column-11">33%</td><td class="column-12">Not Available</td><td class="column-13">6%</td><td class="column-14">2%</td><td class="column-15">1%</td><td class="column-16">1%</td><td class="column-17">10%</td><td class="column-18">2%</td><td class="column-19">Not Available</td><td class="column-20">5%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">Not Available</td>
+</tr>
+<tr class="row-48">
+	<td class="column-1">Market LINKS</td><td class="column-2"></td><td class="column-3">2019-04-12</td><td class="column-4">2019-04-22</td><td class="column-5">European</td><td class="column-6">1049</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">35.4%</td><td class="column-11">35.9%</td><td class="column-12">Not Available</td><td class="column-13">5.7%</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">7.0%</td><td class="column-18">1.9%</td><td class="column-19">Not Available</td><td class="column-20">5.3%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">8.8%</td>
+</tr>
+<tr class="row-49">
+	<td class="column-1">Trend</td><td class="column-2">24 hours</td><td class="column-3">2019-04-05</td><td class="column-4">2019-04-12</td><td class="column-5">European</td><td class="column-6">1008</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">30.5%</td><td class="column-11">31.3%</td><td class="column-12">Not Available</td><td class="column-13">5.5%</td><td class="column-14">1.3%</td><td class="column-15">2.0%</td><td class="column-16">1.3%</td><td class="column-17">12.7%</td><td class="column-18">3.6%</td><td class="column-19">Not Available</td><td class="column-20">4.3%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">7.5%</td>
+</tr>
+<tr class="row-50">
+	<td class="column-1">Gallup</td><td class="column-2"></td><td class="column-3">2019-04-05</td><td class="column-4">2019-04-11</td><td class="column-5">European</td><td class="column-6">1015</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">31.0%</td><td class="column-11">32.1%</td><td class="column-12">Not Available</td><td class="column-13">5.0%</td><td class="column-14">1.4%</td><td class="column-15">1.9%</td><td class="column-16">1.5%</td><td class="column-17">11.1%</td><td class="column-18">3.5%</td><td class="column-19">2%</td><td class="column-20">4.5%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">8.0%</td>
+</tr>
+<tr class="row-51">
+	<td class="column-1">Alpha Research</td><td class="column-2">Dnevnik</td><td class="column-3">2019-03-22</td><td class="column-4">2019-03-26</td><td class="column-5">European</td><td class="column-6">1011</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">33.9%</td><td class="column-11">33.4%</td><td class="column-12">Not Available</td><td class="column-13">4.1%</td><td class="column-14">2.2%</td><td class="column-15">2.1%</td><td class="column-16">1.2%</td><td class="column-17">10.6%</td><td class="column-18">1.9%</td><td class="column-19">Not Available</td><td class="column-20">5.1%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">5.5%</td>
+</tr>
+<tr class="row-52">
+	<td class="column-1">Trend</td><td class="column-2">24 hours</td><td class="column-3">2019-03-06</td><td class="column-4">2019-03-13</td><td class="column-5">European</td><td class="column-6">1005</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">33.6%</td><td class="column-11">30.4%</td><td class="column-12">Not Available</td><td class="column-13">4.4%</td><td class="column-14">1.8%</td><td class="column-15">2.3%</td><td class="column-16">Not Available</td><td class="column-17">12.1%</td><td class="column-18">3.2%</td><td class="column-19">Not Available</td><td class="column-20">4.4%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">7.8%</td>
+</tr>
+<tr class="row-53">
+	<td class="column-1">Sova Harris</td><td class="column-2"></td><td class="column-3">2019-03-06</td><td class="column-4">2019-03-11</td><td class="column-5">European</td><td class="column-6">1000</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">38.2%</td><td class="column-11">30.6%</td><td class="column-12">Not Available</td><td class="column-13">3.0%</td><td class="column-14">1.3%</td><td class="column-15">3.0%</td><td class="column-16">1.3%</td><td class="column-17">11.5%</td><td class="column-18">3.3%</td><td class="column-19">Not Available</td><td class="column-20">3.2%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">4.6%</td>
+</tr>
+<tr class="row-54">
+	<td class="column-1">AFIS</td><td class="column-2"></td><td class="column-3">2019-02-22</td><td class="column-4">2019-02-28</td><td class="column-5">European</td><td class="column-6">1010</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">31.6%</td><td class="column-11">37.5%</td><td class="column-12">7.3%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">13.0%</td><td class="column-18">Not Available</td><td class="column-19">Not Available</td><td class="column-20">1.6%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">9.0%</td>
+</tr>
+<tr class="row-55">
+	<td class="column-1">Mediana</td><td class="column-2"></td><td class="column-3">2020-02-21</td><td class="column-4">2020-02-28</td><td class="column-5">National</td><td class="column-6">1008</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">29.4%</td><td class="column-11">25.74%</td><td class="column-12">5.83%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">13.28%</td><td class="column-18">1.9%</td><td class="column-19">Not Available</td><td class="column-20">2.71%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">12.87%</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">8.26%</td>
+</tr>
+<tr class="row-56">
+	<td class="column-1">Exacta</td><td class="column-2"></td><td class="column-3">2019-02-19</td><td class="column-4">2019-02-28</td><td class="column-5">European</td><td class="column-6">1000</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">35.1%</td><td class="column-11">29.0%</td><td class="column-12">9.6%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">1.5%</td><td class="column-17">10.3%</td><td class="column-18">1.5%</td><td class="column-19">Not Available</td><td class="column-20">3.7%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">9.3%</td>
+</tr>
+<tr class="row-57">
+	<td class="column-1">Market LINKS</td><td class="column-2"></td><td class="column-3">2019-02-15</td><td class="column-4">2019-02-25</td><td class="column-5">European</td><td class="column-6">1018</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">36.2%</td><td class="column-11">29.7%</td><td class="column-12">7.5%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">8.3%</td><td class="column-18">2.5%</td><td class="column-19">Not Available</td><td class="column-20">6.6%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">9.2%</td>
+</tr>
+<tr class="row-58">
+	<td class="column-1">Trend</td><td class="column-2">24 hours</td><td class="column-3">2019-02-05</td><td class="column-4">2019-02-13</td><td class="column-5">European</td><td class="column-6">1007</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">33.6%</td><td class="column-11">31.2%</td><td class="column-12">6.8%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">11.7%</td><td class="column-18">2.7%</td><td class="column-19">Not Available</td><td class="column-20">4.1%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">9.9%</td>
+</tr>
+<tr class="row-59">
+	<td class="column-1">Sova Harris</td><td class="column-2"></td><td class="column-3">2019-01-19</td><td class="column-4">2019-01-21</td><td class="column-5">European</td><td class="column-6">985</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">37.6%</td><td class="column-11">32.6%</td><td class="column-12">9.4%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">1.4%</td><td class="column-17">9.4%</td><td class="column-18">2.9%</td><td class="column-19">Not Available</td><td class="column-20">3.2%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">7.3%</td>
+</tr>
+<tr class="row-60">
+	<td class="column-1">Market LINKS</td><td class="column-2"></td><td class="column-3">2019-01-12</td><td class="column-4">2019-01-21</td><td class="column-5">European</td><td class="column-6">1007</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">37.9%</td><td class="column-11">27.1%</td><td class="column-12">8.5%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">10.0%</td><td class="column-18">1.3%</td><td class="column-19">Not Available</td><td class="column-20">6.5%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">8.7%</td>
+</tr>
+<tr class="row-61">
+	<td class="column-1">AFIS</td><td class="column-2"></td><td class="column-3">2019-01-14</td><td class="column-4">2019-01-19</td><td class="column-5">European</td><td class="column-6">1010</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">0.1%</td><td class="column-10">32.9%</td><td class="column-11">34.6%</td><td class="column-12">4.7%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">11.0%</td><td class="column-18">1.4%</td><td class="column-19">2%</td><td class="column-20">1.4%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">12.0%</td>
+</tr>
+<tr class="row-62">
+	<td class="column-1">Trend</td><td class="column-2">24 hours</td><td class="column-3">2019-01-10</td><td class="column-4">2019-01-17</td><td class="column-5">European</td><td class="column-6">1008</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">1%</td><td class="column-10">36%</td><td class="column-11">34%</td><td class="column-12">7%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">14%</td><td class="column-18">3%</td><td class="column-19">Not Available</td><td class="column-20">4%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">Not Available</td>
+</tr>
+<tr class="row-63">
+	<td class="column-1">Alpha Research</td><td class="column-2">Dnevnik</td><td class="column-3">2018-12-14</td><td class="column-4">2018-12-18</td><td class="column-5">European</td><td class="column-6">1027</td><td class="column-7">Provided</td><td class="column-8">Not Available</td><td class="column-9">1%</td><td class="column-10">33%</td><td class="column-11">31%</td><td class="column-12">6%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">11%</td><td class="column-18">4%</td><td class="column-19">Not Available</td><td class="column-20">6%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">Not Available</td>
+</tr>
+<tr class="row-64">
+	<td class="column-1">Exacta</td><td class="column-2"></td><td class="column-3">2018-12-10</td><td class="column-4">2018-12-17</td><td class="column-5">National</td><td class="column-6">1000</td><td class="column-7">Provided</td><td class="column-8">66.0%</td><td class="column-9">0.1%</td><td class="column-10">35.6%</td><td class="column-11">31.5%</td><td class="column-12">5.8%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">1.5%</td><td class="column-17">7.7%</td><td class="column-18">1.5%</td><td class="column-19">1.5%</td><td class="column-20">3.8%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">10.6%</td>
+</tr>
+<tr class="row-65">
+	<td class="column-1">Trend</td><td class="column-2">24 hours</td><td class="column-3">2018-11-30</td><td class="column-4">2018-12-06</td><td class="column-5">National</td><td class="column-6">1007</td><td class="column-7">Provided</td><td class="column-8">61.5%</td><td class="column-9">0.1%</td><td class="column-10">36.1%</td><td class="column-11">33.7%</td><td class="column-12">7.2%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">10.6%</td><td class="column-18">2.3%</td><td class="column-19">1.6%</td><td class="column-20">3.4%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">5.2%</td>
+</tr>
+<tr class="row-66">
+	<td class="column-1">Market LINKS</td><td class="column-2"></td><td class="column-3">2018-11-16</td><td class="column-4">2018-11-25</td><td class="column-5">National</td><td class="column-6">1005</td><td class="column-7">Provided</td><td class="column-8">41.0%</td><td class="column-9">0.1%</td><td class="column-10">41.2%</td><td class="column-11">38.5%</td><td class="column-12">5.6%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">11.2%</td><td class="column-18">2.7%</td><td class="column-19">Not Available</td><td class="column-20">7.6%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">18.8%</td>
+</tr>
+<tr class="row-67">
+	<td class="column-1">Trend</td><td class="column-2">24 hours</td><td class="column-3">2018-11-06</td><td class="column-4">2018-11-12</td><td class="column-5">National</td><td class="column-6">1004</td><td class="column-7">Provided</td><td class="column-8">59.8%</td><td class="column-9">0.1%</td><td class="column-10">35.5%</td><td class="column-11">33.3%</td><td class="column-12">7.0%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">10.9%</td><td class="column-18">2.3%</td><td class="column-19">1.8%</td><td class="column-20">3.2%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">6.0%</td>
+</tr>
+<tr class="row-68">
+	<td class="column-1">Market LINKS</td><td class="column-2"></td><td class="column-3">2018-10-15</td><td class="column-4">2018-10-24</td><td class="column-5">National</td><td class="column-6">1032</td><td class="column-7">Provided</td><td class="column-8">56.8%</td><td class="column-9">0.1%</td><td class="column-10">34.2%</td><td class="column-11">30.5%</td><td class="column-12">7.4%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">7.9%</td><td class="column-18">1.4%</td><td class="column-19">Not Available</td><td class="column-20">5.3%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">13.2%</td>
+</tr>
+<tr class="row-69">
+	<td class="column-1">Trend</td><td class="column-2">24 hours</td><td class="column-3">2018-10-01</td><td class="column-4">2018-10-09</td><td class="column-5">National</td><td class="column-6">1006</td><td class="column-7">Provided</td><td class="column-8">61.4%</td><td class="column-9">0.1%</td><td class="column-10">36.5%</td><td class="column-11">32.4%</td><td class="column-12">9.0%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">10.9%</td><td class="column-18">2.8%</td><td class="column-19">1.6%</td><td class="column-20">3.1%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">3.7%</td>
+</tr>
+<tr class="row-70">
+	<td class="column-1">Exacta</td><td class="column-2"></td><td class="column-3">2018-09-28</td><td class="column-4">2018-10-05</td><td class="column-5">National</td><td class="column-6">1000</td><td class="column-7">Provided</td><td class="column-8">65.8%</td><td class="column-9">0.1%</td><td class="column-10">36.0%</td><td class="column-11">30.5%</td><td class="column-12">8.4%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">1.7%</td><td class="column-17">9.3%</td><td class="column-18">1.8%</td><td class="column-19">1.5%</td><td class="column-20">3.0%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">7.8%</td>
+</tr>
+<tr class="row-71">
+	<td class="column-1">Alpha Research</td><td class="column-2">Dnevnik</td><td class="column-3">2018-09-23</td><td class="column-4">2018-09-30</td><td class="column-5">National</td><td class="column-6">1027</td><td class="column-7">Provided</td><td class="column-8">63.4%</td><td class="column-9">0.1%</td><td class="column-10">35.0%</td><td class="column-11">31.1%</td><td class="column-12">7.4%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">10.4%</td><td class="column-18">3.2%</td><td class="column-19">Not Available</td><td class="column-20">4.6%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">0.8%</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">7.6%</td>
+</tr>
+<tr class="row-72">
+	<td class="column-1">Sova Harris</td><td class="column-2">BGNES</td><td class="column-3">2018-09-08</td><td class="column-4">2018-09-14</td><td class="column-5">National</td><td class="column-6">1000</td><td class="column-7">Provided</td><td class="column-8">59.1%</td><td class="column-9">0.1%</td><td class="column-10">40.8%</td><td class="column-11">33.8%</td><td class="column-12">8.0%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">0.7%</td><td class="column-17">10.5%</td><td class="column-18">1.4%</td><td class="column-19">Not Available</td><td class="column-20">2.5%</td><td class="column-21">0.5%</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">2.0%</td>
+</tr>
+<tr class="row-73">
+	<td class="column-1">Trend</td><td class="column-2">24 hours</td><td class="column-3">2018-09-04</td><td class="column-4">2018-09-11</td><td class="column-5">National</td><td class="column-6">1006</td><td class="column-7">Provided</td><td class="column-8">63.1%</td><td class="column-9">0.1%</td><td class="column-10">36.3%</td><td class="column-11">31.2%</td><td class="column-12">9.0%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">10.1%</td><td class="column-18">2.4%</td><td class="column-19">2.1%</td><td class="column-20">3.5%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">5.4%</td>
+</tr>
+<tr class="row-74">
+	<td class="column-1">Trend</td><td class="column-2">24 hours</td><td class="column-3">2018-08-01</td><td class="column-4">2018-08-10</td><td class="column-5">National</td><td class="column-6">1006</td><td class="column-7">Provided</td><td class="column-8">63.0%</td><td class="column-9">0.1%</td><td class="column-10">37.1%</td><td class="column-11">31.9%</td><td class="column-12">8.9%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">9.2%</td><td class="column-18">2.2%</td><td class="column-19">1.9%</td><td class="column-20">3.3%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">5.4%</td>
+</tr>
+<tr class="row-75">
+	<td class="column-1">Trend</td><td class="column-2">24 hours</td><td class="column-3">2018-07-01</td><td class="column-4">2018-07-08</td><td class="column-5">National</td><td class="column-6">1007</td><td class="column-7">Provided</td><td class="column-8">63.0%</td><td class="column-9">0.1%</td><td class="column-10">37.4%</td><td class="column-11">30.5%</td><td class="column-12">8.6%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">8.8%</td><td class="column-18">2.4%</td><td class="column-19">1.7%</td><td class="column-20">3.5%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">6.8%</td>
+</tr>
+<tr class="row-76">
+	<td class="column-1">Mediana</td><td class="column-2"></td><td class="column-3">2018-07-01</td><td class="column-4">2018-07-06</td><td class="column-5">National</td><td class="column-6">1008</td><td class="column-7">Provided</td><td class="column-8">77.7%</td><td class="column-9">0.1%</td><td class="column-10">31.9%</td><td class="column-11">26.4%</td><td class="column-12">12.5%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">2.4%</td><td class="column-17">10.7%</td><td class="column-18">2.7%</td><td class="column-19">1.8%</td><td class="column-20">2.1%</td><td class="column-21">0.5%</td><td class="column-22">Not Available</td><td class="column-23">6.0%</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">3.1%</td>
+</tr>
+<tr class="row-77">
+	<td class="column-1">Market LINKS</td><td class="column-2"></td><td class="column-3">2018-06-23</td><td class="column-4">2018-10-28</td><td class="column-5">National</td><td class="column-6">1065</td><td class="column-7">Provided</td><td class="column-8">55.8%</td><td class="column-9">0.1%</td><td class="column-10">36.4%</td><td class="column-11">30.3%</td><td class="column-12">7.5%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">7.3%</td><td class="column-18">1.8%</td><td class="column-19">Not Available</td><td class="column-20">5.2%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">10.9%</td>
+</tr>
+<tr class="row-78">
+	<td class="column-1">Alpha Research</td><td class="column-2">Dnevnik</td><td class="column-3">2018-06-17</td><td class="column-4">2018-06-25</td><td class="column-5">National</td><td class="column-6">1017</td><td class="column-7">Provided</td><td class="column-8">65.4%</td><td class="column-9">0.1%</td><td class="column-10">37.5%</td><td class="column-11">30.7%</td><td class="column-12">7.6%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">7.5%</td><td class="column-18">3.4%</td><td class="column-19">Not Available</td><td class="column-20">3.4%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">0.6%</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">9.3%</td>
+</tr>
+<tr class="row-79">
+	<td class="column-1">Trend</td><td class="column-2">24 hours</td><td class="column-3">2018-06-01</td><td class="column-4">2018-06-09</td><td class="column-5">National</td><td class="column-6">1008</td><td class="column-7">Provided</td><td class="column-8">63.0%</td><td class="column-9">0.1%</td><td class="column-10">36.7%</td><td class="column-11">31.4%</td><td class="column-12">8.7%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">10.5%</td><td class="column-18">3.0%</td><td class="column-19">1.9%</td><td class="column-20">3.3%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">4.4%</td>
+</tr>
+<tr class="row-80">
+	<td class="column-1">Trend</td><td class="column-2">24 hours</td><td class="column-3">2018-05-02</td><td class="column-4">2018-05-10</td><td class="column-5">National</td><td class="column-6">1009</td><td class="column-7">Provided</td><td class="column-8">61.5%</td><td class="column-9">0.1%</td><td class="column-10">37.1%</td><td class="column-11">31.1%</td><td class="column-12">8.6%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">10.4%</td><td class="column-18">2.8%</td><td class="column-19">2.1%</td><td class="column-20">3.7%</td><td class="column-21">Not Available</td><td class="column-22">Not Available</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">4.2%</td>
+</tr>
+<tr class="row-81">
+	<td class="column-1">Trend</td><td class="column-2">24 hours</td><td class="column-3">2018-03-01</td><td class="column-4">2018-03-07</td><td class="column-5">National</td><td class="column-6">1004</td><td class="column-7">Provided</td><td class="column-8">60.4%</td><td class="column-9">0.1%</td><td class="column-10">34.9%</td><td class="column-11">30.5%</td><td class="column-12">8.4%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">10.9%</td><td class="column-18">2.6%</td><td class="column-19">2.6%</td><td class="column-20">Not Available</td><td class="column-21">1.7%</td><td class="column-22">2.5%</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">5.8%</td>
+</tr>
+<tr class="row-82">
+	<td class="column-1">Trend</td><td class="column-2">24 hours</td><td class="column-3">2018-02-01</td><td class="column-4">2018-02-08</td><td class="column-5">National</td><td class="column-6">1004</td><td class="column-7">Provided</td><td class="column-8">59.8%</td><td class="column-9">0.1%</td><td class="column-10">34.6%</td><td class="column-11">30.4%</td><td class="column-12">8.7%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">10.7%</td><td class="column-18">2.5%</td><td class="column-19">2.0%</td><td class="column-20">Not Available</td><td class="column-21">1.7%</td><td class="column-22">2.5%</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">6.9%</td>
+</tr>
+<tr class="row-83">
+	<td class="column-1">Trend</td><td class="column-2">24 hours</td><td class="column-3">2018-01-10</td><td class="column-4">2018-01-18</td><td class="column-5">National</td><td class="column-6">1002</td><td class="column-7">Provided</td><td class="column-8">60.9%</td><td class="column-9">0.1%</td><td class="column-10">35.8%</td><td class="column-11">30.0%</td><td class="column-12">8.7%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">10.0%</td><td class="column-18">2.6%</td><td class="column-19">3.1%</td><td class="column-20">Not Available</td><td class="column-21">1.6%</td><td class="column-22">2.6%</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">5.4%</td>
+</tr>
+<tr class="row-84">
+	<td class="column-1">Exacta</td><td class="column-2"></td><td class="column-3">2017-12-07</td><td class="column-4">2017-12-13</td><td class="column-5">National</td><td class="column-6">1000</td><td class="column-7">Provided</td><td class="column-8">67.5%</td><td class="column-9">0.1%</td><td class="column-10">41.3%</td><td class="column-11">30.7%</td><td class="column-12">9.0%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">8.4%</td><td class="column-18">2.7%</td><td class="column-19">2.1%</td><td class="column-20">Not Available</td><td class="column-21">1.9%</td><td class="column-22">1.0%</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">2.8%</td>
+</tr>
+<tr class="row-85">
+	<td class="column-1">Trend</td><td class="column-2">24 hours</td><td class="column-3">2017-12-01</td><td class="column-4">2017-12-10</td><td class="column-5">National</td><td class="column-6">1003</td><td class="column-7">Provided</td><td class="column-8">60.6%</td><td class="column-9">0.1%</td><td class="column-10">36.6%</td><td class="column-11">29.7%</td><td class="column-12">8.6%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">9.9%</td><td class="column-18">2.6%</td><td class="column-19">3.1%</td><td class="column-20">Not Available</td><td class="column-21">1.8%</td><td class="column-22">2.5%</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">5.1%</td>
+</tr>
+<tr class="row-86">
+	<td class="column-1">Market LINKS</td><td class="column-2"></td><td class="column-3">2017-11-24</td><td class="column-4">2017-12-04</td><td class="column-5">National</td><td class="column-6">1058</td><td class="column-7">Provided</td><td class="column-8">58.6%</td><td class="column-9">0.1%</td><td class="column-10">37.7%</td><td class="column-11">28.8%</td><td class="column-12">6.5%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">6.3%</td><td class="column-18">2.7%</td><td class="column-19">Not Available</td><td class="column-20">Not Available</td><td class="column-21">3.6%</td><td class="column-22">5.3%</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">9.0%</td>
+</tr>
+<tr class="row-87">
+	<td class="column-1">Trend</td><td class="column-2">24 hours</td><td class="column-3">2017-11-03</td><td class="column-4">2017-11-12</td><td class="column-5">National</td><td class="column-6">1005</td><td class="column-7">Provided</td><td class="column-8">60.6%</td><td class="column-9">0.1%</td><td class="column-10">35.0%</td><td class="column-11">29.4%</td><td class="column-12">8.9%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">Not Available</td><td class="column-17">10.4%</td><td class="column-18">3.0%</td><td class="column-19">3.0%</td><td class="column-20">Not Available</td><td class="column-21">1.8%</td><td class="column-22">2.3%</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">6.3%</td>
+</tr>
+<tr class="row-88">
+	<td class="column-1">Market LINKS</td><td class="column-2"></td><td class="column-3">2017-10-06</td><td class="column-4">2017-10-16</td><td class="column-5">National</td><td class="column-6">1017</td><td class="column-7">Provided</td><td class="column-8">57.7%</td><td class="column-9">0.1%</td><td class="column-10">35.9%</td><td class="column-11">30.0%</td><td class="column-12">7.3%</td><td class="column-13">Not Available</td><td class="column-14">Not Available</td><td class="column-15">Not Available</td><td class="column-16">1.7%</td><td class="column-17">5.7%</td><td class="column-18">5.7%</td><td class="column-19">2.3%</td><td class="column-20">Not Available</td><td class="column-21">2.1%</td><td class="column-22">5.5%</td><td class="column-23">Not Available</td><td class="column-24">Not Available</td><td class="column-25">Not Available</td><td class="column-26">Not Available</td><td class="column-27">Not Available</td><td class="column-28">4.0%</td>
+</tr>
+</tbody>
+</table>
+
+</div><!-- #tablepress-24 from cache -->
+
+		</div><!-- .entry-content -->
+
+		
+	</div><!-- .post-inner -->
+
+	
+</article><!-- .post -->
+
+</main><!-- #site-content -->
+
+        		
+			<footer id="site-footer" role="contentinfo">
+
+				
+				
+				<div class="footer-inner section-inner has-footer-menu">
+
+					
+						<ul class="footer-menu reset-list-style">
+							<li id="menu-item-1003949" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1003949"><a href="https://europeelects.eu/press/">Press and Media</a></li>
+<li id="menu-item-1003950" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1003950"><a href="https://europeelects.eu/contact/">Contact us (Impressum)</a></li>
+<li id="menu-item-1003952" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1003952"><a href="https://europeelects.eu/ads/">Advertise with us</a></li>
+<li id="menu-item-6006655" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6006655"><a href="https://europeelects.eu/ep2024/">EU Election Projection 2024</a></li>
+<li id="menu-item-7011961" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7011961"><a href="https://europeelects.eu/our-data/">Our Data</a></li>
+						</ul><!-- .site-nav -->
+
+					
+					<div class="footer-credits">
+
+						<p class="footer-copyright">&copy; 2021 <a href="https://europeelects.eu" rel="home">Europe Elects</a></p>
+
+						<p class="theme-credits color-secondary">
+							Theme by <a href="https://www.andersnoren.se">Anders Nor&eacute;n</a>						</p><!-- .theme-credits -->
+
+					</div><!-- .footer-credits -->
+
+				</div><!-- .footer-bottom -->
+
+				
+			</footer><!-- #site-footer -->
+
+			<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>	<script type="text/javascript">
+		function atomicBlocksShare( url, title, w, h ){
+			var left = ( window.innerWidth / 2 )-( w / 2 );
+			var top  = ( window.innerHeight / 2 )-( h / 2 );
+			return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=600, height=600, top='+top+', left='+left);
+		}
+	</script>
+	<script type='text/javascript' src='https://c0.wp.com/c/5.6.2/wp-includes/js/underscore.min.js' id='underscore-js'></script>
+<script type='text/javascript' id='wp-util-js-extra'>
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://c0.wp.com/c/5.6.2/wp-includes/js/wp-util.min.js' id='wp-util-js'></script>
+<script type='text/javascript' id='wpautoterms_js-js-extra'>
+/* <![CDATA[ */
+var wpautoterms_js_update_notice = {"disable":"","data":[],"ajaxurl":"https:\/\/europeelects.eu\/wp-admin\/admin-ajax.php","action":"wpautoterms_check_updates","cache_detector_cookie":"wpautoterms_cache_detector","cache_detected":"1"};
+var wpautoterms_js_cookies_notice = {"disable":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://europeelects.eu/wp-content/plugins/auto-terms-of-service-and-privacy-policy/js/wpautoterms.js?ver=2.4.4' id='wpautoterms_js-js'></script>
+<script type='text/javascript' src='https://europeelects.eu/wp-content/plugins/patreon-connect/assets/js/app.js?ver=5.6.2' id='patreon-wordpress-js-js'></script>
+<script type='text/javascript' src='https://europeelects.eu/wp-content/plugins/atomic-blocks/dist/assets/js/dismiss.js?ver=1610234614' id='atomic-blocks-dismiss-js-js'></script>
+<script type='text/javascript' src='https://europeelects.eu/wp-content/plugins/custom-scrollbar/asset/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js?ver=5.6.2' id='malihu-custom-scrollbar-js'></script>
+<script type='text/javascript' id='custom_scrollbar_enabler-js-extra'>
+/* <![CDATA[ */
+var customScrollbarEnabler = {"scrollbars":[{"name":"Primary","status":true,"selector":"ul.sub-menu","height":{"size":"800","unit":"%"},"width":{"size":"","unit":"px"},"position":"inside","inline_css":[{"property":"","value":""}],"theme":"light","mouseWheel":{"enable":true,"scrollAmount":112},"keyboard":{"enable":true,"scrollAmount":"auto"},"scrollButtons":{"enable":true,"scrollAmount":"auto","scrollType":"stepless"},"mCSB_draggerContainer":"","mCSB_dragger":"","mCSB_dragger_bar":"","mCSB_draggerRail":"","mCSB_scrollTools":"","initialize_on_ajax_load":false,"responsive":{"enable":true,"screen_width_range":[[1,0]]}}],"debugMode":"0","pluginName":"Custom Scrollbar 1.3.6"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://europeelects.eu/wp-content/plugins/custom-scrollbar/asset/js/custom-scrollbar-enabler.min.js?ver=5.6.2' id='custom_scrollbar_enabler-js'></script>
+<script type='text/javascript' src='https://c0.wp.com/c/5.6.2/wp-includes/js/wp-embed.min.js' id='wp-embed-js'></script>
+<script type='text/javascript' src='https://europeelects.eu/wp-content/plugins/tablepress/js/jquery.datatables.min.js?ver=1.12' id='tablepress-datatables-js'></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+$('#tablepress-24').dataTable({"stripeClasses":[],"ordering":false,"pagingType":"simple","lengthChange":false,"searching":false});
+});
+</script><script src='https://stats.wp.com/e-202109.js' defer></script>
+<script>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:9.5',blog:'152592852',post:'34',tz:'1',srv:'europeelects.eu'} ]);
+	_stq.push([ 'clickTrackerInit', '152592852', '34' ]);
+</script>
+<div class="wpautoterms-footer"><p>
+		<a href="https://europeelects.eu/wpautoterms/terms-and-conditions/" target="_blank">Terms and Conditions</a><span class="separator"> - </span><a href="https://europeelects.eu/wpautoterms/gdpr-privacy-policy/" target="_blank">Privacy Policy</a></p>
+</div>
+    </body>
+</html>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Page Caching using disk: enhanced 
+
+Served from: europeelects.eu @ 2021-03-04 08:14:19 by W3 Total Cache
+-->
+
