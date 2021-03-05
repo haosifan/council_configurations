@@ -203,11 +203,63 @@ path_bg <- list.files(path = "../data/sourcecode_ee/", pattern = "source_") %>%
 html <- read_html(path_bg)
 cntry <- html %>% html_nodes(".entry-title") %>% html_text()
 
-html %>% 
+partyinfos_bg <- html %>% 
   html_nodes(".wp-block-media-text__content") %>% 
   map(f_inforaw_bg) %>% 
-  map_dfr(f_cleaninfo_bg)
+  map_dfr(f_cleaninfo_bg) %>% 
+  mutate(cntry = cntry)
+```
 
+
+## Belgium
+
+Aufgrund teils sehr unterschiedlicher Anordnung der Infos, müssen hier z.T. sehr spezifische select-Anweisungen je nach Partei (Zeile) formuliert werden. Bspw. direkt bei der ersten Partei "Nieuw-Vlaamse Alliantie" gibt es ein Zusatzfeld mit "Language Group", welches die restlichen Felder verschiebt. Bei anderen Parteien wird auf die Infos aus den Partnerparteien der anderen Sprachgruppen verwiesen. 
+
+
+Problem 1 gelöst: Problem 16 und 17 muss noch angegangen werden
+
+```{r}
+f_inforaw_be <- function(html_partyblock){
+  info_raw_unselected <- html_partyblock %>% 
+    html_nodes("p") %>% 
+    as.character() %>% 
+    as_tibble_col(column_name = "text") %>% 
+    separate(text, sep = "<br>", into = c("s1","s2","s3","s4","s5","s6","s7","s8")) %>% 
+    filter(s2 != "")
+  
+  if (info_raw_unselected$s2 == "New Flemish Alliance") {
+    info_raw <- info_raw_unselected %>% select(s1, s2, s4:s7)
+  } else {
+    info_raw <- info_raw_unselected %>% select(s1:s6)
+  }
+  return(info_raw)
+}
+```
+
+```{r}
+path_be <- list.files(path = "../data/sourcecode_ee/", pattern = "source_") %>% 
+  paste0("../data/sourcecode_ee/",.) %>% 
+  .[2]
+
+html <- read_html(path_be)
+cntry <- html %>% html_nodes(".entry-title") %>% html_text()
+
+t <- html %>% 
+  html_nodes(".wp-block-media-text__content") %>% 
+  .[17] %>% 
+  html_nodes("p") %>% 
+    as.character() %>% 
+    as_tibble_col(column_name = "text") %>% 
+    separate(text, sep = "<br>", into = c("s1","s2","s3","s4","s5","s6","s7","s8")) %>% 
+    filter(s2 != "")
+
+  if (t$s2 == "New Flemish Alliance") {
+    t2 <- t %>% select(s1, s2, s4:s7)
+  } else {
+    t2 <- t %>% select(s1:s6)
+  }
+t
+t2
 
 ```
 
