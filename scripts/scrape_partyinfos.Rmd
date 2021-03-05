@@ -18,6 +18,8 @@ library(rvest)
 
 # Functions
 
+Unte werden noch die speziellen Funktionen für bspw. Bulgarien erstellt. Hier aber der Hauptteil und Hauptprinzip.
+
 ```{r}
 f_inforaw <- function(html_partyblock){
   info_raw <- html_partyblock %>% 
@@ -105,7 +107,11 @@ country_urls <- read_html("https://europeelects.eu/") %>%
   html_nodes("li") %>%
   html_nodes("a") %>% 
   html_attr("href") %>% 
-  .[c(5,10:17,19:21,23,24,26,28:30,34,37:39,43:46)]
+  .[c(5,11:17,19:21,23,24,26,28:30,34,37:39,43:46)]
+
+read_html("https://europeelects.eu/hungary/")
+
+country_urls %>% map(f_countryparties)
 ```
 
 Daher lokal source-codes abgespeichert und hier geladen.
@@ -117,59 +123,94 @@ Special Cases: Bulgaria, weil dort ein kyrillisches Schriftset genutzt wird. Die
 ```{r}
 partyinfos <- list.files(path = "../data/sourcecode_ee/", pattern = "source_") %>% 
   paste0("../data/sourcecode_ee/",.) %>% 
-  .[-c(2,15)] %>% 
+  .[-c(2,3,15)] %>% 
   map_dfr(f_countryparties)
 partyinfos
 ```
 
 
+# Special Cases
+
+## Bulgaria
+
+Der Parteiname ist hier auf au kyrillisch(?). In der jeweils zweiten Zeile folgt dann der Name in arabischem Alphabet. Für die Extrahierung des Parteikürzels wird aber dennoch die erste Zeile gebraucht, weshalb man das nicht oben über "select" in f_inforaw regeln kann.
 
 
 ```{r}
-t <- read_html("../misc/test_estonia_sourcehtml.txt")
+f_inforaw_bg <- function(html_partyblock){
+  info_raw <- html_partyblock %>% 
+    html_nodes("p") %>% 
+    as.character() %>% 
+    as_tibble_col(column_name = "text") %>% 
+    separate(text, sep = "<br>", into = c("s1","s2","s3","s4","s5","s6","s7","s8")) %>% 
+    filter(s2 != "") %>% 
+    select(s1:s7)
+  return(info_raw)
+}
+```
 
-read_html("https://europeelects.eu/france/")
+```{r}
+f_cleaninfo_bg <- function(rawinfo){
+  name <- rawinfo$s2 %>% read_html() %>% 
+    html_nodes("em") %>% 
+    as.character() %>% 
+    str_remove_all(pattern = "<[\\/]*em>") %>% 
+    .[1]
+  
+  abbr <- rawinfo$s1 %>% 
+    str_remove_all(pattern = "<[\\/]*strong>") %>% 
+    str_extract(pattern = "\\(.[^\\)]+\\)[:blank:]*$") %>% 
+    str_remove(pattern = "[:blank:]$") %>%
+    str_remove_all(pattern = "[\\(\\)]")
 
-partyinfo_raw <- read_html("https://europeelects.eu/estonia/") %>% 
+  name_en <- rawinfo$s3
+
+  leader <- rawinfo$s4 %>% 
+    str_remove(pattern = "<strong>Leader:</strong> ")
+
+  orientation <- rawinfo$s5 %>% 
+    str_remove(pattern = "<strong>Orientation:</strong> ")
+  
+  ep_affiliation <- rawinfo$s6 %>% 
+    read_html() %>% 
+    html_text() %>% 
+    str_remove_all(pattern = "EP Affiliation: ") %>% 
+    str_remove(pattern = " \\(.+\\)")
+
+  eu_stance <- rawinfo$s7 %>% 
+    read_html() %>% 
+    html_text() %>% 
+    str_remove("EU Stance:[:blank:]*") %>% 
+    str_remove(" \\(Chapel Hill data\\) ")
+  
+  cleaninfo <- bind_cols(name = name, 
+            abbr = abbr, 
+            name_en = name_en, 
+            leader = leader, 
+            orientation = orientation, 
+            ep_affiliation = ep_affiliation, 
+            eu_stance = eu_stance)
+  
+  return(cleaninfo)
+}
+```
+
+```{r}
+path_bg <- list.files(path = "../data/sourcecode_ee/", pattern = "source_") %>% 
+  paste0("../data/sourcecode_ee/",.) %>% 
+  .[3]
+
+html <- read_html(path_bg)
+cntry <- html %>% html_nodes(".entry-title") %>% html_text()
+
+html %>% 
   html_nodes(".wp-block-media-text__content") %>% 
-  html_nodes("p") %>% 
-  as.character() %>% 
-  as_tibble_col(column_name = "text") %>% 
-  separate(text, sep = "<br>", into = c("s1","s2","s3","s4","s5","s6","s7","s8")) %>% 
-  select(s1:s6)
-```
+  map(f_inforaw_bg) %>% 
+  map_dfr(f_cleaninfo_bg)
 
-```{r}
-partyinfo_raw$s1 %>% read_html() %>% html_nodes("strong") %>% as.character() %>% str_remove_all(pattern = "<[\\/]*strong>") %>% .[1]
-
-partyinfo_raw$s1 %>% 
-  str_remove_all(pattern = "<[\\/]*strong>") %>% 
-  str_extract(pattern = "\\(.[^\\)]+\\)[:blank:]*$") %>% 
-  str_remove(pattern = "[:blank:]$") %>%
-  str_remove_all(pattern = "[\\(\\)]")
-
-partyinfo_raw$s2
-
-partyinfo_raw$s3 %>% 
-  str_remove(pattern = "<strong>Leader:</strong> ")
-
-partyinfo_raw$s4 %>% 
-  str_remove(pattern = "<strong>Orientation:</strong> ")
-
-partyinfo_raw$s5 %>% 
-  read_html() %>% 
-  html_text() %>% 
-  str_remove_all(pattern = "EP Affiliation: ") %>% 
-  str_remove(pattern = " \\(.+\\)")
-
-partyinfo_raw$s6 %>% 
-  read_html() %>% 
-  html_text() %>% 
-  str_remove("EU Stance:[:blank:]*") %>% 
-  str_remove(" \\(Chapel Hill data\\) ")
-
-bind_cols(name = name, abbr = abbr, name_en = name_en, leader = leader, orientation = orientation, ep_affiliation = ep_affiliation, eu_stance = eu_stance)
 
 ```
+
+
 
 
