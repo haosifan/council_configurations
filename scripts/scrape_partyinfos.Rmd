@@ -226,15 +226,10 @@ f_inforaw_be <- function(html_partyblock){
     as_tibble_col(column_name = "text") %>% 
     separate(text, sep = "<br>", into = c("s1","s2","s3","s4","s5","s6","s7","s8")) %>% 
     filter(s2 != "")
-  
-  if (info_raw_unselected$s2 == "New Flemish Alliance") {
-    info_raw <- info_raw_unselected %>% select(s1, s2, s4:s7)
-  } else {
-    info_raw <- info_raw_unselected %>% select(s1:s6)
-  }
-  return(info_raw)
+  return(info_raw_unselected)
 }
 ```
+
 
 ```{r}
 path_be <- list.files(path = "../data/sourcecode_ee/", pattern = "source_") %>% 
@@ -246,6 +241,14 @@ cntry <- html %>% html_nodes(".entry-title") %>% html_text()
 
 t <- html %>% 
   html_nodes(".wp-block-media-text__content") %>% 
+  .[1:16] %>% 
+  f_inforaw_be()
+
+
+t1 <- t[1,] %>% select(s1, s2, s3=s4, s4=s5, s5=s6, s6=s7)
+bind_rows(t1, t[2:dim(t)[1],])
+
+%>% 
   .[17] %>% 
   html_nodes("p") %>% 
     as.character() %>% 
