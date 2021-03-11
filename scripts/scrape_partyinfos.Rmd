@@ -312,6 +312,7 @@ partyinfos_ir <- html %>% html_nodes(".wp-block-media-text__content") %>%
 
 ```
 
+
 # Bind all together and final cleaning
 
 ```{r}
