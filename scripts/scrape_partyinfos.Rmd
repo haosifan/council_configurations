@@ -109,8 +109,6 @@ country_urls <- read_html("https://europeelects.eu/") %>%
   html_attr("href") %>% 
   .[c(5,11:17,19:21,23,24,26,28:30,34,37:39,43:46)]
 
-read_html("https://europeelects.eu/hungary/")
-
 #country_urls %>% map(f_countryparties)
 ```
 
@@ -123,7 +121,7 @@ Special Cases: Bulgaria, weil dort ein kyrillisches Schriftset genutzt wird. Die
 ```{r}
 partyinfos <- list.files(path = "../data/sourcecode_ee/", pattern = "source_") %>% 
   paste0("../data/sourcecode_ee/",.) %>% 
-  .[-c(2,3,15)] %>% 
+  .[-c(2,3,15)] %>%
   map_dfr(f_countryparties)
 partyinfos
 ```
@@ -277,10 +275,46 @@ partyinfos_be <- t %>% mutate(s1 = str_remove_all(s1, pattern = "(<[\\/]*p>)|<[\
              ep_affiliation = s5 %>% str_remove_all("<strong>EP Affiliation:</strong> ") %>% 
                                      str_remove_all("\\(.*$"),
              eu_stance = s6 %>% str_remove_all("<strong>EU Stance:</strong> ") %>% 
-                                str_remove_all("\\(.*$")) %>% 
-  select(name, abbr, name_en, leader, orientation, ep_affiliation, eu_stance)
+                                str_remove_all("\\(.*$"),
+             cntry = cntry) %>% 
+  select(name, abbr, name_en, leader, orientation, ep_affiliation, eu_stance, cntry)
 ```
 
 
+## Ireland
 
+Bei Partei 9: Right To Change gibt es keinen englischen oder alternativ Originalnamen. s2 ist daher leer und wird im Normalfall weggefiltert. Dann hat f_cleaninfo Probleme, weil leeres Dok.
+
+```{r}
+f_inforaw_ir <- function(html_partyblock){
+  info_raw <- html_partyblock %>% 
+    html_nodes("p") %>% 
+    as.character() %>% 
+    as_tibble_col(column_name = "text") %>% 
+    separate(text, sep = "<br>", into = c("s1","s2","s3","s4","s5","s6","s7","s8")) %>% 
+    select(s1:s6)
+  return(info_raw)
+}
+```
+
+
+```{r}
+path_ir <- list.files(path = "../data/sourcecode_ee/", pattern = "source_") %>% 
+  paste0("../data/sourcecode_ee/",.) %>% 
+  .[15]
+
+html <- read_html(path_ir)
+cntry <- html %>% html_nodes(".entry-title") %>% html_text()
+
+partyinfos_ir <- html %>% html_nodes(".wp-block-media-text__content") %>% 
+  map(f_inforaw_ir) %>% 
+  map_dfr(f_cleaninfo) %>% mutate(cntry = cntry)
+
+```
+
+# Bind all together and final cleaning
+
+```{r}
+partyinfos_all <- bind_rows(partyinfos, partyinfos_be, partyinfos_bg, partyinfos_ir)
+```
 
