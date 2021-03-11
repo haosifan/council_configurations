@@ -742,5 +742,6 @@ all_ministers <- mget(ls(pattern="ministers_")) %>%
 all_ministers
 
 write_csv2(all_ministers, file = "../data/list_scraped_gov_with_party.csv")
+write_excel_csv2(all_ministers, file = "../data/list_scraped_gov_with_party_de.csv")
 ```
 

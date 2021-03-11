@@ -1,0 +1,42 @@
+---
+title: "data_wrangling_list_ministers_wiki"
+author: "Stefan Haußner"
+date: "11 3 2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(countrycode)
+library(fuzzyjoin)
+```
+
+```{r}
+l_ministers <- read_csv2("../data/list_scraped_gov_with_party.csv")
+l_parties <- read_csv("../data/list_european_parties.csv")
+```
+
+# Prepare to join
+
+```{r}
+l_ministers %>% mutate(cntry = countrycode(cntry, "iso2c","iso3c")) %>% 
+  left_join(., l_parties, by = c("cntry" = "iso", "party" = "abbr")) %>% 
+  janitor::clean_names() %>% 
+  select(cntry, party,name_y)
+
+l_ministers_prep <- l_ministers %>% 
+  mutate(cntry = countrycode(cntry, "iso2c","iso3c")) %>% 
+  select(cntry, party)
+
+
+l_ministers_prep
+
+l_parties_prep <- l_parties %>% 
+  select(iso, name, abbr)
+
+```
+
