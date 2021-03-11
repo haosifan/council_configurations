@@ -52,7 +52,7 @@ f_cleaninfo <- function(rawinfo){
   name_en <- rawinfo$s2
 
   leader <- rawinfo$s3 %>% 
-    str_remove(pattern = "<strong>Leader:</strong> ")
+    str_remove(pattern = "<strong>Leader[s]*:</strong> ")
 
   orientation <- rawinfo$s4 %>% 
     str_remove(pattern = "<strong>Orientation:</strong> ")
@@ -111,7 +111,7 @@ country_urls <- read_html("https://europeelects.eu/") %>%
 
 read_html("https://europeelects.eu/hungary/")
 
-country_urls %>% map(f_countryparties)
+#country_urls %>% map(f_countryparties)
 ```
 
 Daher lokal source-codes abgespeichert und hier geladen.
@@ -215,8 +215,7 @@ partyinfos_bg <- html %>%
 
 Aufgrund teils sehr unterschiedlicher Anordnung der Infos, müssen hier z.T. sehr spezifische select-Anweisungen je nach Partei (Zeile) formuliert werden. Bspw. direkt bei der ersten Partei "Nieuw-Vlaamse Alliantie" gibt es ein Zusatzfeld mit "Language Group", welches die restlichen Felder verschiebt. Bei anderen Parteien wird auf die Infos aus den Partnerparteien der anderen Sprachgruppen verwiesen. 
 
-
-Problem 1 gelöst: Problem 16 und 17 muss noch angegangen werden
+Gedoppelte Parteien (Ecolo und Parti Socialiste) nur einmal im Datensatz (frz. Version)
 
 ```{r}
 f_inforaw_be <- function(html_partyblock){
@@ -241,29 +240,45 @@ cntry <- html %>% html_nodes(".entry-title") %>% html_text()
 
 t <- html %>% 
   html_nodes(".wp-block-media-text__content") %>% 
-  .[1:16] %>% 
   f_inforaw_be()
 
-
+# Nieuw-Vlaamse Alliantie
 t1 <- t[1,] %>% select(s1, s2, s3=s4, s4=s5, s5=s6, s6=s7)
-bind_rows(t1, t[2:dim(t)[1],])
+t <- bind_rows(t1, t[2:dim(t)[1],])
 
-%>% 
-  .[17] %>% 
-  html_nodes("p") %>% 
-    as.character() %>% 
-    as_tibble_col(column_name = "text") %>% 
-    separate(text, sep = "<br>", into = c("s1","s2","s3","s4","s5","s6","s7","s8")) %>% 
-    filter(s2 != "")
+# ProDG
+t1 <- t[t$s1 == "<p><strong>ProDG</strong>",] %>% 
+  select(s1, s2, s3 = s2, s4 = s3, s5 = s4, s6 = s5) %>% 
+  mutate(s2 = NA_character_)
 
-  if (t$s2 == "New Flemish Alliance") {
-    t2 <- t %>% select(s1, s2, s4:s7)
-  } else {
-    t2 <- t %>% select(s1:s6)
-  }
-t
-t2
 
+# Vivant
+t2 <- t[t$s1 == "<p><strong>Vivant</strong>",] %>% 
+  select(s1, s2, s3 = s2, s4 = s3, s5 = s4, s6 = s5) %>% 
+  mutate(s2 = NA_character_)
+
+
+t <- bind_rows(t[c(1:12),], t1, t2) %>% 
+  select(s1:s6)
+```
+
+```{r}
+
+partyinfos_be <- t %>% mutate(s1 = str_remove_all(s1, pattern = "(<[\\/]*p>)|<[\\/]*strong>"),
+             name = str_remove_all(s1, pattern = "\\(.*$"),
+             name = str_trim(name) %>% str_remove_all(pattern = "^\\+"),
+             abbr = str_remove_all(s1, pattern = "(<[\\/]*p>)|<[\\/]*strong>") %>% 
+                    str_extract(pattern = "\\(.[^\\)]+\\)[:blank:]*$") %>% 
+                    str_remove(pattern = "[:blank:]$") %>%
+                    str_remove_all(pattern = "[\\(\\)]"),
+             name_en = s2,
+             leader = s3 %>% str_remove(pattern = "<strong>Leader[s]*:</strong> "),
+             orientation = s4 %>% str_remove(pattern = "<strong>Orientation:</strong> "),
+             ep_affiliation = s5 %>% str_remove_all("<strong>EP Affiliation:</strong> ") %>% 
+                                     str_remove_all("\\(.*$"),
+             eu_stance = s6 %>% str_remove_all("<strong>EU Stance:</strong> ") %>% 
+                                str_remove_all("\\(.*$")) %>% 
+  select(name, abbr, name_en, leader, orientation, ep_affiliation, eu_stance)
 ```
 
 
