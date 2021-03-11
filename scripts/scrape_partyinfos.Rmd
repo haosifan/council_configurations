@@ -12,6 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 library(tidyverse)
 library(rvest)
+library(countrycode)
 ```
 
 # Infos from EuropeElects.eu (maybe we should ask them at some point)
@@ -318,4 +319,71 @@ partyinfos_ir <- html %>% html_nodes(".wp-block-media-text__content") %>%
 ```{r}
 partyinfos_all <- bind_rows(partyinfos, partyinfos_be, partyinfos_bg, partyinfos_ir)
 ```
+
+```{r}
+partyinfos_clean <- partyinfos_all %>% 
+  mutate_all(str_trim) %>% 
+  mutate(ep_affiliation = str_replace_all(ep_affiliation, pattern = "\\&amp;", replacement = "\\&"),
+         leader = str_replace_all(leader, pattern = "\\&amp;", replacement = "\\&"),
+         leader = str_remove_all(leader, pattern = "(<strong>Leader: <\\/strong><em>)"),
+         leader = str_remove_all(leader, pattern = "<[\\/]*strong>"),
+         leader = str_remove_all(leader, pattern = "Leader \\(C[DS]U\\): "),
+         leader = str_remove_all(leader, pattern = "Leader: "),
+         leader = str_remove_all(leader, pattern = "<[\\/]*em>"),
+         eu_stance = str_remove_all(eu_stance, pattern = "\\(.*$"),
+         eu_stance = case_when(eu_stance == "" ~ NA_character_,
+                               TRUE ~ eu_stance),
+         eu_stance = str_remove_all(eu_stance, pattern = "<[\\/]*p>"),
+         eu_stance = str_remove_all(eu_stance, pattern = "EU Stace: "),
+         eu_stance = str_replace_all(eu_stance, pattern = "Integration", replacement = "integration"),
+         eu_stance = str_replace_all(eu_stance, pattern = "Various", replacement = "Ambiguous"),
+         ep_affiliation = case_when(str_detect(ep_affiliation, pattern = "\\*") == TRUE ~ NA_character_,
+                                    TRUE ~ ep_affiliation),
+         iso = countrycode(cntry, origin = "country.name", destination = "iso3c")) %>% 
+  select(iso, cntry, everything()) %>% 
+  mutate_all(str_trim) %>% 
+  mutate(eu_stance = fct_relevel(eu_stance,
+                                 "Strongly in favour of EU integration",
+                                 "In favour of EU integration",
+                                 "Somewhat in favour of EU integration",
+                                 "Neutral towards EU integration",
+                                 "Ambiguous",
+                                 "Somewhat opposed to EU integration",
+                                 "Opposed to EU integration",
+                                 "Strongly opposed to EU integration")) %>% 
+  arrange(cntry)
+
+write_excel_csv2(partyinfos_clean, file = "../data/list_european_parties_de.csv", na = "")
+write_csv(partyinfos_clean, file = "../data/list_european_parties.csv", na = "")
+```
+
+# Fun Stuff
+
+```{r}
+partyinfos_clean %>% 
+  group_by(cntry) %>%
+  filter(eu_stance != "NA") %>% 
+  count(eu_stance) %>%
+  mutate(perc = n/sum(n, na.rm = TRUE)) %>% 
+  ggplot()+
+  geom_col(aes(x = cntry, y = perc, fill = eu_stance))+
+  coord_flip()+
+  scale_y_continuous(name = "", labels = scales::percent_format())+
+  viridis::scale_fill_viridis(name = "", discrete = TRUE)+
+  labs(x = "", title = "EU stance of parties in the EU",
+       subtitle = "Share of parties in the party system that are in favour or in opposition to EU integration",
+       caption = "Source: europeelects.eu") +
+  theme_minimal(base_size = 16)
+
+ggsave("../misc/eu_stance_of_parties_by_cntry.png", width = 12, height = 10)
+  
+```
+
+
+
+
+
+
+
+
 
