@@ -10,33 +10,158 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r}
-library(tidyverse)
+library(dplyr)
+library(readr)
+library(tidyr)
+library(purrr)
+library(stringr)
 library(countrycode)
 library(fuzzyjoin)
+library(janitor)
+
 ```
 
-```{r}
-l_ministers <- read_csv2("../data/list_scraped_gov_with_party.csv")
-l_parties <- read_csv("../data/list_european_parties.csv")
+```{r warning=FALSE, message=FALSE}
+ministers <- read_csv2("../data/list_scraped_gov_with_party.csv")
+parties <- read_csv("../data/list_european_parties.csv")
+
+
 ```
 
 # Prepare to join
 
+Zusatzfrage: Wie gehen wir mit "nominated by" etc. um?
+
+Problem: In Minister-Liste sind sehr unterschiedliche Parteibezeichner (meist Abkürzung oder englischsprachige Vollnamen)
+
 ```{r}
-l_ministers %>% mutate(cntry = countrycode(cntry, "iso2c","iso3c")) %>% 
-  left_join(., l_parties, by = c("cntry" = "iso", "party" = "abbr")) %>% 
-  janitor::clean_names() %>% 
-  select(cntry, party,name_y)
-
-l_ministers_prep <- l_ministers %>% 
+ministers <- ministers %>%
   mutate(cntry = countrycode(cntry, "iso2c","iso3c")) %>% 
-  select(cntry, party)
+  group_by(cntry) %>% 
+  mutate(id = row_number())
+
+parties <- parties %>% 
+  group_by(iso) %>% 
+  mutate(id = row_number())
+```
 
 
-l_ministers_prep
+pm = perfect match
+gm = grepl match
+fm = fuzzy match
 
-l_parties_prep <- l_parties %>% 
-  select(iso, name, abbr)
+```{r}
+tp <- ministers %>% filter(cntry == "EST") %>% pull(party)
+tp[3]
+
+tl <- parties %>% filter(iso == "EST")
+
+grepl(pattern = tp[1], x = tl)
+
+```
+
+```{r}
+f_findmatchposition_gm(tp[3], tl)
+```
+
+
+
+```{r}
+f_findmatchposition_gm <- function(ministerparty, partylist){
+  gm_abbr <- grepl(pattern = ministerparty, x = partylist$abbr)
+  gm_name <- grepl(pattern = ministerparty, x = partylist$name)
+  gm_nameen <- grepl(pattern = ministerparty, x = partylist$name_en)
+  
+  gm <- tibble(gm_abbr = gm_abbr, gm_name = gm_name, gm_nameen = gm_nameen) %>% 
+    rowwise() %>% 
+    mutate(any = case_when(gm_abbr == TRUE ~ TRUE,
+                           gm_name == TRUE ~ TRUE,
+                           gm_nameen == TRUE ~ TRUE,
+                           TRUE ~ FALSE)) %>% 
+    pull(any)
+  if (any(gm)) {position <- which(gm)[1]} else {position <- NA_integer_}
+
+  return(position)
+  }
+```
+
+
+```{r}
+f_findmatchposition_pm <- function(ministerparty, partylist){
+  
+  pm_abbr <- partylist$abbr %in% ministerparty
+  pm_name <- partylist$name %in% ministerparty
+  pm_nameen <- partylist$name_en %in% ministerparty
+  
+  pm <- tibble(pm_abbr = pm_abbr, pm_name = pm_name, pm_nameen = pm_nameen) %>% 
+    rowwise() %>% 
+    mutate(any = case_when(pm_abbr == TRUE ~ TRUE,
+                           pm_name == TRUE ~ TRUE,
+                           pm_nameen == TRUE ~ TRUE,
+                           TRUE ~ FALSE)) %>% 
+    pull(any)
+
+  if (any(pm)) {position <- which(pm)[1]} else {position <- NA_integer_}
+
+  return(position)
+}
+```
+
+
+```{r}
+f_linkposition <- function(cntry_ministers, cntry_parties){
+  m_to_link <- cntry_ministers %>%
+    as.data.frame() %>% 
+    as_tibble() %>% 
+    mutate(party = str_to_lower(party)) %>% 
+    select(id, party)
+  
+  p_to_link <- cntry_parties %>%
+    as.data.frame() %>% 
+    as_tibble() %>% 
+    mutate(name = str_to_lower(name),
+           abbr = str_to_lower(abbr),
+           name_en = str_to_lower(name_en)) %>% 
+    select(id, name, abbr, name_en)
+  
+  ministers_with_pos <- m_to_link %>% 
+    mutate(pos = map_int(party, f_findmatchposition_pm, p_to_link),
+           pos = case_when(is.na(pos) ~ map_int(party, f_findmatchposition_gm, p_to_link),
+                           TRUE ~ pos),
+           id = row_number()) %>% 
+    select(id, pos) %>% 
+    left_join(cntry_ministers, ., by = c("id"))
+  return(ministers_with_pos)
+}
+```
+
+
+```{r}
+ministers_nested <- ministers %>% group_by(cntry) %>% nest() %>% rename("ministers" = "data")
+parties_nested <- parties %>% group_by(iso) %>% nest() %>% rename("parties" = "data")
+nested_joined <- left_join(ministers_nested, parties_nested, by = c("cntry" = "iso"))
+```
+
+```{r}
+nested_joined %>% pull(cntry)
+```
+
+```{r}
+test <- nested_joined %>%
+  mutate(m_with_pos = map(ministers, f_linkposition, parties)) %>% 
+  select(cntry, m_with_pos) %>% 
+  unnest(m_with_pos) %>% 
+  left_join(., parties, by = c("cntry" = "iso", "pos" = "id")) %>% 
+  clean_names() %>% 
+  select(cntry, 
+         name_minister = name_x, 
+         portfolio, 
+         party, 
+         party_fullname = name_y, 
+         party_abbr = abbr, 
+         party_nameen = name_en, 
+         orientation:eu_stance)
+  
 
 ```
 

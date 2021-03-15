@@ -380,7 +380,7 @@ ministers_ir <- t %>%
   clean_names() %>% 
   select(name, portfolio = office_2, party = party_2, term) %>% 
   filter(name != "Name", name != "Also attending Cabinet") %>% 
-  mutate(cntry = "IR")
+  mutate(cntry = "IE")
 
 ministers_ir
 ```

@@ -339,7 +339,8 @@ partyinfos_clean <- partyinfos_all %>%
          eu_stance = str_replace_all(eu_stance, pattern = "Various", replacement = "Ambiguous"),
          ep_affiliation = case_when(str_detect(ep_affiliation, pattern = "\\*") == TRUE ~ NA_character_,
                                     TRUE ~ ep_affiliation),
-         iso = countrycode(cntry, origin = "country.name", destination = "iso3c")) %>% 
+         iso = countrycode(cntry, origin = "country.name", destination = "iso3c"),
+         abbr = str_replace_all(abbrv, pattern = "\\&amp;", replacement = "\\&")) %>% 
   select(iso, cntry, everything()) %>% 
   mutate_all(str_trim) %>% 
   mutate(eu_stance = fct_relevel(eu_stance,
