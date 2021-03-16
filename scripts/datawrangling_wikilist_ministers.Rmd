@@ -179,7 +179,7 @@ test_parties <- parties %>% filter(iso == "FIN") %>% pull(name_en)
 test_ministers <- ministers %>% filter(cntry == "FIN") %>% select(name, party)
 
 stringdist::stringdist(test_ministers$party[6], test_parties, method = "jaccard")
-stringdist::afind(test_ministers$party[6], pattern = test_parties)
+stringdist::stringdist(test_ministers$party[6], test_parties, method = "jw")
 
 
 test_parties
