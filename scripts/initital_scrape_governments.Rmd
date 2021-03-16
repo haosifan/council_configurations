@@ -58,6 +58,7 @@ ministers_be <- html %>%
   clean_names() %>% 
   select(name = minister_2, everything(), -contains("na"), -minister) %>% 
   filter(!grepl("Minister", name)) %>% 
+  filter(portfolio != "Secretaries of State") %>% 
   mutate(name = str_remove(name,"[:blank:]\\[.*\\]"),
          cntry = "BE")
 
@@ -729,7 +730,6 @@ ministers_se
 ```{r}
 ls(pattern = "ministers_") %>% length() == 27
 ```
-
 
 # bind together
 

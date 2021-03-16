@@ -18,7 +18,7 @@ library(stringr)
 library(countrycode)
 library(fuzzyjoin)
 library(janitor)
-
+library(stringdist)
 ```
 
 ```{r warning=FALSE, message=FALSE}
@@ -45,32 +45,20 @@ parties <- parties %>%
   mutate(id = row_number())
 ```
 
+# Functions
+
+## Suche der Matchposition
 
 pm = perfect match
 gm = grepl match
 fm = fuzzy match
 
 ```{r}
-tp <- ministers %>% filter(cntry == "EST") %>% pull(party)
-tp[3]
-
-tl <- parties %>% filter(iso == "EST")
-
-grepl(pattern = tp[1], x = tl)
-
-```
-
-```{r}
-f_findmatchposition_gm(tp[3], tl)
-```
-
-
-
-```{r}
 f_findmatchposition_gm <- function(ministerparty, partylist){
   gm_abbr <- grepl(pattern = ministerparty, x = partylist$abbr)
   gm_name <- grepl(pattern = ministerparty, x = partylist$name)
   gm_nameen <- grepl(pattern = ministerparty, x = partylist$name_en)
+  gm_abbr2 <- str_detect(string = ministerparty, pattern = partylist$abbr2)
   
   gm <- tibble(gm_abbr = gm_abbr, gm_name = gm_name, gm_nameen = gm_nameen) %>% 
     rowwise() %>% 
@@ -107,6 +95,12 @@ f_findmatchposition_pm <- function(ministerparty, partylist){
 }
 ```
 
+```{r}
+f_findmatchposition_fm <- function(ministerparty, partylist){
+  
+}
+```
+
 
 ```{r}
 f_linkposition <- function(cntry_ministers, cntry_parties){
@@ -121,8 +115,9 @@ f_linkposition <- function(cntry_ministers, cntry_parties){
     as_tibble() %>% 
     mutate(name = str_to_lower(name),
            abbr = str_to_lower(abbr),
+           abbr2 = str_to_lower(abbr) %>% str_remove_all(pattern = "[^A-Za-z0-9]"),
            name_en = str_to_lower(name_en)) %>% 
-    select(id, name, abbr, name_en)
+    select(id, name, abbr, name_en, abbr2)
   
   ministers_with_pos <- m_to_link %>% 
     mutate(pos = map_int(party, f_findmatchposition_pm, p_to_link),
@@ -146,6 +141,13 @@ nested_joined <- left_join(ministers_nested, parties_nested, by = c("cntry" = "i
 nested_joined %>% pull(cntry)
 ```
 
+Noch offen:
+
+nominated by etc. -> Partei oder independent?
+pure Independents
+Achtung bei BGR ist der Join von NA falsch. NA party wird gematcht über abbr == NA. Lösbar über Austausch vorher von NAs zu "unaffiliated" etc.
+fuzzy match über distanzen (siehe playground)
+
 ```{r}
 test <- nested_joined %>%
   mutate(m_with_pos = map(ministers, f_linkposition, parties)) %>% 
@@ -163,5 +165,23 @@ test <- nested_joined %>%
          orientation:eu_stance)
   
 
+```
+
+# Playground
+
+ ! Achtung bei BGR ist der Join von NA falsch. NA party wird gematcht über abbrv == NA. Lösbar über Austausch vorher von NAs zu "unaffiliated" etc.
+
+
+
+```{r}
+test_parties <- parties %>% filter(iso == "FIN") %>% pull(name_en)
+
+test_ministers <- ministers %>% filter(cntry == "FIN") %>% select(name, party)
+
+stringdist::stringdist(test_ministers$party[6], test_parties, method = "jaccard")
+stringdist::afind(test_ministers$party[6], pattern = test_parties)
+
+
+test_parties
 ```
 
