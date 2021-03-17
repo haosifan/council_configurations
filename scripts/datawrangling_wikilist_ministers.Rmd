@@ -98,9 +98,31 @@ f_findmatchposition_pm <- function(ministerparty, partylist){
 ```{r}
 f_findmatchposition_fm <- function(ministerparty, partylist){
   
-}
+  ministerparty <- str_remove_all(ministerparty, pattern = stop_pattern)
+  
+  d_jc <- stringdist(ministerparty, partylist, method = "jaccard")
+  d_jw <- stringdist(ministerparty, partylist, method = "jw")
+  d_osa <- stringdist(ministerparty, partylist, method = "osa")
+  d_lcs <- stringdist(ministerparty, partylist, method = "lcs")
+  
+  position <- bind_cols(jaccard = d_jc, jw = d_jw, osa = d_osa, lcs = d_lcs) %>% 
+    mutate(pos = row_number()) %>% 
+    pivot_longer(jaccard:lcs) %>% 
+    group_by(name) %>% 
+    arrange(name) %>% 
+    filter(value == min(value)) %>% 
+    ungroup() %>% 
+    count(pos) %>% 
+    filter(n == max(n)) %>% 
+    pull(pos) %>% 
+    .[1]
+
+  return(position)
+  }
 ```
 
+
+## Link position to with ministers
 
 ```{r}
 f_linkposition <- function(cntry_ministers, cntry_parties){
@@ -123,6 +145,8 @@ f_linkposition <- function(cntry_ministers, cntry_parties){
     mutate(pos = map_int(party, f_findmatchposition_pm, p_to_link),
            pos = case_when(is.na(pos) ~ map_int(party, f_findmatchposition_gm, p_to_link),
                            TRUE ~ pos),
+           pos = case_when(is.na(pos) ~ map_int(party, f_findmatchposition_fm, p_to_link),
+                           TRUE ~ pos),
            id = row_number()) %>% 
     select(id, pos) %>% 
     left_join(cntry_ministers, ., by = c("id"))
@@ -136,6 +160,15 @@ ministers_nested <- ministers %>% group_by(cntry) %>% nest() %>% rename("ministe
 parties_nested <- parties %>% group_by(iso) %>% nest() %>% rename("parties" = "data")
 nested_joined <- left_join(ministers_nested, parties_nested, by = c("cntry" = "iso"))
 ```
+
+```{r}
+stop_pattern <- ministers$cntry %>% 
+  unique() %>% 
+  countrycode(origin = "iso3c", destination = "country.name") %>% 
+  c(., "[:blank:]*[Tt]he[:blank:]","[:blank:]of[:blank:]","[:blank:]in[:blank:]") %>% 
+  str_c(collapse = "|")
+```
+
 
 ```{r}
 nested_joined %>% pull(cntry)
@@ -163,23 +196,68 @@ test <- nested_joined %>%
          party_abbr = abbr, 
          party_nameen = name_en, 
          orientation:eu_stance)
-  
+ 
+test 
 
 ```
 
 # Playground
 
  ! Achtung bei BGR ist der Join von NA falsch. NA party wird gematcht über abbrv == NA. Lösbar über Austausch vorher von NAs zu "unaffiliated" etc.
-
-
+ Bulgarien jetzt noch mehr falsch
 
 ```{r}
-test_parties <- parties %>% filter(iso == "FIN") %>% pull(name_en)
+f_findmatchposition_fm <- function(ministerparty, partylist){
+  
+  ministerparty <- str_remove_all(ministerparty, pattern = stop_pattern)
+  
+  d_jc <- stringdist(ministerparty, partylist, method = "jaccard")
+  d_jw <- stringdist(ministerparty, partylist, method = "jw")
+  d_osa <- stringdist(ministerparty, partylist, method = "osa")
+  d_lcs <- stringdist(ministerparty, partylist, method = "lcs")
+  
+  position <- bind_cols(jaccard = d_jc, jw = d_jw, osa = d_osa, lcs = d_lcs) %>% 
+    mutate(pos = row_number()) %>% 
+    pivot_longer(jaccard:lcs) %>% 
+    group_by(name) %>% 
+    arrange(name) %>% 
+    filter(value == min(value)) %>% 
+    ungroup() %>% 
+    count(pos) %>% 
+    filter(n == max(n)) %>% 
+    pull(pos) %>% 
+    .[1]
 
-test_ministers <- ministers %>% filter(cntry == "FIN") %>% select(name, party)
+  return(position)
+  }
+```
 
-stringdist::stringdist(test_ministers$party[6], test_parties, method = "jaccard")
-stringdist::stringdist(test_ministers$party[6], test_parties, method = "jw")
+```{r}
+
+
+test_parties <- parties %>% 
+  filter(iso == "FIN") %>%
+  pull(name_en)
+
+test_ministers <- ministers %>% 
+  filter(cntry == "FIN") %>% 
+  mutate(party_stop = str_remove_all(party, pattern = stop_pattern)) %>% 
+  select(name, party, party_stop)
+
+d_jc <- stringdist::stringdist(test_ministers$party[4], test_parties, method = "jaccard")
+d_jw <- stringdist::stringdist(test_ministers$party[4], test_parties, method = "jw")
+d_osa <- stringdist::stringdist(test_ministers$party[4], test_parties, method = "osa")
+d_lcs <- stringdist::stringdist(test_ministers$party[4], test_parties, method = "lcs")
+bind_cols(jaccard = d_jc, jw = d_jw, osa = d_osa, lcs = d_lcs) %>% 
+  mutate(pos = row_number()) %>% 
+  pivot_longer(jaccard:lcs) %>% 
+  group_by(name) %>% 
+  arrange(name) %>% 
+  filter(value == min(value)) %>% 
+  ungroup() %>% 
+  count(pos) %>% 
+  filter(n == max(n)) %>% pull(pos)
+
 
 
 test_parties
