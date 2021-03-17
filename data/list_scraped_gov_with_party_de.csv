@@ -54,7 +54,7 @@ BG;Desislava Taneva;Minister of Agriculture, Food and Forestry;NA;NA;nominated b
 BG;Rossen Jeliazkov;Minister of Transport, Information Technologies and Communications;NA;NA;GERB;NA;NA;NA;NA;NA;NA;NA
 BG;Krasimir Valchev;Minister of Education and Science;NA;NA;nominated by GERB;NA;NA;NA;NA;NA;NA;NA
 BG;Kostadin Angelov;Minister of Health;NA;NA;nominated by GERB, unaffiliated;NA;NA;NA;NA;NA;NA;NA
-BG;Boil Banov;Minister of Culture;NA;NA;;NA;NA;NA;NA;NA;NA;NA
+BG;Boil Banov;Minister of Culture;NA;NA;unaffiliated;NA;NA;NA;NA;NA;NA;NA
 BG;Mariyana Nikolova;Minister of Tourism;NA;NA;GERB;NA;NA;NA;NA;NA;NA;NA
 BG;Krasen Kralev;Minister of Youth and Sports;NA;NA;GERB;NA;NA;NA;NA;NA;NA;NA
 CY;Nicos Anastasiades;President;NA;NA;DISY;28 Feb 2018 –;NA;NA;NA;NA;NA;NA
@@ -150,14 +150,14 @@ EE;Mart Järvik;Minister of Rural Affairs;29 April 2019;25 November 2019;EKRE;NA
 EE;Arvo Aller;Minister of Rural Affairs;10 December 2019;26 January 2021;EKRE;NA;NA;NA;NA;NA;NA;NA
 ES;Pedro Sánchez;Prime Minister;8 January 2020;Incumbent;PSOE;NA;NA;NA;NA;NA;NA;NA
 ES;Carmen Calvo;First Deputy Prime MinisterMinister of the Presidency, Relations with the Cortes and Democratic Memory;13 January 2020;Incumbent;PSOE;NA;NA;NA;NA;NA;NA;NA
-ES;Pablo Iglesias;Second Deputy Prime MinisterMinister of Social Rights and 2030 Agenda;13 January 2020;Incumbent;Podemos;NA;NA;NA;NA;NA;NA;NA
-ES;Nadia Calviño;Third Deputy Prime MinisterMinister of Economic Affairs and Digital Transformation;13 January 2020;Incumbent;Independent[b];NA;NA;NA;NA;NA;NA;NA
+ES;Pablo Iglesias;Second Deputy Prime MinisterMinister of Social Rights and 2030 Agenda;13 January 2020;TBD;Podemos;NA;NA;NA;NA;NA;NA;NA
+ES;Nadia Calviño;Third Deputy Prime MinisterMinister of Economic Affairs and Digital Transformation;13 January 2020;TBD;Independent;NA;NA;NA;NA;NA;NA;NA
 ES;Teresa Ribera;Fourth Deputy Prime MinisterMinister for the Ecological Transition and the Demographic Challenge;13 January 2020;Incumbent;PSOE;NA;NA;NA;NA;NA;NA;NA
-ES;Arancha González Laya;Minister of Foreign Affairs, European Union and Cooperation;13 January 2020;Incumbent;Independent[b];NA;NA;NA;NA;NA;NA;NA
-ES;Juan Carlos Campo;Minister of Justice;13 January 2020;Incumbent;Independent[b];NA;NA;NA;NA;NA;NA;NA
-ES;Margarita Robles;Minister of Defence;13 January 2020;Incumbent;Independent[b];NA;NA;NA;NA;NA;NA;NA
+ES;Arancha González Laya;Minister of Foreign Affairs, European Union and Cooperation;13 January 2020;Incumbent;Independent;NA;NA;NA;NA;NA;NA;NA
+ES;Juan Carlos Campo;Minister of Justice;13 January 2020;Incumbent;Independent;NA;NA;NA;NA;NA;NA;NA
+ES;Margarita Robles;Minister of Defence;13 January 2020;Incumbent;Independent;NA;NA;NA;NA;NA;NA;NA
 ES;María Jesús Montero;Minister of FinanceSpokesperson of the Government;13 January 2020;Incumbent;PSOE;NA;NA;NA;NA;NA;NA;NA
-ES;Fernando Grande-Marlaska;Minister of the Interior;13 January 2020;Incumbent;Independent[b];NA;NA;NA;NA;NA;NA;NA
+ES;Fernando Grande-Marlaska;Minister of the Interior;13 January 2020;Incumbent;Independent;NA;NA;NA;NA;NA;NA;NA
 ES;José Luis Ábalos;Minister of Transport, Mobility and Urban Agenda;13 January 2020;Incumbent;PSOE;NA;NA;NA;NA;NA;NA;NA
 ES;Isabel Celaá;Minister of Education and Vocational Training;13 January 2020;Incumbent;PSOE;NA;NA;NA;NA;NA;NA;NA
 ES;Yolanda Díaz;Minister of Labour and Social Economy;13 January 2020;Incumbent;PCE;NA;NA;NA;NA;NA;NA;NA
@@ -166,13 +166,16 @@ ES;Luis Planas;Minister of Agriculture, Fisheries and Food;13 January 2020;Incum
 ES;Carolina Darias;Minister of Territorial Policy and Civil Service;13 January 2020;27 January 2021;PSOE;NA;NA;NA;NA;NA;NA;NA
 ES;José Manuel Rodríguez Uribes;Minister of Culture and Sports;13 January 2020;Incumbent;PSOE;NA;NA;NA;NA;NA;NA;NA
 ES;Salvador Illa;Minister of Health;13 January 2020;27 January 2021;PSC–PSOE;NA;NA;NA;NA;NA;NA;NA
-ES;Pedro Duque;Minister of Science and Innovation;13 January 2020;Incumbent;Independent[b];NA;NA;NA;NA;NA;NA;NA
+ES;Pedro Duque;Minister of Science and Innovation;13 January 2020;Incumbent;Independent;NA;NA;NA;NA;NA;NA;NA
 ES;Irene Montero;Minister of Equality;13 January 2020;Incumbent;Podemos;NA;NA;NA;NA;NA;NA;NA
 ES;Alberto Garzón;Minister of Consumer Affairs;13 January 2020;Incumbent;IU (PCE);NA;NA;NA;NA;NA;NA;NA
-ES;José Luis Escrivá;Minister of Inclusion, Social Security and Migration;13 January 2020;Incumbent;Independent[b];NA;NA;NA;NA;NA;NA;NA
-ES;Manuel Castells;Minister of Universities;13 January 2020;Incumbent;Independent[c];NA;NA;NA;NA;NA;NA;NA
+ES;José Luis Escrivá;Minister of Inclusion, Social Security and Migration;13 January 2020;Incumbent;Independent;NA;NA;NA;NA;NA;NA;NA
+ES;Manuel Castells;Minister of Universities;13 January 2020;Incumbent;Independent;NA;NA;NA;NA;NA;NA;NA
 ES;Miquel Iceta;Minister of Territorial Policy and Civil Service;27 January 2021;Incumbent;PSC–PSOE;NA;NA;NA;NA;NA;NA;NA
 ES;Carolina Darias;Minister of Health;27 January 2021;Incumbent;PSOE;NA;NA;NA;NA;NA;NA;NA
+ES;Nadia Calviño;Second Deputy Prime MinisterMinister of Economic Affairs and Digital Transformation;TBD;;Independent;NA;NA;NA;NA;NA;NA;NA
+ES;Yolanda Díaz;Third Deputy Prime MinisterMinister of Labour and Social Economy;TBD;;PCE;NA;NA;NA;NA;NA;NA;NA
+ES;Ione Belarra;Minister of Social Rights and 2030 Agenda;TBD;;Podemos;NA;NA;NA;NA;NA;NA;NA
 FI;Sanna Marin;Prime Minister;NA;NA;Social Democratic Party;NA;NA;NA;NA;NA;NA;NA
 FI;Annika Saarikko;Minister of Science and Culture;NA;NA;Centre Party of Finland;NA;NA;NA;NA;NA;NA;NA
 FI;Tytti Tuppurainen;Minister for European Affairs and Ownership Steering;NA;NA;Social Democratic Party;NA;NA;NA;NA;NA;NA;NA
@@ -615,21 +618,22 @@ SI;Anže Logar;Minister of Foreign Affairs;13 March 2020;NA;SDS;NA;NA;NA;NA;NA;N
 SI;Lilijana Kozlovič;Minister of Justice;13 March 2020;NA;SMC;NA;NA;NA;NA;NA;NA;NA
 SI;Zvone Černač;Minister without portfolio for Development and European Cohesion Policy;13 March 2020;NA;SDS;NA;NA;NA;NA;NA;NA;NA
 SI;Helena Jaklitsch;Minister without portfolio for Slovenian Diaspora;13 March 2020;NA;SDS;NA;NA;NA;NA;NA;NA;NA
-SK;Igor Matovič;Prime Minister;21 March 2020;Incumbent;OĽANO;NA;NA;NA;NA;NA;NA;NA
-SK;Štefan Hollý;Deputy Prime Minister for Legislation and Strategic Planning;21 March 2020;Incumbent;We Are Family;NA;NA;NA;NA;NA;NA;NA
-SK;Veronika Remišová;Deputy Prime Minister and Minister of Investments and Regional Development;21 March 2020;Incumbent;For the People;NA;NA;NA;NA;NA;NA;NA
+SK;Igor Matovič;Prime Minister;21 March 2020;Incumbent;OĽaNO;NA;NA;NA;NA;NA;NA;NA
+SK;Štefan Hollý;Deputy Prime Minister for Legislation and Strategic Planning;21 March 2020;Incumbent;SR;NA;NA;NA;NA;NA;NA;NA
+SK;Veronika Remišová;Deputy Prime Minister and Minister of Investments and Regional Development;21 March 2020;Incumbent;ZĽ;NA;NA;NA;NA;NA;NA;NA
 SK;Richard Sulík;Deputy Prime Minister for Economic Affairs and Minister of Economy;21 March 2020;Incumbent;SaS;NA;NA;NA;NA;NA;NA;NA
-SK;Eduard Heger;Deputy Prime Minister and Minister of Finance;21 March 2020;Incumbent;OĽANO;NA;NA;NA;NA;NA;NA;NA
-SK;Roman Mikulec;Minister of Internal affairs;21 March 2020;Incumbent;OĽANO;NA;NA;NA;NA;NA;NA;NA
-SK;Marek Krajčí;Minister of Health;21 March 2020;12 March 2021;OĽANO;NA;NA;NA;NA;NA;NA;NA
-SK;Eduard Heger(acting);Minister of Health;12 March 2021;Incumbent;OĽANO;NA;NA;NA;NA;NA;NA;NA
-SK;Jaroslav Naď;Minister of Defence;21 March 2020;Incumbent;OĽANO;NA;NA;NA;NA;NA;NA;NA
-SK;Mária Kolíková;Minister of Justice;21 March 2020;Incumbent;For the People;NA;NA;NA;NA;NA;NA;NA
+SK;Eduard Heger;Deputy Prime Minister and Minister of Finance;21 March 2020;Incumbent;OĽaNO;NA;NA;NA;NA;NA;NA;NA
+SK;Roman Mikulec;Minister of Internal affairs;21 March 2020;Incumbent;OĽaNO;NA;NA;NA;NA;NA;NA;NA
+SK;Marek Krajčí;Minister of Health;21 March 2020;12 March 2021;OĽaNO;NA;NA;NA;NA;NA;NA;NA
+SK;Eduard Heger(acting);Minister of Health;12 March 2021;Incumbent;OĽaNO;NA;NA;NA;NA;NA;NA;NA
+SK;Jaroslav Naď;Minister of Defence;21 March 2020;Incumbent;OĽaNO;NA;NA;NA;NA;NA;NA;NA
+SK;Mária Kolíková;Minister of Justice;21 March 2020;Incumbent;ZĽ;NA;NA;NA;NA;NA;NA;NA
 SK;Richard Sulík(acting);Minister of Foreign and European Affairs;21 March 2020;8 April 2020;SaS;NA;NA;NA;NA;NA;NA;NA
 SK;Ivan Korčok;Minister of Foreign and European Affairs;8 April 2020;Incumbent;Independent(SaS);NA;NA;NA;NA;NA;NA;NA
 SK;Branislav Gröhling;Minister of Education, Science, Research and Sport;21 March 2020;Incumbent;SaS;NA;NA;NA;NA;NA;NA;NA
-SK;Milan Krajniak;Minister of Labour, Social Affairs and Family;21 March 2020;Incumbent;We Are Family;NA;NA;NA;NA;NA;NA;NA
-SK;Andrej Doležal;Minister of Transport and Construction;21 March 2020;Incumbent;Independent(WaF);NA;NA;NA;NA;NA;NA;NA
-SK;Natália Milanová;Minister of Culture;21 March 2020;Incumbent;OĽANO;NA;NA;NA;NA;NA;NA;NA
-SK;Ján Mičovský;Minister of Agriculture and Rural Development;21 March 2020;Incumbent;OĽANO;NA;NA;NA;NA;NA;NA;NA
-SK;Ján Budaj;Minister of Environment;21 March 2020;Incumbent;OĽANO;NA;NA;NA;NA;NA;NA;NA
+SK;Milan Krajniak;Minister of Labour, Social Affairs and Family;21 March 2020;17 March 2021;SR;NA;NA;NA;NA;NA;NA;NA
+SK;Andrej Doležal(acting);Minister of Labour, Social Affairs and Family;17 March 2021;Incumbent;Independent(SR);NA;NA;NA;NA;NA;NA;NA
+SK;Andrej Doležal;Minister of Transport and Construction;21 March 2020;Incumbent;Independent(SR);NA;NA;NA;NA;NA;NA;NA
+SK;Natália Milanová;Minister of Culture;21 March 2020;Incumbent;OĽaNO;NA;NA;NA;NA;NA;NA;NA
+SK;Ján Mičovský;Minister of Agriculture and Rural Development;21 March 2020;Incumbent;OĽaNO;NA;NA;NA;NA;NA;NA;NA
+SK;Ján Budaj;Minister of Environment;21 March 2020;Incumbent;OĽaNO;NA;NA;NA;NA;NA;NA;NA

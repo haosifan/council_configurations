@@ -24,8 +24,6 @@ library(stringdist)
 ```{r warning=FALSE, message=FALSE}
 ministers <- read_csv2("../data/list_scraped_gov_with_party.csv")
 parties <- read_csv("../data/list_european_parties.csv")
-
-
 ```
 
 # Prepare to join
@@ -100,22 +98,23 @@ f_findmatchposition_fm <- function(ministerparty, partylist){
   
   ministerparty <- str_remove_all(ministerparty, pattern = stop_pattern)
   
-  d_jc <- stringdist(ministerparty, partylist, method = "jaccard")
-  d_jw <- stringdist(ministerparty, partylist, method = "jw")
-  d_osa <- stringdist(ministerparty, partylist, method = "osa")
-  d_lcs <- stringdist(ministerparty, partylist, method = "lcs")
+  d_jc <- stringdist(ministerparty, partylist$name_en, method = "jaccard")
+  d_jw <- stringdist(ministerparty, partylist$name_en, method = "jw")
+  d_osa <- stringdist(ministerparty, partylist$name_en, method = "osa")
+  d_lcs <- stringdist(ministerparty, partylist$name_en, method = "lcs")
+  d_qg <- stringdist(ministerparty, partylist$name_en, method = "qgram")
   
-  position <- bind_cols(jaccard = d_jc, jw = d_jw, osa = d_osa, lcs = d_lcs) %>% 
+  filterpos <- bind_cols(jaccard = d_jc, jw = d_jw, osa = d_osa, lcs = d_lcs, qgram = d_qg) %>% 
     mutate(pos = row_number()) %>% 
-    pivot_longer(jaccard:lcs) %>% 
+    pivot_longer(jaccard:qgram) %>% 
     group_by(name) %>% 
     arrange(name) %>% 
     filter(value == min(value)) %>% 
     ungroup() %>% 
     count(pos) %>% 
-    filter(n == max(n)) %>% 
-    pull(pos) %>% 
-    .[1]
+    filter(n == max(n) & n > 3)
+
+  if (length(filterpos$pos) > 0) {position <- pull(filterpos, pos)[1]} else {position <- NA_integer_}
 
   return(position)
   }
@@ -129,7 +128,9 @@ f_linkposition <- function(cntry_ministers, cntry_parties){
   m_to_link <- cntry_ministers %>%
     as.data.frame() %>% 
     as_tibble() %>% 
-    mutate(party = str_to_lower(party)) %>% 
+    mutate(party = str_to_lower(party),
+           party = case_when(grepl(party, pattern = "[Ii]ndependent|[Nn]ominated") ~ "unaffiliated",
+                             TRUE ~ party)) %>% 
     select(id, party)
   
   p_to_link <- cntry_parties %>%
@@ -178,8 +179,7 @@ Noch offen:
 
 nominated by etc. -> Partei oder independent?
 pure Independents
-Achtung bei BGR ist der Join von NA falsch. NA party wird gematcht über abbr == NA. Lösbar über Austausch vorher von NAs zu "unaffiliated" etc.
-fuzzy match über distanzen (siehe playground)
+Achtung bei BGR ist der Join von NA falsch. NA party wird gematcht über abbr == NA. Lösbar über Austausch vorher von NAs zu "unaffiliated" etc. BGR noch mehr falsch (United Patriots wird schwierig)
 
 ```{r}
 test <- nested_joined %>%
@@ -203,63 +203,12 @@ test
 
 # Playground
 
- ! Achtung bei BGR ist der Join von NA falsch. NA party wird gematcht über abbrv == NA. Lösbar über Austausch vorher von NAs zu "unaffiliated" etc.
- Bulgarien jetzt noch mehr falsch
-
-```{r}
-f_findmatchposition_fm <- function(ministerparty, partylist){
-  
-  ministerparty <- str_remove_all(ministerparty, pattern = stop_pattern)
-  
-  d_jc <- stringdist(ministerparty, partylist, method = "jaccard")
-  d_jw <- stringdist(ministerparty, partylist, method = "jw")
-  d_osa <- stringdist(ministerparty, partylist, method = "osa")
-  d_lcs <- stringdist(ministerparty, partylist, method = "lcs")
-  
-  position <- bind_cols(jaccard = d_jc, jw = d_jw, osa = d_osa, lcs = d_lcs) %>% 
-    mutate(pos = row_number()) %>% 
-    pivot_longer(jaccard:lcs) %>% 
-    group_by(name) %>% 
-    arrange(name) %>% 
-    filter(value == min(value)) %>% 
-    ungroup() %>% 
-    count(pos) %>% 
-    filter(n == max(n)) %>% 
-    pull(pos) %>% 
-    .[1]
-
-  return(position)
-  }
-```
-
-```{r}
+SR in SVK steht für Sme Rodina
+BGR: United Patriots falsch gematched
+ESP: Independents werden als IU gematched; PSC-PSOE als Vox, Spanien ist irgendwie richtig schief
+FIN: Greens werden nicht gematched
+FRA: Nochmal schauen, ob scrapen ändern. Aktuell "later REM".
+POL: United Poland nicht gematched; Wird in Liste als Solidaric Poland geführt
 
 
-test_parties <- parties %>% 
-  filter(iso == "FIN") %>%
-  pull(name_en)
-
-test_ministers <- ministers %>% 
-  filter(cntry == "FIN") %>% 
-  mutate(party_stop = str_remove_all(party, pattern = stop_pattern)) %>% 
-  select(name, party, party_stop)
-
-d_jc <- stringdist::stringdist(test_ministers$party[4], test_parties, method = "jaccard")
-d_jw <- stringdist::stringdist(test_ministers$party[4], test_parties, method = "jw")
-d_osa <- stringdist::stringdist(test_ministers$party[4], test_parties, method = "osa")
-d_lcs <- stringdist::stringdist(test_ministers$party[4], test_parties, method = "lcs")
-bind_cols(jaccard = d_jc, jw = d_jw, osa = d_osa, lcs = d_lcs) %>% 
-  mutate(pos = row_number()) %>% 
-  pivot_longer(jaccard:lcs) %>% 
-  group_by(name) %>% 
-  arrange(name) %>% 
-  filter(value == min(value)) %>% 
-  ungroup() %>% 
-  count(pos) %>% 
-  filter(n == max(n)) %>% pull(pos)
-
-
-
-test_parties
-```
 

@@ -227,8 +227,7 @@ portfolio <- html %>% html_nodes(".title") %>% html_text()
 links <- html %>% 
   html_nodes(".minister-tile") %>% 
   html_node("a") %>% 
-  html_attr("href") %>% 
-  paste0("https://valtioneuvosto.fi",.)
+  html_attr("href")
 
 f_getparty <- function(link){
   p <- read_html(link) %>% html_node(".text p") %>% html_text()
@@ -696,12 +695,14 @@ names(t) <- header_names
 
 
 ministers_es <- t %>% 
-  clean_names() %>% 
-  filter(row_number()!=c(1,26,27), name != "") %>% 
+  clean_names() %>%
+  filter(name != "", !grepl(name, pattern = "Changes"), name != "Name") %>% 
   select(name, portfolio, party = party_2, took_office, left_office) %>% 
-  mutate(cntry = "ES")
+  mutate(cntry = "ES",
+         party = str_remove(party, pattern = "\\[.+$"))
 
 ministers_es
+
 ```
 
 
@@ -736,7 +737,8 @@ ls(pattern = "ministers_") %>% length() == 27
 ```{r}
 all_ministers <- mget(ls(pattern="ministers_")) %>%
               bind_rows() %>% 
-  arrange(cntry) %>% 
+  arrange(cntry) %>%
+  mutate(party = str_replace(party, pattern = "^$", replace = "unaffiliated")) %>% 
   select(cntry, everything())
 
 all_ministers
