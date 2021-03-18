@@ -662,8 +662,6 @@ ministers_sk <- t %>%
   select(name, portfolio = position, party = party_2, took_office, left_office) %>% 
   mutate(cntry = "SK")
 
-ministers_sk
-
 ```
 
 

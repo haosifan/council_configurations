@@ -28,15 +28,18 @@ parties <- read_csv("../data/list_european_parties.csv")
 
 # Prepare to join
 
-Zusatzfrage: Wie gehen wir mit "nominated by" etc. um?
-
-Problem: In Minister-Liste sind sehr unterschiedliche Parteibezeichner (meist Abkürzung oder englischsprachige Vollnamen)
+In einigen wenigen Fällen müssen die Parteinamen angepasst werden, da Parteien unter mehreren leicht unterschiedlichen Namen firmieren. Bsp. United Poland nicht gematched; Wird in Liste als Solidaric Poland geführt. Wird somit hier in "Solidaric Poland" geändert.
 
 ```{r}
 ministers <- ministers %>%
   mutate(cntry = countrycode(cntry, "iso2c","iso3c")) %>% 
   group_by(cntry) %>% 
-  mutate(id = row_number())
+  mutate(id = row_number(),
+         party = case_when(party == "United Poland" ~ "Solidaric Poland",
+                           (party == "SR" & cntry == "SVK") ~ "Sme Rodina",
+                           party == "KPV LV" ~ "PCL",
+                           TRUE ~ party),
+         party = str_replace_all(party, pattern = "\u013d", replacement =  "L"))
 
 parties <- parties %>% 
   group_by(iso) %>% 
@@ -189,17 +192,19 @@ nested_joined %>% pull(cntry)
 
 Noch offen:
 
-nominated by etc. -> Partei oder independent? (solved as independent)
-pure Independents (solved as independent)
-Achtung bei BGR ist der Join von NA falsch. NA party wird gematcht über abbr == NA. Lösbar über Austausch vorher von NAs zu "unaffiliated" etc. BGR noch mehr falsch (United Patriots wird schwierig)
+Soll als NI als ep_affiliation auftauchen
+
+
 
 ```{r}
-test <- nested_joined %>%
+ministers_assigned <- nested_joined %>%
   mutate(m_with_pos = map(ministers, f_linkposition, parties)) %>% 
   select(cntry, m_with_pos) %>% 
   unnest(m_with_pos) %>% 
   left_join(., parties, by = c("cntry" = "iso", "pos" = "id")) %>% 
   clean_names() %>% 
+  mutate_at(.vars = vars(name_y:eu_stance), .funs = ~case_when(pos == 9999 ~ "NI",
+                                                             TRUE ~ .x)) %>% 
   select(cntry, 
          name_minister = name_x, 
          portfolio, 
@@ -208,78 +213,10 @@ test <- nested_joined %>%
          party_abbr = abbr, 
          party_nameen = name_en, 
          orientation:eu_stance)
- 
-test 
 
 ```
 
 # Playground
-
-SVK: SR steht für Sme Rodina
-BGR: United Patriots falsch gematched
-FIN: Greens werden nicht gematched
-FRA: DVG und DVD als diverse nicht gematched, was machen wir mit denen? (aktuell independent)
-POL: United Poland nicht gematched; Wird in Liste als Solidaric Poland geführt
-
-
-```{r}
-m_to_link <- ministers %>% 
-    filter(cntry == "FIN") %>% 
-    as.data.frame() %>% 
-    as_tibble() %>% 
-    mutate(party = str_to_lower(party),
-           party = case_when(grepl(party, pattern = "[Ii]ndependent|[Nn]ominated") ~ "unaffiliated",
-                             TRUE ~ party),
-           party2 = str_remove_all(party, pattern = "[^[:alnum:]]")) %>% 
-    select(id, party, party2)
-  
-  p_to_link <- parties %>%
-    filter(iso == "FIN") %>% 
-    as.data.frame() %>% 
-    as_tibble() %>% 
-    mutate(name = str_to_lower(name),
-           abbr = str_to_lower(abbr),
-           abbr2 = str_to_lower(abbr) %>% str_remove_all(pattern = "[^A-Za-z0-9]"),
-           name_en = str_to_lower(name_en)) %>% 
-    select(id, name, abbr, name_en, abbr2)
-
-
-m_to_link %>% 
-    mutate(pos = case_when(party == "unaffiliated" ~ 9999L,
-                           TRUE ~ NA_integer_),
-           pos = case_when(is.na(pos) ~ map_int(party, f_findmatchposition_pm, p_to_link),
-                           TRUE ~ pos),
-           pos = case_when(is.na(pos) ~ map_int(party2, f_findmatchposition_pm, p_to_link),
-                           TRUE ~ pos),
-           pos = case_when(is.na(pos) ~ map_int(party, f_findmatchposition_gm, p_to_link),
-                           TRUE ~ pos),
-           pos = case_when(is.na(pos) ~ map_int(party, f_findmatchposition_fm, p_to_link),
-                           TRUE ~ pos),
-           id = row_number())
-
-
-
-ministerparty <- m_to_link$party[4] %>% str_remove_all(pattern = stop_pattern)
-  
-  d_jc <- stringdist(ministerparty, p_to_link$name_en, method = "jaccard")
-  d_jw <- stringdist(ministerparty, p_to_link$name_en, method = "jw", )
-  d_osa <- stringdist(ministerparty, p_to_link$name_en, method = "osa", weight = c(1,1,1,1))
-  d_lcs <- stringdist(ministerparty, p_to_link$name_en, method = "lcs")
-  d_qg <- stringdist(ministerparty, p_to_link$name_en, method = "qgram")
-  
-  filterpos <- bind_cols(jaccard = d_jc, jw = d_jw, osa = d_osa, lcs = d_lcs, qgram = d_qg) %>% 
-    mutate(pos = row_number()) %>% 
-    pivot_longer(jaccard:qgram) %>% 
-    group_by(name) %>% 
-    arrange(name) %>% 
-    filter(value == min(value)) %>% 
-    ungroup() %>% 
-    count(pos) %>% 
-    filter(n == max(n) & n > 3)
-  
-
-
-```
 
 
 
