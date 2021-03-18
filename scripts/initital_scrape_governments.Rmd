@@ -245,21 +245,38 @@ ministers_fi
 
 # France
 
-Source with party affiliation: https://en.wikipedia.org/wiki/Second_Philippe_government
+Source with party affiliation: https://en.wikipedia.org/wiki/Castex_government
 Official Source: https://www.gouvernement.fr/en/composition-of-the-government
 
 ```{r}
-url <- "https://en.wikipedia.org/wiki/Second_Philippe_government"
+url <- "https://en.wikipedia.org/wiki/Castex_government"
 html <- read_html(url)
 
-ministers_fr <- html %>% 
-  html_nodes(".wikitable") %>% 
-  .[[4]] %>% 
-  html_table(fill = TRUE) %>% 
+fr_m <- html %>% 
+  html_nodes(".wikitable") %>%
+  html_table(fill = TRUE) %>%
+  .[1] %>%
+  as.data.frame() %>% 
+  as_tibble() %>% 
   clean_names() %>% 
-  tbl_df() %>% 
-  select(portfolio = post, name = name, party = party_2) %>% 
+  select(portfolio = portfolio, name = name, party = party_1) %>%
+  mutate(cntry = "FR",
+         ministry = "")
+
+fr_dep <- html %>% 
+  html_nodes(".wikitable") %>%
+  html_table(fill = TRUE) %>%
+  .[2:3] %>%
+  bind_rows() %>% 
+  clean_names() %>% 
+  select(portfolio, name = name, party = party_5, ministry = attached_minister) %>% 
   mutate(cntry = "FR")
+
+ministers_fr <- bind_rows(fr_m, fr_dep) %>% 
+  mutate(party = case_when(party == "SE" ~ "Independent",
+                           party == "LREM-PÉ" ~ "LREM",
+                           party == "TDP" ~ "Independent",
+                           TRUE ~ party))
 
 ministers_fr
 
@@ -738,7 +755,10 @@ ls(pattern = "ministers_") %>% length() == 27
 all_ministers <- mget(ls(pattern="ministers_")) %>%
               bind_rows() %>% 
   arrange(cntry) %>%
-  mutate(party = str_replace(party, pattern = "^$", replace = "unaffiliated")) %>% 
+  mutate(party = str_replace(party, pattern = "^$", replace = "unaffiliated"),
+         party = case_when(str_detect(party, pattern = "\\)") ~ str_extract(party, pattern = "\\([:alnum:]+\\)$") %>% 
+                             str_remove_all(pattern = "[\\(\\)]"),
+                           TRUE ~ party)) %>% 
   select(cntry, everything())
 
 all_ministers

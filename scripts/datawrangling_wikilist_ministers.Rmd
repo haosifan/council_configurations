@@ -53,10 +53,13 @@ fm = fuzzy match
 
 ```{r}
 f_findmatchposition_gm <- function(ministerparty, partylist){
+  
+  ministerparty_onlyalnum <- str_remove_all(ministerparty, pattern = "[^[:alnum:]]")
+  
   gm_abbr <- grepl(pattern = ministerparty, x = partylist$abbr)
   gm_name <- grepl(pattern = ministerparty, x = partylist$name)
   gm_nameen <- grepl(pattern = ministerparty, x = partylist$name_en)
-  gm_abbr2 <- str_detect(string = ministerparty, pattern = partylist$abbr2)
+  gm_abbr2 <- str_detect(string = ministerparty_onlyalnum, pattern = partylist$abbr2)
   
   gm <- tibble(gm_abbr = gm_abbr, gm_name = gm_name, gm_nameen = gm_nameen) %>% 
     rowwise() %>% 
@@ -78,12 +81,14 @@ f_findmatchposition_pm <- function(ministerparty, partylist){
   pm_abbr <- partylist$abbr %in% ministerparty
   pm_name <- partylist$name %in% ministerparty
   pm_nameen <- partylist$name_en %in% ministerparty
+  pm_abbr2 <- partylist$abbr2 %in% ministerparty
   
-  pm <- tibble(pm_abbr = pm_abbr, pm_name = pm_name, pm_nameen = pm_nameen) %>% 
+  pm <- tibble(pm_abbr = pm_abbr, pm_name = pm_name, pm_nameen = pm_nameen, pm_abbr2 = pm_abbr2) %>% 
     rowwise() %>% 
     mutate(any = case_when(pm_abbr == TRUE ~ TRUE,
                            pm_name == TRUE ~ TRUE,
                            pm_nameen == TRUE ~ TRUE,
+                           pm_abbr2 == TRUE ~ TRUE,
                            TRUE ~ FALSE)) %>% 
     pull(any)
 
@@ -130,8 +135,9 @@ f_linkposition <- function(cntry_ministers, cntry_parties){
     as_tibble() %>% 
     mutate(party = str_to_lower(party),
            party = case_when(grepl(party, pattern = "[Ii]ndependent|[Nn]ominated") ~ "unaffiliated",
-                             TRUE ~ party)) %>% 
-    select(id, party)
+                             TRUE ~ party),
+           party2 = str_remove_all(party, pattern = "[^[:alnum:]]")) %>% 
+    select(id, party, party2)
   
   p_to_link <- cntry_parties %>%
     as.data.frame() %>% 
@@ -143,7 +149,12 @@ f_linkposition <- function(cntry_ministers, cntry_parties){
     select(id, name, abbr, name_en, abbr2)
   
   ministers_with_pos <- m_to_link %>% 
-    mutate(pos = map_int(party, f_findmatchposition_pm, p_to_link),
+    mutate(pos = case_when(party == "unaffiliated" ~ 9999L,
+                           TRUE ~ NA_integer_),
+           pos = case_when(is.na(pos) ~ map_int(party, f_findmatchposition_pm, p_to_link),
+                           TRUE ~ pos),
+           pos = case_when(is.na(pos) ~ map_int(party2, f_findmatchposition_pm, p_to_link),
+                           TRUE ~ pos),
            pos = case_when(is.na(pos) ~ map_int(party, f_findmatchposition_gm, p_to_link),
                            TRUE ~ pos),
            pos = case_when(is.na(pos) ~ map_int(party, f_findmatchposition_fm, p_to_link),
@@ -177,8 +188,8 @@ nested_joined %>% pull(cntry)
 
 Noch offen:
 
-nominated by etc. -> Partei oder independent?
-pure Independents
+nominated by etc. -> Partei oder independent? (solved as independent)
+pure Independents (solved as independent)
 Achtung bei BGR ist der Join von NA falsch. NA party wird gematcht über abbr == NA. Lösbar über Austausch vorher von NAs zu "unaffiliated" etc. BGR noch mehr falsch (United Patriots wird schwierig)
 
 ```{r}
@@ -203,12 +214,74 @@ test
 
 # Playground
 
-SR in SVK steht für Sme Rodina
+SVK: SR steht für Sme Rodina
 BGR: United Patriots falsch gematched
 ESP: Independents werden als IU gematched; PSC-PSOE als Vox, Spanien ist irgendwie richtig schief
+  PSC-PSOE hat zwar die identische Abkürzung, aber Spiegelstrich statt Bindestrich (solved)
 FIN: Greens werden nicht gematched
 FRA: Nochmal schauen, ob scrapen ändern. Aktuell "later REM".
 POL: United Poland nicht gematched; Wird in Liste als Solidaric Poland geführt
+
+
+```{r}
+m_to_link <- ministers %>% 
+    filter(cntry == "ESP") %>% 
+    as.data.frame() %>% 
+    as_tibble() %>% 
+    mutate(party = str_to_lower(party),
+           party = case_when(grepl(party, pattern = "[Ii]ndependent|[Nn]ominated") ~ "unaffiliated",
+                             TRUE ~ party),
+           party2 = str_remove_all(party, pattern = "[^[:alnum:]]")) %>% 
+    select(id, party, party2)
+  
+  p_to_link <- parties %>%
+    filter(iso == "ESP") %>% 
+    as.data.frame() %>% 
+    as_tibble() %>% 
+    mutate(name = str_to_lower(name),
+           abbr = str_to_lower(abbr),
+           abbr2 = str_to_lower(abbr) %>% str_remove_all(pattern = "[^A-Za-z0-9]"),
+           name_en = str_to_lower(name_en)) %>% 
+    select(id, name, abbr, name_en, abbr2)
+
+
+m_to_link %>% 
+    mutate(pos = case_when(party == "unaffiliated" ~ 9999L,
+                           TRUE ~ NA_integer_),
+           pos = case_when(is.na(pos) ~ map_int(party, f_findmatchposition_pm, p_to_link),
+                           TRUE ~ pos),
+           pos = case_when(is.na(pos) ~ map_int(party2, f_findmatchposition_pm, p_to_link),
+                           TRUE ~ pos),
+           pos = case_when(is.na(pos) ~ map_int(party, f_findmatchposition_gm, p_to_link),
+                           TRUE ~ pos),
+           pos = case_when(is.na(pos) ~ map_int(party, f_findmatchposition_fm, p_to_link),
+                           TRUE ~ pos),
+           id = row_number())
+
+
+
+ministerparty <- m_to_link$party[21] %>% str_remove_all(pattern = stop_pattern)
+  
+  d_jc <- stringdist(ministerparty, p_to_link$name_en, method = "jaccard")
+  d_jw <- stringdist(ministerparty, p_to_link$name_en, method = "jw", )
+  d_osa <- stringdist(ministerparty, p_to_link$name_en, method = "osa", weight = c(1,1,1,1))
+  d_lcs <- stringdist(ministerparty, p_to_link$name_en, method = "lcs")
+  d_qg <- stringdist(ministerparty, p_to_link$name_en, method = "qgram")
+  
+  filterpos <- bind_cols(jaccard = d_jc, jw = d_jw, osa = d_osa, lcs = d_lcs, qgram = d_qg) %>% 
+    mutate(pos = row_number()) %>% 
+    pivot_longer(jaccard:qgram) %>% 
+    group_by(name) %>% 
+    arrange(name) %>% 
+    filter(value == min(value)) %>% 
+    ungroup() %>% 
+    count(pos) %>% 
+    filter(n == max(n) & n > 3)
+  
+
+
+```
+
 
 
 
