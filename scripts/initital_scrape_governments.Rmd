@@ -81,7 +81,10 @@ ministers_bg <- html %>%
   clean_names() %>% 
   tbl_df() %>% 
   select(name = na, portfolio = ministry_2, party = na_2) %>% 
-  mutate(cntry = "BG")
+  mutate(cntry = "BG",
+         party = case_when(str_detect(party, pattern = "\\)") ~ str_extract(party, pattern = "\\([:alnum:]+\\)$") %>% 
+                             str_remove_all(pattern = "[\\(\\)]"),
+                           TRUE ~ party))
 
 ministers_bg
 
@@ -716,7 +719,10 @@ ministers_es <- t %>%
   filter(name != "", !grepl(name, pattern = "Changes"), name != "Name") %>% 
   select(name, portfolio, party = party_2, took_office, left_office) %>% 
   mutate(cntry = "ES",
-         party = str_remove(party, pattern = "\\[.+$"))
+         party = str_remove(party, pattern = "\\[.+$"),
+         party = case_when(str_detect(party, pattern = "\\)") ~ str_extract(party, pattern = "\\([:alnum:]+\\)$") %>% 
+                             str_remove_all(pattern = "[\\(\\)]"),
+                           TRUE ~ party))
 
 ministers_es
 
@@ -755,10 +761,7 @@ ls(pattern = "ministers_") %>% length() == 27
 all_ministers <- mget(ls(pattern="ministers_")) %>%
               bind_rows() %>% 
   arrange(cntry) %>%
-  mutate(party = str_replace(party, pattern = "^$", replace = "unaffiliated"),
-         party = case_when(str_detect(party, pattern = "\\)") ~ str_extract(party, pattern = "\\([:alnum:]+\\)$") %>% 
-                             str_remove_all(pattern = "[\\(\\)]"),
-                           TRUE ~ party)) %>% 
+  mutate(party = str_replace(party, pattern = "^$", replace = "unaffiliated")) %>% 
   select(cntry, everything())
 
 all_ministers

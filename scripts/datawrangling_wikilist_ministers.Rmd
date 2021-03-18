@@ -177,6 +177,7 @@ nested_joined <- left_join(ministers_nested, parties_nested, by = c("cntry" = "i
 stop_pattern <- ministers$cntry %>% 
   unique() %>% 
   countrycode(origin = "iso3c", destination = "country.name") %>% 
+  str_to_lower() %>% 
   c(., "[:blank:]*[Tt]he[:blank:]","[:blank:]of[:blank:]","[:blank:]in[:blank:]") %>% 
   str_c(collapse = "|")
 ```
@@ -216,16 +217,14 @@ test
 
 SVK: SR steht für Sme Rodina
 BGR: United Patriots falsch gematched
-ESP: Independents werden als IU gematched; PSC-PSOE als Vox, Spanien ist irgendwie richtig schief
-  PSC-PSOE hat zwar die identische Abkürzung, aber Spiegelstrich statt Bindestrich (solved)
 FIN: Greens werden nicht gematched
-FRA: Nochmal schauen, ob scrapen ändern. Aktuell "later REM".
+FRA: DVG und DVD als diverse nicht gematched, was machen wir mit denen? (aktuell independent)
 POL: United Poland nicht gematched; Wird in Liste als Solidaric Poland geführt
 
 
 ```{r}
 m_to_link <- ministers %>% 
-    filter(cntry == "ESP") %>% 
+    filter(cntry == "FIN") %>% 
     as.data.frame() %>% 
     as_tibble() %>% 
     mutate(party = str_to_lower(party),
@@ -235,7 +234,7 @@ m_to_link <- ministers %>%
     select(id, party, party2)
   
   p_to_link <- parties %>%
-    filter(iso == "ESP") %>% 
+    filter(iso == "FIN") %>% 
     as.data.frame() %>% 
     as_tibble() %>% 
     mutate(name = str_to_lower(name),
@@ -260,7 +259,7 @@ m_to_link %>%
 
 
 
-ministerparty <- m_to_link$party[21] %>% str_remove_all(pattern = stop_pattern)
+ministerparty <- m_to_link$party[4] %>% str_remove_all(pattern = stop_pattern)
   
   d_jc <- stringdist(ministerparty, p_to_link$name_en, method = "jaccard")
   d_jw <- stringdist(ministerparty, p_to_link$name_en, method = "jw", )

@@ -4,18 +4,18 @@ AT;Werner Kogler;Vice-Chancellor of AustriaMinister for Arts, Culture, the Civil
 AT;Karoline Edtstadler;Chancellery minister for the EU and Constitution;7 January 2020 (2020-01-07);;ÖVP;NA;NA;NA;NA;NA;NA;NA
 AT;Susanne Raab;Chancellery minister for Women and Integration;7 January 2020 (2020-01-07);;ÖVP;NA;NA;NA;NA;NA;NA;NA
 AT;Karl Nehammer;Minister of the Interior;7 January 2020 (2020-01-07);;ÖVP;NA;NA;NA;NA;NA;NA;NA
-AT;Alexander Schallenberg;Minister for European and International Affairs;7 January 2020 (2020-01-07);;NA;NA;NA;NA;NA;NA;NA;NA
+AT;Alexander Schallenberg;Minister for European and International Affairs;7 January 2020 (2020-01-07);;Independent(ÖVP nominated);NA;NA;NA;NA;NA;NA;NA
 AT;Alma Zadić;Minister of Justice;7 January 2020 (2020-01-07);;Greens;NA;NA;NA;NA;NA;NA;NA
 AT;Rudolf Anschober;Minister of Social Affairs, Health, Care, and Consumer Protection;7 January 2020 (2020-01-07);;Greens;NA;NA;NA;NA;NA;NA;NA
 AT;Christine Aschbacher;Minister of Labour, Family and Youth;7 January 2020 (2020-01-07);9 January 2021;ÖVP;NA;NA;NA;NA;NA;NA;NA
 AT;Klaudia Tanner;Minister of Defence;7 January 2020 (2020-01-07);;ÖVP;NA;NA;NA;NA;NA;NA;NA
-AT;Heinz Faßmann;Minister of Education, Science, and Research;7 January 2020 (2020-01-07);;NA;NA;NA;NA;NA;NA;NA;NA
+AT;Heinz Faßmann;Minister of Education, Science, and Research;7 January 2020 (2020-01-07);;Independent(ÖVP nominated);NA;NA;NA;NA;NA;NA;NA
 AT;Leonore Gewessler;Minister of Climate Action, Environment, Energy, Mobility, Innovation and Technology[b];7 January 2020 (2020-01-07);;Greens;NA;NA;NA;NA;NA;NA;NA
 AT;Elisabeth Köstinger;Minister of Agriculture, Regions, and Tourism;7 January 2020 (2020-01-07);;ÖVP;NA;NA;NA;NA;NA;NA;NA
 AT;Margarete Schramböck;Minister of Digital and Economic Affairs;7 January 2020 (2020-01-07);;ÖVP;NA;NA;NA;NA;NA;NA;NA
 AT;Gernot Blümel;Minister of Finance;7 January 2020 (2020-01-07);;ÖVP;NA;NA;NA;NA;NA;NA;NA
 AT;Magnus Brunner;State secretary in the Ministry for Climate Action, Environment, Energy, Mobility, Innovation and Technology[b];7 January 2020 (2020-01-07);;ÖVP;NA;NA;NA;NA;NA;NA;NA
-AT;Andrea Mayer;State secretary in the Ministry for Arts, Culture, the Civil Service and Sport;20 May 2020 (2020-05-20);;NA;NA;NA;NA;NA;NA;NA;NA
+AT;Andrea Mayer;State secretary in the Ministry for Arts, Culture, the Civil Service and Sport;20 May 2020 (2020-05-20);;Independent(Greens nominated);NA;NA;NA;NA;NA;NA;NA
 AT;Ulrike Lunacek;State secretary in the Ministry for Arts, Culture, the Civil Service and Sport;7 January 2020 (2020-01-07);20 May 2020 (2020-05-20);Greens;NA;NA;NA;NA;NA;NA;NA
 BE;Alexander De Croo;Prime Minister;1 October 2020;Incumbent;Open Vld;NA;NA;NA;NA;NA;NA;NA
 BE;Pierre-Yves Dermagne;Minister of Economy and Labour;1 October 2020;Incumbent;PS;NA;NA;NA;NA;NA;NA;NA
@@ -293,7 +293,7 @@ GR;Sofia Voultepsi;Deputy Minister for Integration;NA;NA;New Democracy;NA;5 Janu
 HR;Andrej Plenković;Prime Minister;23 July 2020;NA;HDZ;NA;NA;NA;NA;NA;NA;NA
 HR;Tomo Medved;Croatian Veterans;23 July 2020;NA;HDZ;NA;NA;NA;NA;NA;NA;NA
 HR;Davor Božinović;Interior;23 July 2020;NA;HDZ;NA;NA;NA;NA;NA;NA;NA
-HR;Zdravko Marić;Finance;23 July 2020;NA;HDZ;NA;NA;NA;NA;NA;NA;NA
+HR;Zdravko Marić;Finance;23 July 2020;NA;Ind.(HDZ);NA;NA;NA;NA;NA;NA;NA
 HR;Boris Milošević;Minister without portfolio responsibility for Social Affairs and Human and Minority Rights;23 July 2020;NA;SDSS;NA;NA;NA;NA;NA;NA;NA
 HR;Marija Vučković;Agriculture;23 July 2020;NA;HDZ;NA;NA;NA;NA;NA;NA;NA
 HR;Darko Horvat;Construction, Spatial Planning and State Property;23 July 2020;NA;HDZ;NA;NA;NA;NA;NA;NA;NA
@@ -411,7 +411,7 @@ IT;Vittorio Colao;Minister for Technological Innovation and Digital Transition(w
 Assuntela Messina (PD)";NA
 IT;Massimo Garavaglia;Minister of Tourism(without portfolio);NA;NA;League;NA;NA;NA;NA;13 February 2021 – present;NA;NA
 IT;Erika Stefani;Minister for Disabilities(without portfolio);NA;NA;League;NA;NA;NA;NA;13 February 2021 – present;NA;NA
-LT;Ingrida Šimonytė;Prime Minister;November 25, 2020;Present;NA;NA;NA;NA;NA;NA;NA;NA
+LT;Ingrida Šimonytė;Prime Minister;November 25, 2020;Present;Independent (delegated by Homeland Union);NA;NA;NA;NA;NA;NA;NA
 LT;Kęstutis Navickas;Minister for Agriculture;December 11, 2020;Present;Homeland Union;NA;NA;NA;NA;NA;NA;NA
 LT;Simonas Kairys;Minister for Culture;December 11, 2020;Present;Liberal Movement;NA;NA;NA;NA;NA;NA;NA
 LT;Aušrinė Armonaitė;Minister for Economy and Innovation;December 11, 2020;Present;Freedom Party;NA;NA;NA;NA;NA;NA;NA
@@ -420,12 +420,12 @@ LT;Dainius Kreivys;Minister for Energy;December 11, 2020;Present;Homeland Union;
 LT;Simonas Gentvilas;Minister for Environment;December 11, 2020;Present;Liberal Movement;NA;NA;NA;NA;NA;NA;NA
 LT;Gintarė Skaistė;Minister for Finance;December 11, 2020;Present;Homeland Union;NA;NA;NA;NA;NA;NA;NA
 LT;Gabrielius Landsbergis;Minister for Foreign Affairs;December 11, 2020;Present;Homeland Union;NA;NA;NA;NA;NA;NA;NA
-LT;Arūnas Dulkys;Minister for Health;December 11, 2020;Present;NA;NA;NA;NA;NA;NA;NA;NA
+LT;Arūnas Dulkys;Minister for Health;December 11, 2020;Present;Independent (delegated by Homeland Union);NA;NA;NA;NA;NA;NA;NA
 LT;Agnė Bilotaitė;Minister for Interior;December 11, 2020;Present;Homeland Union;NA;NA;NA;NA;NA;NA;NA
 LT;Evelina Dobrovolska;Minister for Justice;December 11, 2020;Present;Freedom Party;NA;NA;NA;NA;NA;NA;NA
 LT;Arvydas Anušauskas;Minister for National Defence;December 11, 2020;Present;Homeland Union;NA;NA;NA;NA;NA;NA;NA
 LT;Monika Navickienė;Minister for Social Security and Labour;December 11, 2020;Present;Homeland Union;NA;NA;NA;NA;NA;NA;NA
-LT;Marius Skuodis;Minister for Transport and Communications;December 11, 2020;Present;NA;NA;NA;NA;NA;NA;NA;NA
+LT;Marius Skuodis;Minister for Transport and Communications;December 11, 2020;Present;Independent (delegated by Freedom Party);NA;NA;NA;NA;NA;NA;NA
 LU;Xavier Bettel;Prime Minister Minister of Communications and the Media  Minister of State  Minister of Administrative Reform;NA;NA;DP;NA;NA;NA;NA;NA;NA;NA
 LU;Etienne Schneider;First Deputy Prime Minister Minister of the Economy  Minister of Health;NA;NA;LSAP;NA;NA;NA;NA;NA;NA;NA
 LU;Félix Braz;Second Deputy Prime Minister Minister of Justice;NA;NA;DG;NA;NA;NA;NA;NA;NA;NA
@@ -654,11 +654,11 @@ SK;Eduard Heger(acting);Minister of Health;12 March 2021;Incumbent;OĽaNO;NA;NA;
 SK;Jaroslav Naď;Minister of Defence;21 March 2020;Incumbent;OĽaNO;NA;NA;NA;NA;NA;NA;NA
 SK;Mária Kolíková;Minister of Justice;21 March 2020;Incumbent;ZĽ;NA;NA;NA;NA;NA;NA;NA
 SK;Richard Sulík(acting);Minister of Foreign and European Affairs;21 March 2020;8 April 2020;SaS;NA;NA;NA;NA;NA;NA;NA
-SK;Ivan Korčok;Minister of Foreign and European Affairs;8 April 2020;Incumbent;SaS;NA;NA;NA;NA;NA;NA;NA
+SK;Ivan Korčok;Minister of Foreign and European Affairs;8 April 2020;Incumbent;Independent(SaS);NA;NA;NA;NA;NA;NA;NA
 SK;Branislav Gröhling;Minister of Education, Science, Research and Sport;21 March 2020;Incumbent;SaS;NA;NA;NA;NA;NA;NA;NA
 SK;Milan Krajniak;Minister of Labour, Social Affairs and Family;21 March 2020;17 March 2021;SR;NA;NA;NA;NA;NA;NA;NA
-SK;Andrej Doležal(acting);Minister of Labour, Social Affairs and Family;17 March 2021;Incumbent;SR;NA;NA;NA;NA;NA;NA;NA
-SK;Andrej Doležal;Minister of Transport and Construction;21 March 2020;Incumbent;SR;NA;NA;NA;NA;NA;NA;NA
+SK;Andrej Doležal(acting);Minister of Labour, Social Affairs and Family;17 March 2021;Incumbent;Independent(SR);NA;NA;NA;NA;NA;NA;NA
+SK;Andrej Doležal;Minister of Transport and Construction;21 March 2020;Incumbent;Independent(SR);NA;NA;NA;NA;NA;NA;NA
 SK;Natália Milanová;Minister of Culture;21 March 2020;Incumbent;OĽaNO;NA;NA;NA;NA;NA;NA;NA
 SK;Ján Mičovský;Minister of Agriculture and Rural Development;21 March 2020;Incumbent;OĽaNO;NA;NA;NA;NA;NA;NA;NA
 SK;Ján Budaj;Minister of Environment;21 March 2020;Incumbent;OĽaNO;NA;NA;NA;NA;NA;NA;NA
