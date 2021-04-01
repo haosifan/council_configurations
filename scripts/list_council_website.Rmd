@@ -15,36 +15,6 @@ library(diffdf)
 library(rvest)
 ```
 
-```{r url}
-url <- "http://publications.europa.eu/webapi/rdf/sparql?default-graph-uri=&query=define+sql%3Asignal-void-variables+0%0D%0APREFIX+euvoc%3A%3Chttp%3A%2F%2Fpublications.europa.eu%2Fontology%2Feuvoc%23%3E+%0D%0APREFIX+org%3A%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Forg%23%3E%0D%0Aprefix+skos%3A%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E+%0D%0APREFIX+vcard%3A%3Chttp%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23%3E%0D%0APREFIX+foaf%3A%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%3E+%0D%0ASELECT+distinct+%3ForgL+as+%3Fcountry+%3Fname+%3Fposition%0D%0AWHERE%7B%0D%0A%3Forg+org%3AsubOrganizationOf+%3ForgP.%0D%0AFILTER%28%3ForgP%3D%3Chttp%3A%2F%2Fpublications.europa.eu%2Fresource%2Fauthority%2Fcorporate-body%2FGOVREP%3E+%7C%7C+%3Forg%3D%3Chttp%3A%2F%2Fpublications.europa.eu%2Fresource%2Fdirectory%2Forganization%2FCONSIL%2FCONSIL_GOVREP_BEL.FED%3E%29%0D%0A%3Forg+skos%3AprefLabel+%3ForgL.+FILTER%28LANGMATCHES%28LANG%28%3ForgL%29%2C%22en%22%29%29%0D%0A%3FMS+org%3Aorganization+%3Forg%0D%0Aoptional%7B%3FMS+euvoc%3Aorder+%3Forder%7D%0D%0Aoptional%7B%3FMS+euvoc%3ApositionComplement+%3Fposition+FILTER%28LANGMATCHES%28LANG%28%3Fposition%29%2C%22en%22%29%29%7D%0D%0A%3Fperson+org%3AhasMembership+%3FMS.%0D%0A%3Fperson+foaf%3AfamilyName+%3FfamilyN.+%3Fperson+foaf%3AgivenName+%3FgivenN%0D%0AOPTIONAL%7B%3Fperson+euvoc%3AofficialFamilyName+%3FoffFamN.OPTIONAL%7B%3Fperson+euvoc%3AofficialGivenName+%3FoffGivenN%7D%7D%0D%0AOPTIONAL%7B%3Fperson+vcard%3AhasHonorificPrefix+%3Fhon.%3Fhon+skos%3AprefLabel+%3FhonValue.FILTER%28LANGMATCHES%28LANG%28%3FhonValue%29%2C%22en%22%29+%29%7D%0D%0Abind+%28concat%28%3FhonValue%2C%27+%27%2C%3FgivenN%2C%27+%27%2C%3FfamilyN%2C+if%28%3FoffFamName%2Cconcat%28%27+%28%27%2C%3FoffGivenN%2C%27+%27%2C%3FoffFamN%2C%27%29%27%29%2C%27%27%29%29as%3Fname%29%0D%0A%7DORDER+BY+%3Fcountry%3Forder+&format=text%2Fcsv&timeout=0&debug=on&run=+Run+Query+"
-```
-
-
-```{r readcsv}
-govmembers <- read_csv("../data/eu_gov_members_per_country.csv")
-```
-```{r check}
-equal_govmembers <- all(govmembers == read_csv(url))
-```
-
-```{r ifelsedownload}
-if (equal_govmembers == TRUE) {
-  message("No changes in European Governments")
-} else {
-  download.file(url, destfile = "../data/eu_gov_members_per_country.csv")
-  message("Attention: Changes in European Governments - Downloaded new file")
-}
-```
-```{r}
-if (equal_govmembers == TRUE) {
-  message("No changes in European Governments")
-} else {
-  of <- govmembers
-  nf <- read_csv(url)
-  diffdf(of, nf, suppress_warnings = TRUE, file = paste0("../data/log_", Sys.Date(),".txt"))
-}
-```
-
 # Zweiter Versuch über Wiki, da die Tabelle der EU nicht aktuell ist
 
 ```{r f_wikitemplate}
