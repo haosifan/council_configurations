@@ -1,0 +1,22 @@
+---
+title: "Dokumentation"
+author: "Stefan Haußner"
+date: "26 3 2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Dokumentation
+
+## Entscheidungen, die wir bzgl. Grenzfällen getroffen haben
+
+Bei manchen Parteien gibt es Zusatzinfos bei der Zuordnung. Wir haben diese bei einem Meeting besprochen und abgestimmt.
+
+  - Frankreich: DVG und DVD bleiben NI (muss noch umgesetzt werden, aktuell NA)
+  - nominated by o.Ä.: Werden zu NI
+  - Fälle mit ~ oder ->: Werden auch zu NI, sollten aber irgendwo erhalten bleiben
+  
+Grundsätzlich bietet sich eine neue Spalte mit der Partei an und eine Spalte, bei der die Infos weiterhin drinstehen.
