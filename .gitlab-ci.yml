@@ -2,7 +2,7 @@
 
 # A workflow for gitlab ci
 variables:
-  APT_PKGS: "libcurl4-openssl-dev libssl-dev libxt6"
+  APT_PKGS: "libcurl4-openssl-dev libssl-dev libxt6 libxml2-dev"
   #RENV_CONFIG_REPOS_OVERRIDE: "http://cran.r-project.org"
   RENV_PATHS_CACHE: ${CI_PROJECT_DIR}/cache
   RENV_PATHS_LIBRARY: ${CI_PROJECT_DIR}/renv/library
@@ -12,7 +12,7 @@ before_script:
   - apt-get install -y --no-install-recommends ${APT_PKGS}
   - export PATH="/usr/local/lib/R/site-library/littler/examples/:${PATH}"
   - echo "options(Ncpus = $(nproc --all))" >> /usr/local/lib/R/etc/Rprofile.site
-  - R -e  'install.packages(c("dplyr","readr","diffdf","xml2","rvest"))'
+  - R -e  'install.packages(c("dplyr","readr","diffdf","rvest"))'
   - mkdir -p ~/.local/share/renv
   - R -e 'renv::restore()'
   
