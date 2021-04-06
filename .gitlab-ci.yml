@@ -1,0 +1,26 @@
+# Example from https://blog.rmhogervorst.nl/blog/2020/09/24/running-an-r-script-on-a-schedule-gitlab/
+
+# A workflow for gitlab ci
+variables:
+  APT_PKGS: "libcurl4-openssl-dev libssl-dev libxt6"
+  #RENV_CONFIG_REPOS_OVERRIDE: "http://cran.r-project.org"
+  RENV_PATHS_CACHE: ${CI_PROJECT_DIR}/cache
+  RENV_PATHS_LIBRARY: ${CI_PROJECT_DIR}/renv/library
+
+before_script:
+  - apt-get update
+  - apt-get install -y --no-install-recommends ${APT_PKGS}
+  - export PATH="/usr/local/lib/R/site-library/littler/examples/:${PATH}"
+  - echo "options(Ncpus = $(nproc --all))" >> /usr/local/lib/R/etc/Rprofile.site
+  - R -e  'install.packages(c("tidyverse","diffdf","rvest"))'
+  - mkdir -p ~/.local/share/renv
+  - R -e 'renv::restore()'
+  
+# setup steps
+run:
+  tags:
+      - docker
+  image: rocker/r-ver:4.0.4
+  script:
+      - Rscript scripts/list_council_website.R
+
