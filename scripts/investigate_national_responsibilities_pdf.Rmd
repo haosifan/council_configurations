@@ -1,0 +1,84 @@
+---
+title: "investigate_national_responsibilities"
+author: "Stefan Haußner"
+date: "13 4 2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(rvest)
+```
+
+Ziel ist es, alle Teilnahmelisten der Council-Configurations der letzten Monate zu scrapen. Diese liegen lediglich als PDF vor.
+
+1. Task: Finde alle Links zu den PDFs auf der Council-Seite
+2. Task: Download aller PDFs
+3. Task: Parsen aller PDFs
+
+# Task 1: Finde alle Links zu TN-Listen PDFs auf Council-Seite
+
+## Find all links to Meeting-Pages
+
+Bisschen dämlich, aber ich finde nicht, wie man quasi auf "Next" klickt. Beizeiten abändern.
+
+```{r}
+searchurl <- "https://www.consilium.europa.eu/en/meetings/calendar/?Category=meeting&Page=1&dateFrom=2021%2F01%2F01&dateTo=2021%2F03%2F31&filters=2024&filters=2027&filters=2021&filters=2020&filters=2026&filters=2022&filters=2025&filters=2028&filters=2029&filters=2023&filters=2019&filters="
+
+html_landingpage <- read_html(searchurl)
+
+
+title <- html_landingpage %>% html_nodes(".d-block-mobile a") %>% html_text()
+link <- html_landingpage %>% html_nodes(".d-block-mobile a") %>% html_attr("href") %>% paste0("https://www.consilium.europa.eu",.)
+
+t1 <- tibble(title = title, link = link)
+
+# Seite 2
+
+searchurl <- "https://www.consilium.europa.eu/en/meetings/calendar/?Category=meeting&Page=2&dateFrom=2021%2F01%2F01&dateTo=2021%2F03%2F31&filters=2024&filters=2027&filters=2021&filters=2020&filters=2026&filters=2022&filters=2025&filters=2028&filters=2029&filters=2023&filters=2019"
+
+html_landingpage <- read_html(searchurl)
+
+
+title <- html_landingpage %>% html_nodes(".d-block-mobile a") %>% html_text()
+link <- html_landingpage %>% html_nodes(".d-block-mobile a") %>% html_attr("href") %>% paste0("https://www.consilium.europa.eu",.)
+t2 <- tibble(title = title, link = link)
+
+linklist_meetings <- bind_rows(t1,t2) %>% 
+  filter(!grepl(pattern = "Brussels", title)) %>% 
+  filter(!grepl(pattern = "members", title))
+```
+
+## Find Link to PDF
+
+Small workaround for multi
+
+```{r}
+find_pdflinks <- function(meeting_link){
+  
+  html_meeting <- read_html(meeting_link)
+  
+  linktext <- html_meeting %>% html_nodes(".link-pdf") %>% html_text()
+  link <- html_meeting %>% html_nodes(".link-pdf") %>% html_attr("href") %>% paste0("https://www.consilium.europa.eu",.)
+  
+  pdf_link <- tibble(linktext, link) %>% 
+    filter(grepl("List of participants", linktext)) %>% 
+    pull(link) %>% 
+    .[1]
+      
+  
+  return(pdf_link)
+}
+```
+
+Apply all links from meeting-linklist to function "find_pdflinks". Result is dataframe with titles, links to meeting-pages and link to pdf of list of participants. Could be complemented with Meeting information like dates etc.
+
+```{r}
+linklist_meetings %>% 
+  mutate(pdf_link = map_chr(link, find_pdflinks))
+```
+
