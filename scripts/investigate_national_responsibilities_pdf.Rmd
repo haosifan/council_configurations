@@ -12,6 +12,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 library(tidyverse)
 library(rvest)
+library(lubridate)
+library(glue)
 ```
 
 Ziel ist es, alle Teilnahmelisten der Council-Configurations der letzten Monate zu scrapen. Diese liegen lediglich als PDF vor.
@@ -24,38 +26,37 @@ Ziel ist es, alle Teilnahmelisten der Council-Configurations der letzten Monate 
 
 ## Find all links to Meeting-Pages
 
-Bisschen dämlich, aber ich finde nicht, wie man quasi auf "Next" klickt. Beizeiten abändern.
+potentiell bei längeren Zeiträumen *page = 1:4* ändern.
 
 ```{r}
-searchurl <- "https://www.consilium.europa.eu/en/meetings/calendar/?Category=meeting&Page=1&dateFrom=2021%2F01%2F01&dateTo=2021%2F03%2F31&filters=2024&filters=2027&filters=2021&filters=2020&filters=2026&filters=2022&filters=2025&filters=2028&filters=2029&filters=2023&filters=2019&filters="
 
-html_landingpage <- read_html(searchurl)
+search_urls <- tibble(page = 1:4) %>% 
+  mutate(searchurl = glue("https://www.consilium.europa.eu/en/meetings/calendar/?Category=meeting&Page={page}&dateFrom=2020%2F10%2F01&dateTo=2021%2F03%2F31&filters=2024&filters=2027&filters=2021&filters=2020&filters=2026&filters=2022&filters=2025&filters=2028&filters=2029&filters=2023&filters=2019")) %>% pull(searchurl)
 
+init_list <- function(searchurl){
 
-title <- html_landingpage %>% html_nodes(".d-block-mobile a") %>% html_text()
-link <- html_landingpage %>% html_nodes(".d-block-mobile a") %>% html_attr("href") %>% paste0("https://www.consilium.europa.eu",.)
+  html_landingpage <- read_html(searchurl)
+  
+  
+  title <- html_landingpage %>% html_nodes(".d-block-mobile a") %>% html_text()
+  link <- html_landingpage %>% html_nodes(".d-block-mobile a") %>% html_attr("href") %>% paste0("https://www.consilium.europa.eu",.)
+  
+  t <- tibble(title = title, link = link)
+  return(t)
+}
 
-t1 <- tibble(title = title, link = link)
-
-# Seite 2
-
-searchurl <- "https://www.consilium.europa.eu/en/meetings/calendar/?Category=meeting&Page=2&dateFrom=2021%2F01%2F01&dateTo=2021%2F03%2F31&filters=2024&filters=2027&filters=2021&filters=2020&filters=2026&filters=2022&filters=2025&filters=2028&filters=2029&filters=2023&filters=2019"
-
-html_landingpage <- read_html(searchurl)
-
-
-title <- html_landingpage %>% html_nodes(".d-block-mobile a") %>% html_text()
-link <- html_landingpage %>% html_nodes(".d-block-mobile a") %>% html_attr("href") %>% paste0("https://www.consilium.europa.eu",.)
-t2 <- tibble(title = title, link = link)
-
-linklist_meetings <- bind_rows(t1,t2) %>% 
+linklist_meetings <- map_dfr(search_urls, init_list) %>% 
   filter(!grepl(pattern = "Brussels", title)) %>% 
-  filter(!grepl(pattern = "members", title))
+  filter(!grepl(pattern = "members", title)) %>% 
+  filter(!grepl(pattern = "EU Chiefs of Defence", title)) %>% 
+  filter(!grepl(pattern = "Cooperation", title))
 ```
 
 ## Find Link to PDF
 
-Small workaround for multi
+Small workaround for multi-day councils with different lists of participants: Take only the first one.
+
+*Muss noch überarbeitet werden*
 
 ```{r}
 find_pdflinks <- function(meeting_link){
@@ -75,10 +76,31 @@ find_pdflinks <- function(meeting_link){
 }
 ```
 
+
 Apply all links from meeting-linklist to function "find_pdflinks". Result is dataframe with titles, links to meeting-pages and link to pdf of list of participants. Could be complemented with Meeting information like dates etc.
 
 ```{r}
-linklist_meetings %>% 
+linklist_meetings_pdf <- linklist_meetings %>% 
   mutate(pdf_link = map_chr(link, find_pdflinks))
 ```
+
+```{r}
+list_clean <- linklist_meetings_pdf %>% 
+  mutate(configuration = link %>% 
+           str_remove(pattern = "https://www.consilium.europa.eu/en/meetings/") %>% 
+           str_extract(pattern = "^[:alpha:]*"),
+         date = str_remove(link, pattern = "https://www.consilium.europa.eu/en/meetings/[:alpha:]*\\/"),
+         date = case_when(str_length(date) == 14 ~ str_sub(date, end = -4),
+                          TRUE ~ str_sub(date, end = -1)),
+         date = lubridate::ymd(date),
+         destfile = glue("../pdf_participants/{configuration}_{date}.pdf"))
+
+list_clean %>% count(configuration)
+```
+
+```{r}
+safe_download <- safely(~ download.file(.x , .y, mode = "wb"))
+walk2(list_clean$pdf_link, list_clean$destfile, safe_download)
+```
+
 
