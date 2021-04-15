@@ -14,6 +14,7 @@ library(tidyverse)
 library(rvest)
 library(lubridate)
 library(glue)
+library(pdftools)
 ```
 
 Ziel ist es, alle Teilnahmelisten der Council-Configurations der letzten Monate zu scrapen. Diese liegen lediglich als PDF vor.
@@ -98,9 +99,47 @@ list_clean <- linklist_meetings_pdf %>%
 list_clean %>% count(configuration)
 ```
 
+# Task 2: Download all pdf-files
+
 ```{r}
 safe_download <- safely(~ download.file(.x , .y, mode = "wb"))
-walk2(list_clean$pdf_link, list_clean$destfile, safe_download)
+
+#to download uncomment
+#walk2(list_clean$pdf_link, list_clean$destfile, safe_download)
 ```
 
+# Task 3: Parse of PDF
+
+```{r}
+eu_cntries <- c("Austria:", "Belgium:", "Bulgaria:", "Croatia:", "Republic of Cyprus:", "Czech Republic:", "Denmark:", "Estonia:", "Finland:", "France:", "Germany:", "Greece:", "Hungary:", "Ireland:", "Italy:", "Latvia:", "Lithuania:", "Luxembourg:", "Malta:", "Netherlands:", "Poland:", "Portugal:", "Romania:", "Slovakia:", "Slovenia:", "Spain:", "Sweden:", "Commission:")
+```
+
+Workflow:
+
+1. Splitte wenn in einer Zeile viele Blanks aufeinanderfolgen --> 2 Spalten
+2. Wenn du in Spalte 1 einen Ländernamen findest, schreibe diesen in die Variable cntry
+3. Fülle Zeilen die entweder in Spalte V1 oder cntry == NA sind, mit dem was darüber als letzter Wert ist --> schreibt Länder und Ministernamen überall in untere Zeilen.
+4. Filter Commission-members
+5. Gruppieren nach Namen und anschließendes collapsendes pasten, schreibt in neue Variable "office" den kompletten Titel.
+6. Unique wenn V1 (Name), cntry und office gleich sind. Bewirkt, dass die ursprünglichen Zeilen mit Office-Teilen rausfliegen.
+
+```{r}
+pdf_raw <- pdf_text("../pdf_participants/agrifish_2020-10-19.pdf")
+
+pdf_raw %>% 
+  read_lines() %>%
+  str_split(pattern = "[:blank:][:blank:][:blank:]*", simplify = TRUE) %>% 
+  as_tibble() %>% 
+  mutate(cntry = case_when(V1 %in% eu_cntries ~ V1,
+                           TRUE ~ NA_character_),
+         V1 = na_if(V1, "")) %>%
+  fill(cntry, .direction = "down") %>%
+  filter(cntry != "Commission:") %>% 
+  fill(V1, .direction = "down") %>% 
+  filter(V2 != "") %>% 
+  group_by(V1) %>% 
+  mutate(office = paste0(V2, collapse = " ")) %>% 
+  distinct_at(.vars = vars(V1, cntry, office))
+  
+```
 
