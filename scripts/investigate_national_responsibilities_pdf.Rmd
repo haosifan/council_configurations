@@ -124,22 +124,51 @@ Workflow:
 6. Unique wenn V1 (Name), cntry und office gleich sind. Bewirkt, dass die ursprünglichen Zeilen mit Office-Teilen rausfliegen.
 
 ```{r}
-pdf_raw <- pdf_text("../pdf_participants/agrifish_2020-10-19.pdf")
+f_extract_participants_pdf <- function(path){
 
-pdf_raw %>% 
-  read_lines() %>%
-  str_split(pattern = "[:blank:][:blank:][:blank:]*", simplify = TRUE) %>% 
-  as_tibble() %>% 
-  mutate(cntry = case_when(V1 %in% eu_cntries ~ V1,
-                           TRUE ~ NA_character_),
-         V1 = na_if(V1, "")) %>%
-  fill(cntry, .direction = "down") %>%
-  filter(cntry != "Commission:") %>% 
-  fill(V1, .direction = "down") %>% 
-  filter(V2 != "") %>% 
-  group_by(V1) %>% 
-  mutate(office = paste0(V2, collapse = " ")) %>% 
-  distinct_at(.vars = vars(V1, cntry, office))
+  date <- basename(path) %>%
+    str_sub(start = -14, end = -5)
   
+  abbr <- basename(path) %>%
+    str_remove(pattern = "_.{10}\\.pdf$")
+  
+  pdf_raw <- pdf_text(path)
+    
+  full_title <- pdf_raw %>% 
+    read_lines() %>%
+    str_split(pattern = "[:blank:][:blank:][:blank:]*", simplify = TRUE) %>% 
+    as_tibble() %>%
+    pull(V1) %>% .[1]
+  
+  participants <- pdf_raw %>% 
+    read_lines() %>%
+    str_split(pattern = "[:blank:][:blank:][:blank:]*", simplify = TRUE) %>% 
+    as_tibble() %>% 
+    mutate(cntry = case_when(V1 %in% eu_cntries ~ V1,
+                             TRUE ~ NA_character_),
+           V1 = na_if(V1, "")) %>%
+    fill(cntry, .direction = "down") %>%
+    filter(cntry != "Commission:") %>% 
+    fill(V1, .direction = "down") %>% 
+    filter(V2 != "") %>% 
+    group_by(V1) %>% 
+    mutate(office = paste0(V2, collapse = " ")) %>% 
+    distinct_at(.vars = vars(V1, cntry, office)) %>% 
+    rename(name = V1) %>% 
+    mutate(cntry = str_remove(cntry, ":"),
+           date = date,
+           abbr = abbr,
+           full_title = full_title) %>% 
+    select(abbr, full_title, date, cntry, name, office)
+  return(participants)
+}
+
+```
+
+Apply on all pdfs
+
+```{r}
+paths_to_pdfs <- paste0("../pdf_participants/",dir("../pdf_participants/"))
+map_dfr(paths_to_pdfs, f_extract_participants_pdf) %>% write_excel_csv2("../test.csv")
 ```
 
