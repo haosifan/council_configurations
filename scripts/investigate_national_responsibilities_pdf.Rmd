@@ -112,6 +112,23 @@ safe_download <- safely(~ download.file(.x , .y, mode = "wb"))
 
 ```{r}
 eu_cntries <- c("Austria:", "Belgium:", "Bulgaria:", "Croatia:", "Republic of Cyprus:", "Czech Republic:", "Denmark:", "Estonia:", "Finland:", "France:", "Germany:", "Greece:", "Hungary:", "Ireland:", "Italy:", "Latvia:", "Lithuania:", "Luxembourg:", "Malta:", "Netherlands:", "Poland:", "Portugal:", "Romania:", "Slovakia:", "Slovenia:", "Spain:", "Sweden:", "Commission:")
+
+regex_remove_title <- c("Informal videoconference of Ministers responsible for ",
+                        "Informal videoconference of Ministers of the ", 
+                        "REV[:digit:]*\\*",
+                        "Brussels, ",
+                        "BRUSSELS",
+                        "LUXEMBOURG",
+                        "Luxembourg",
+                        "[:digit:]*",
+                        "PARTICIPANTS",
+                        "October",
+                        lubridate::month(1:12, 
+                                         label = TRUE, 
+                                         abbr = FALSE, 
+                                         locale = Sys.setlocale("LC_TIME", "English")) %>% 
+                          as.character()) %>% 
+  glue_collapse(sep = "|")
 ```
 
 Workflow:
@@ -134,12 +151,15 @@ f_extract_participants_pdf <- function(path){
   
   pdf_raw <- pdf_text(path)
     
-  full_title <- pdf_raw %>% 
+  full_title <- pdf_text(path) %>% 
     read_lines() %>%
     str_split(pattern = "[:blank:][:blank:][:blank:]*", simplify = TRUE) %>% 
     as_tibble() %>%
-    pull(V1) %>% .[1]
-  
+    pull(V1) %>% 
+    .[1:3] %>%
+    glue_collapse(sep = " ") %>% 
+    str_remove_all(pattern = regex_remove_title)
+    
   participants <- pdf_raw %>% 
     read_lines() %>%
     str_split(pattern = "[:blank:][:blank:][:blank:]*", simplify = TRUE) %>% 
@@ -169,6 +189,14 @@ Apply on all pdfs
 
 ```{r}
 paths_to_pdfs <- paste0("../pdf_participants/",dir("../pdf_participants/"))
-map_dfr(paths_to_pdfs, f_extract_participants_pdf) %>% write_excel_csv2("../test.csv")
+map_dfr(paths_to_pdfs, f_extract_participants_pdf) %>% write_excel_csv2("../temp.csv")
+
+list_participants <- read_csv2("../temp.csv") %>% 
+  mutate(full_title = str_remove_all(full_title, regex_remove_title))
+```
+
+```{r}
+list_participants %>% 
+  count(abbr, cntry, office)
 ```
 
