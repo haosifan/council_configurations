@@ -1,0 +1,13 @@
+name: shiny_discover_councilconfigurations
+title: shiny_discover_councilconfigurations
+username:
+account: shaussner
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4070817
+bundleId: 4551302
+url: https://shaussner.shinyapps.io/shiny_discover_councilconfigurations/
+when: 1620055800.45685
+lastSyncTime: 1620055800.45685
+asMultiple: FALSE
+asStatic: FALSE
