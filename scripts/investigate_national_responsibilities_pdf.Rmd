@@ -27,12 +27,23 @@ Ziel ist es, alle Teilnahmelisten der Council-Configurations der letzten Monate 
 
 ## Find all links to Meeting-Pages
 
-potentiell bei längeren Zeiträumen *page = 1:4* ändern.
+Suche maximale Seitenanzahl. Bei erweiterter Suchanfrage muss Link erneuert werden.
 
 ```{r}
+maxpage <- read_html("https://www.consilium.europa.eu/en/meetings/calendar/?Category=meeting&Page=1&dateFrom=2019%2F07%2F01&dateTo=2022%2F06%2F08&filters=2024&filters=2027&filters=2021&filters=2020&filters=2026&filters=2022&filters=2025&filters=2028&filters=2029&filters=2023&filters=2019&filters=") %>% 
+  html_nodes(".pagination-lg a") %>% 
+  html_attr("data-page") %>% 
+  as_tibble() %>% 
+  mutate(value = parse_integer(value)) %>% 
+  filter(value == max(value, na.rm = TRUE)) %>% 
+  distinct() %>% 
+  pull(value)
+```
 
-search_urls <- tibble(page = 1:4) %>% 
-  mutate(searchurl = glue("https://www.consilium.europa.eu/en/meetings/calendar/?Category=meeting&Page={page}&dateFrom=2020%2F10%2F01&dateTo=2021%2F03%2F31&filters=2024&filters=2027&filters=2021&filters=2020&filters=2026&filters=2022&filters=2025&filters=2028&filters=2029&filters=2023&filters=2019")) %>% pull(searchurl)
+
+```{r}
+search_urls <- tibble(page = 1:maxpage) %>% 
+  mutate(searchurl = glue("https://www.consilium.europa.eu/en/meetings/calendar/?Category=meeting&Page={page}&dateFrom=2019%2F07%2F01&dateTo=2022%2F06%2F08&filters=2024&filters=2027&filters=2021&filters=2020&filters=2026&filters=2022&filters=2025&filters=2028&filters=2029&filters=2023&filters=2019&filters=")) %>% pull(searchurl)
 
 init_list <- function(searchurl){
 
@@ -50,7 +61,8 @@ linklist_meetings <- map_dfr(search_urls, init_list) %>%
   filter(!grepl(pattern = "Brussels", title)) %>% 
   filter(!grepl(pattern = "members", title)) %>% 
   filter(!grepl(pattern = "EU Chiefs of Defence", title)) %>% 
-  filter(!grepl(pattern = "Cooperation", title))
+  filter(!grepl(pattern = "Cooperation", title)) %>% 
+  filter(!grepl(pattern = "Joint", title))
 ```
 
 ## Find Link to PDF
