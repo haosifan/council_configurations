@@ -106,7 +106,8 @@ list_clean <- linklist_meetings_pdf %>%
          date = case_when(str_length(date) == 14 ~ str_sub(date, end = -4),
                           TRUE ~ str_sub(date, end = -1)),
          date = lubridate::ymd(date),
-         destfile = glue("../pdf_participants/{configuration}_{date}.pdf"))
+         destfile = glue("../pdf_participants/{configuration}_{date}.pdf")) %>% 
+  filter(configuration != "international")
 
 list_clean %>% count(configuration)
 ```
@@ -117,7 +118,7 @@ list_clean %>% count(configuration)
 safe_download <- safely(~ download.file(.x , .y, mode = "wb"))
 
 #to download uncomment
-#walk2(list_clean$pdf_link, list_clean$destfile, safe_download)
+walk2(list_clean$pdf_link, list_clean$destfile, safe_download)
 ```
 
 # Task 3: Parse of PDF
