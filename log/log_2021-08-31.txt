@@ -1,0 +1,32 @@
+Differences found between the objects!
+
+A summary is given below.
+
+Not all Values Compared Equal
+All rows are shown in table below
+
+  =============================
+   Variable  No of Differences 
+  -----------------------------
+   gov_name          1         
+     link            1         
+  -----------------------------
+
+
+All rows are shown in table below
+
+  ================================================
+   VARIABLE  ..ROWNUMBER..    BASE      COMPARE   
+  ------------------------------------------------
+   gov_name       27        Löfven II  Löfven III 
+  ------------------------------------------------
+
+
+All rows are shown in table below
+
+  ===============================================================================================
+   VARIABLE  ..ROWNUMBER..                BASE                              COMPARE              
+  -----------------------------------------------------------------------------------------------
+     link         27        https://en.wikipedia.org/wiki/...  https://en.wikipedia.org/wiki/... 
+  -----------------------------------------------------------------------------------------------
+
