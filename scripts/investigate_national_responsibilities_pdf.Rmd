@@ -203,9 +203,16 @@ Apply on all pdfs
 ```{r}
 paths_to_pdfs <- paste0("../pdf_participants/",dir("../pdf_participants/"))
 map_dfr(paths_to_pdfs, f_extract_participants_pdf) %>% write_excel_csv2("../temp.csv")
+```
 
+
+```{r}
 list_participants <- read_csv2("../temp.csv") %>% 
   mutate(full_title = str_remove_all(full_title, regex_remove_title))
+
+month.name
+
+str_remove_all(list_participants$full_title, pattern = month.name)
 ```
 
 ```{r}

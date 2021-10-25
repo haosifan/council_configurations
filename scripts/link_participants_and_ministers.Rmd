@@ -1,0 +1,33 @@
+---
+title: "link participants and ministers"
+author: "Stefan Haußner"
+date: "14 10 2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(fuzzyjoin)
+```
+
+```{r}
+list_participants <- read_csv2("../temp.csv") %>% 
+  mutate(isocntry = countrycode::countrycode(cntry, origin = 'country.name', destination = 'iso3c'),
+         matchprep = str_remove_all(name,pattern = "^M[rs]"),
+         matchprep = str_remove_all(matchprep, pattern = "[^[:alnum:]]"),
+         matchprep = str_to_lower(matchprep))
+
+list_ministers <- read_csv2("../data/list_ministers_assigned.csv") %>% 
+  mutate(matchprep = str_remove_all(name_minister, pattern = "[^[:alnum:]]"),
+         matchprep = str_to_lower(matchprep))
+
+fuzzyjoin::stringdist_left_join(list_participants, list_ministers, by = c("matchprep" = "matchprep")) %>% 
+  filter(is.na(name_minister))
+
+
+```
+

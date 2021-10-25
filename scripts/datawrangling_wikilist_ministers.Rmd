@@ -214,6 +214,7 @@ ministers_assigned <- nested_joined %>%
          party_nameen = name_en, 
          orientation:eu_stance)
 
+#write_excel_csv2(ministers_assigned, "../data/list_ministers_assigned.csv")
 ```
 
 # Playground

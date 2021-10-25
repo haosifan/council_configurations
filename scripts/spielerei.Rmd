@@ -1,0 +1,73 @@
+---
+title: "Spielerei"
+author: "Stefan Haußner"
+date: "13 10 2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(ggforce)
+library(ggtext)
+```
+
+
+https://blog.datawrapper.de/gendercolor/
+
+```{r}
+male_female <- read_csv2("../temp.csv") %>% 
+  mutate(female_male = case_when(str_detect(name, pattern = "^Mr") ~ "male",
+                                 str_detect(name, pattern = "^Ms") ~ "female",
+                                 TRUE ~ NA_character_)) %>% 
+  filter(!is.na(female_male)) %>% 
+  group_by(abbr, female_male) %>% 
+  summarise(n = n()) %>% 
+  mutate(pct=n/sum(n)*100,
+         pct = case_when(female_male == "female" ~ pct*-1,
+                         TRUE ~ pct)) %>% 
+  filter(abbr != "gac_NA.pdf")
+  
+male_female_plot <- male_female %>% 
+  select(-n) %>% 
+  pivot_wider(names_from = female_male, values_from = pct) %>% 
+  ungroup() %>% 
+  mutate(abbr = factor(abbr, ordered = TRUE),
+         abbr = fct_reorder(abbr, female))
+```
+
+
+
+
+```{r}
+theme_set(theme_minimal(base_size = 14))
+
+theme_update(panel.grid.minor.x = element_blank(),
+             panel.grid.major.x = element_blank(),
+             axis.text.x = element_blank(),
+             plot.title = element_markdown(face = 'bold'),
+             plot.title.position = 'plot')
+
+ggplot(male_female_plot)+
+  geom_linerange(aes(xmin = female, xmax = -0.1, y = abbr), size = 3, color = "#9370db")+
+  geom_linerange(aes(xmin = male, xmax = 0.1, y = abbr), size = 3, color = "#1fc3aa")+
+  geom_point(aes(x = female, y = abbr), color = "#9370db", size = 13)+
+  geom_point(aes(x = male, y = abbr), color = "#1fc3aa", size = 13)+
+  geom_text(aes(x = female, y = abbr, label = glue::glue("{as.character(round(female*-1,0))}%")), color = "white")+
+  geom_text(aes(x = male, y = abbr, label = glue::glue("{as.character(round(male,0))}%")), color = "white")+
+  geom_segment(aes(x = -5, xend = -40, y = 11.2, yend = 11.2), arrow = arrow(length = unit(0.1, "inches")), size = 1)+
+  geom_segment(aes(x = 5, xend = 40, y = 11.2, yend = 11.2), arrow = arrow(length = unit(0.1, "inches")), size = 1)+
+  geom_label(aes(label="more women", x=(-5-40)/2), y = 11.2, size=4, color = "#9370db")+
+  geom_label(aes(label="more men", x=(5+40)/2), y = 11.2, size=4, color = "#1fc3aa")+
+  expand_limits(y = 12.5)+
+  labs(x = NULL, y = NULL,
+       caption = "Data: lists of participants to council meetings since July 2019\nhttps://www.consilium.europa.eu/en/meetings/calendar/",
+       title = "Ratio of <i style='color:#9370db;'>women</i> to <i style='color:#1fc3aa;'>men</i> in meetings of the Council of the EU")
+
+ggsave("../misc/graph_genderratio.png", dpi = 300, width = 11, height = 8, bg = "white")
+  
+```
+
