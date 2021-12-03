@@ -129,7 +129,7 @@ f_findmatchposition_fm <- function(ministerparty, partylist){
 ```
 
 
-## Link position to with ministers
+## Link position with ministers
 
 ```{r}
 f_linkposition <- function(cntry_ministers, cntry_parties){

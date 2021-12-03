@@ -1,0 +1,70 @@
+---
+title: "prep_inoffice_dates"
+author: "Stefan Haußner"
+date: "24 11 2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(lubridate)
+```
+
+
+```{r}
+d_prep_dates <- read_csv2("../data/list_scraped_gov_with_party.csv") %>% 
+  select(cntry, name, took_office, left_office, period, in_office, term_of_office) %>% 
+  separate(in_office, into = c("in_office_start","in_office_end"), sep = " *[–|-] *") %>% 
+  separate(period, into = c("period_start","period_end"), sep = " [–|-] *") %>% 
+  separate(term_of_office, into = c("term_of_office_start","term_of_office_end"), sep = " [–|-] *") %>% 
+  mutate(start = coalesce(took_office, period_start, in_office_start, term_of_office_start),
+         end = coalesce(left_office, period_end, in_office_end, term_of_office_end)) %>% 
+  select(cntry, name, took_office = start, left_office = end) %>%
+  mutate(took_office = str_remove(took_office, pattern = "[:blank:]\\(.*\\)$"),
+         left_office = str_remove(left_office, pattern = "[:blank:]\\(.*\\)$"),
+         left_office = na_if(left_office, ""))
+
+```
+
+
+```{r}
+d_prep_dates %>%
+  mutate(took_office_f = map(took_office, .f = guess_formats, c("mdy", "dmy")),
+         took_office_f = replace_na(took_office_f, ""),
+         took_office_f = map_chr(took_office_f, .f = ~.x[1]),
+         took_office_f = na_if(took_office_f, "")) %>% 
+  pull(took_office_f) %>% 
+  unique() %>% 
+  .[c(1,2,4,9,10)]
+
+d_prep_dates %>% 
+  mutate(took_office_f = parse_date_time(took_office, c("%d %Om %Y", 
+                                                        "%d %Om %Y", 
+                                                        "%Om %d%y", 
+                                                        "%Om %d, %Y", 
+                                                        "%d %Om, %Y")),
+         left_office_f = parse_date_time(left_office, c("%d %Om %Y", 
+                                                        "%d %Om %Y", 
+                                                        "%Om %d%y", 
+                                                        "%Om %d, %Y", 
+                                                        "%d %Om, %Y"))) %>% 
+  write_excel_csv2("../data/ministers_inoffice.csv")
+  
+```
+
+
+```{r}
+mutate(took_office = str_remove(took_office, pattern = "[:blank:]\\(.*\\)$"),
+         took_office_new = lubridate::dmy(took_office),
+         took_office_new2 = mdy(took_office)) %>% 
+  select(cntry, name, took_office, took_office_new, took_office_new2)
+
+read_csv2("../data/list_scraped_gov_with_party.csv") %>% 
+  mutate(took_office = str_remove(took_office, pattern = "[:blank:]\\(.*\\)$")) %>% 
+  mutate(guess = lubridate::guess_formats(took_office, c("mdy", "dmy", "Bdy", "bdY", "bdy")))
+```
+
