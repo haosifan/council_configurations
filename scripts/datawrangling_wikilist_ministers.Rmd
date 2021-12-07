@@ -39,7 +39,8 @@ ministers <- ministers %>%
                            (party == "SR" & cntry == "SVK") ~ "Sme Rodina",
                            party == "KPV LV" ~ "PCL",
                            TRUE ~ party),
-         party = str_replace_all(party, pattern = "\u013d", replacement =  "L"))
+         party = str_replace_all(party, pattern = "\u013d", replacement =  "L"),
+         party = str_replace(party, pattern = "Ind\\.", replacement = "Independent"))
 
 parties <- parties %>% 
   group_by(iso) %>% 
@@ -214,10 +215,12 @@ ministers_assigned <- nested_joined %>%
          party_nameen = name_en, 
          orientation:eu_stance)
 
+ministers_assigned %>% 
+  filter(is.na(party_fullname))
+
 #write_excel_csv2(ministers_assigned, "../data/list_ministers_assigned.csv")
 ```
 
-# Playground
 
 
 

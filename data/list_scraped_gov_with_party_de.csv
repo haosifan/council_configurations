@@ -1,26 +1,62 @@
 ﻿cntry;name;portfolio;took_office;left_office;party;period;in_office;state_secs;ministry;term;deputies;position
 AT;Sebastian Kurz;Chancellor of Austria[a];7 January 2020 (2020-01-07);11 October 2021 (2021-10-11);ÖVP;NA;NA;NA;NA;NA;NA;NA
-AT;Werner Kogler;Vice-Chancellor of AustriaMinister for Arts, Culture, the Civil Service and Sport;7 January 2020 (2020-01-07);;Greens;NA;NA;NA;NA;NA;NA;NA
-AT;Karoline Edtstadler;Chancellery minister for the EU and Constitution;7 January 2020 (2020-01-07);;ÖVP;NA;NA;NA;NA;NA;NA;NA
-AT;Susanne Raab;Chancellery minister for Women and Integration;7 January 2020 (2020-01-07);;ÖVP;NA;NA;NA;NA;NA;NA;NA
-AT;Karl Nehammer;Minister of the Interior;7 January 2020 (2020-01-07);;ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Werner Kogler;Vice-Chancellor of AustriaMinister for Arts, Culture, the Civil Service and Sport;7 January 2020 (2020-01-07);	11 October 2021 (2021-10-11);Greens;NA;NA;NA;NA;NA;NA;NA
+AT;Karoline Edtstadler;Chancellery minister for the EU and Constitution;7 January 2020 (2020-01-07);	11 October 2021 (2021-10-11);ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Susanne Raab;Chancellery minister for Women and Integration;7 January 2020 (2020-01-07);	11 October 2021 (2021-10-11);ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Karl Nehammer;Minister of the Interior;7 January 2020 (2020-01-07);	11 October 2021 (2021-10-11);ÖVP;NA;NA;NA;NA;NA;NA;NA
 AT;Alexander Schallenberg;Minister for European and International Affairs;7 January 2020 (2020-01-07);11 October 2021 (2021-10-11);ÖVP;NA;NA;NA;NA;NA;NA;NA
-AT;Alma Zadić;Minister of Justice;7 January 2020 (2020-01-07);;Greens;NA;NA;NA;NA;NA;NA;NA
+AT;Alma Zadić;Minister of Justice;7 January 2020 (2020-01-07);	11 October 2021 (2021-10-11);Greens;NA;NA;NA;NA;NA;NA;NA
 AT;Rudolf Anschober;Minister of Social Affairs, Health, Care, and Consumer Protection;7 January 2020 (2020-01-07);13 April 2021 (2021-04-13);Greens;NA;NA;NA;NA;NA;NA;NA
-AT;Wolfgang Mückstein;Minister of Social Affairs, Health, Care, and Consumer Protection;19 April 2021 (2021-04-19);;Greens;NA;NA;NA;NA;NA;NA;NA
+AT;Wolfgang Mückstein;Minister of Social Affairs, Health, Care, and Consumer Protection;19 April 2021 (2021-04-19);	11 October 2021 (2021-10-11);Greens;NA;NA;NA;NA;NA;NA;NA
 AT;Christine Aschbacher;Minister of Labour, Family and Youth;7 January 2020 (2020-01-07);9 January 2021 (2021-01-09);ÖVP;NA;NA;NA;NA;NA;NA;NA
-AT;Martin Kocher;Minister of Labour, Family and Youth;11 January 2021 (2021-01-11);;ÖVP;NA;NA;NA;NA;NA;NA;NA
-AT;Klaudia Tanner;Minister of Defence;7 January 2020 (2020-01-07);;ÖVP;NA;NA;NA;NA;NA;NA;NA
-AT;Heinz Faßmann;Minister of Education, Science, and Research;7 January 2020 (2020-01-07);;Independent(ÖVP nominated);NA;NA;NA;NA;NA;NA;NA
-AT;Leonore Gewessler;Minister of Climate Action, Environment, Energy, Mobility, Innovation and Technology[b];7 January 2020 (2020-01-07);;Greens;NA;NA;NA;NA;NA;NA;NA
-AT;Elisabeth Köstinger;Minister of Agriculture, Regions, and Tourism;7 January 2020 (2020-01-07);;ÖVP;NA;NA;NA;NA;NA;NA;NA
-AT;Margarete Schramböck;Minister of Digital and Economic Affairs;7 January 2020 (2020-01-07);;ÖVP;NA;NA;NA;NA;NA;NA;NA
-AT;Gernot Blümel;Minister of Finance;7 January 2020 (2020-01-07);;ÖVP;NA;NA;NA;NA;NA;NA;NA
-AT;Magnus Brunner;State secretary in the Ministry for Climate Action, Environment, Energy, Mobility, Innovation and Technology[b];7 January 2020 (2020-01-07);;ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Martin Kocher;Minister of Labour, Family and Youth;11 January 2021 (2021-01-11);	11 October 2021 (2021-10-11);ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Klaudia Tanner;Minister of Defence;7 January 2020 (2020-01-07);	11 October 2021 (2021-10-11);ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Heinz Faßmann;Minister of Education, Science, and Research;7 January 2020 (2020-01-07);	11 October 2021 (2021-10-11);Independent(ÖVP nominated);NA;NA;NA;NA;NA;NA;NA
+AT;Leonore Gewessler;Minister of Climate Action, Environment, Energy, Mobility, Innovation and Technology[b];7 January 2020 (2020-01-07);	11 October 2021 (2021-10-11);Greens;NA;NA;NA;NA;NA;NA;NA
+AT;Elisabeth Köstinger;Minister of Agriculture, Regions, and Tourism;7 January 2020 (2020-01-07);	11 October 2021 (2021-10-11);ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Margarete Schramböck;Minister of Digital and Economic Affairs;7 January 2020 (2020-01-07);	11 October 2021 (2021-10-11);ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Gernot Blümel;Minister of Finance;7 January 2020 (2020-01-07);	11 October 2021 (2021-10-11);ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Magnus Brunner;State secretary in the Ministry for Climate Action, Environment, Energy, Mobility, Innovation and Technology[b];7 January 2020 (2020-01-07);	11 October 2021 (2021-10-11);ÖVP;NA;NA;NA;NA;NA;NA;NA
 AT;Ulrike Lunacek;State secretary in the Ministry for Arts, Culture, the Civil Service and Sport;7 January 2020 (2020-01-07);20 May 2020 (2020-05-20);Greens;NA;NA;NA;NA;NA;NA;NA
-AT;Andrea Mayer;State secretary in the Ministry for Arts, Culture, the Civil Service and Sport;20 May 2020 (2020-05-20);;Independent(Greens nominated);NA;NA;NA;NA;NA;NA;NA
+AT;Andrea Mayer;State secretary in the Ministry for Arts, Culture, the Civil Service and Sport;20 May 2020 (2020-05-20);	11 October 2021 (2021-10-11);Independent(Greens nominated);NA;NA;NA;NA;NA;NA;NA
+AT;Alexander Schallenberg;Chancellor of Austria[a];2021-10-11;2021-12-06;ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Werner Kogler;Vice-Chancellor of AustriaMinister for Arts, Culture, the Civil Service and Sport;2020-01-07;2021-12-06;Greens;NA;NA;NA;NA;NA;NA;NA
+AT;Susanne Raab;Chancellery minister for Women and Integration;2020-01-07;2021-12-06;ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Susanne Raab;Minister for Women, Family, Youth and Integration;2021-02-01;2021-12-06;ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Karoline Edtstadler;Chancellery minister for the EU and Constitution;2020-01-07;2021-12-06;ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Gernot Blümel;Minister of Finance;2020-01-07;2021-12-06;ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Heinz Faßmann;Minister of Education, Science, and Research;2020-01-07;2021-12-06;Independent(ÖVP nominated);NA;NA;NA;NA;NA;NA;NA
+AT;Leonore Gewessler;Minister of Climate Action, Environment, Energy, Mobility, Innovation and Technology[b];2020-01-07;2021-12-06;Greens;NA;NA;NA;NA;NA;NA;NA
+AT;Martin Kocher;Minister of Labour;2021-01-11;2021-12-06;ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Elisabeth Köstinger;Minister of Agriculture, Regions, and Tourism;2020-01-07;2021-12-06;ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Michael Linhart;Minister for European and International Affairs;2021-10-11;2021-12-06;ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Wolfgang Mückstein;Minister of Social Affairs, Health, Care, and Consumer Protection;2021-04-19;2021-12-06;Greens;NA;NA;NA;NA;NA;NA;NA
+AT;Karl Nehammer;Minister of the Interior;2020-01-07;2021-12-06;ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Margarete Schramböck;Minister of Digital and Economic Affairs;2020-01-07;2021-12-06;ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Klaudia Tanner;Minister of Defence;2020-01-07;2021-12-06;ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Alma Zadić;Minister of Justice;2020-01-07;2021-12-06;Greens;NA;NA;NA;NA;NA;NA;NA
+AT;Magnus Brunner;State secretary in the Ministry for Climate Action, Environment, Energy, Mobility, Innovation and Technology[b];2020-01-07;2021-12-06;ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Andrea Mayer;State secretary in the Ministry for Arts, Culture, the Civil Service and Sport;2020-05-20;2021-12-06;Independent(Greens nominated);NA;NA;NA;NA;NA;NA;NA
+AT;Karl Nehammer;Chancellor of Austria[a];6 December 2021 (2021-12-06);incumbent;ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Werner Kogler;Vice-Chancellor of AustriaMinister for Arts, Culture, the Civil Service and Sport;7 January 2020 (2020-01-07);incumbent;Greens;NA;NA;NA;NA;NA;NA;NA
+AT;Susanne Raab;Chancellery minister for Women and Integration;7 January 2020 (2020-01-07);incumbent;ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Susanne Raab;Minister for Women, Family, Youth and Integration;1 February 2021 (2021-02-01);incumbent;ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Karoline Edtstadler;Chancellery minister for the EU and Constitution;7 January 2020 (2020-01-07);incumbent;ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Magnus Brunner;Minister of Finance;6 December 2021 (2021-12-06);incumbent;ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Martin Polaschek;Minister of Education, Science, and Research;6 December 2021 (2021-12-06);incumbent;Independent(ÖVP nominated);NA;NA;NA;NA;NA;NA;NA
+AT;Leonore Gewessler;Minister of Climate Action, Environment, Energy, Mobility, Innovation and Technology[b];7 January 2020 (2020-01-07);incumbent;Greens;NA;NA;NA;NA;NA;NA;NA
+AT;Martin Kocher;Minister of Labour;11 January 2021 (2021-01-11);incumbent;ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Elisabeth Köstinger;Minister of Agriculture, Regions, and Tourism;7 January 2020 (2020-01-07);incumbent;ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Alexander Schallenberg;Minister for European and International Affairs;6 December 2021 (2021-12-06);incumbent;ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Wolfgang Mückstein;Minister of Social Affairs, Health, Care, and Consumer Protection;19 April 2021 (2021-04-19);incumbent;Greens;NA;NA;NA;NA;NA;NA;NA
+AT;Gerhard Karner;Minister of the Interior;6 December 2021 (2021-12-06);incumbent;ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Margarete Schramböck;Minister of Digital and Economic Affairs;7 January 2020 (2020-01-07);incumbent;ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Klaudia Tanner;Minister of Defence;7 January 2020 (2020-01-07);incumbent;ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Alma Zadić;Minister of Justice;7 January 2020 (2020-01-07);incumbent;Greens;NA;NA;NA;NA;NA;NA;NA
+AT;Claudia Plakolm;State secretary in the Chancellery for Youth and Generations;6 December 2021 (2021-12-06);incumbent;ÖVP;NA;NA;NA;NA;NA;NA;NA
+AT;Andrea Mayer;State secretary in the Ministry for Arts, Culture, the Civil Service and Sport;20 May 2020 (2020-05-20);incumbent;Independent(Greens nominated);NA;NA;NA;NA;NA;NA;NA
 BE;Alexander De Croo;Prime Minister;1 October 2020;Incumbent;Open Vld;NA;NA;NA;NA;NA;NA;NA
-BE;Pierre-Yves Dermagne;Minister of Economy and Employment;1 October 2020;Incumbent;Parti Socialiste (Belgium);NA;NA;NA;NA;NA;NA;NA
+BE;Pierre-Yves Dermagne;Minister of Economy and Employment;1 October 2020;Incumbent;Parti Socialiste;NA;NA;NA;NA;NA;NA;NA
 BE;Sophie Wilmès (deputised by David Clarinval);Minister of Foreign Affairs, European Affairs, Foreign Trade and Federal Cultural Institutions;1 October 2020;Incumbent;Mouvement Réformateur;NA;NA;NA;NA;NA;NA;NA
 BE;Georges Gilkinet;Minister of Mobility;1 October 2020;Incumbent;Ecolo;NA;NA;NA;NA;NA;NA;NA
 BE;Vincent Van Peteghem;Minister of Finance, in charge of the Coordination of the Fight against Fraud;1 October 2020;Incumbent;CD&V;NA;NA;NA;NA;NA;NA;NA
@@ -28,13 +64,13 @@ BE;Frank Vandenbroucke;Minister of Social Affairs and Public Health;1 October 20
 BE;Petra De Sutter;Minister of Civil Service, Public Enterprises, Telecommunication and Postal Services;1 October 2020;Incumbent;Groen;NA;NA;NA;NA;NA;NA;NA
 BE;Vincent Van Quickenborne;Minister of Justice and the North Sea;1 October 2020;Incumbent;Open Vld;NA;NA;NA;NA;NA;NA;NA
 BE;David Clarinval;Minister of the Small Businesses, Self-Employed, SMEs and Agriculture,  Institutional Reforms and Democratic Renewal;1 October 2020;Incumbent;Mouvement Réformateur;NA;NA;NA;NA;NA;NA;NA
-BE;Karine Lalieux;Minister of Pensions and Social Integration, in charge of Persons with Disabilities, Combating Poverty and Beliris;1 October 2020;Incumbent;Parti Socialiste (Belgium);NA;NA;NA;NA;NA;NA;NA
-BE;Ludivine Dedonder;Minister of Defence;1 October 2020;Incumbent;Parti Socialiste (Belgium);NA;NA;NA;NA;NA;NA;NA
+BE;Karine Lalieux;Minister of Pensions and Social Integration, in charge of Persons with Disabilities, Combating Poverty and Beliris;1 October 2020;Incumbent;Parti Socialiste;NA;NA;NA;NA;NA;NA;NA
+BE;Ludivine Dedonder;Minister of Defence;1 October 2020;Incumbent;Parti Socialiste;NA;NA;NA;NA;NA;NA;NA
 BE;Zakia Khattabi;Minister of Climate, Environment, Sustainable Development and Green Deal;1 October 2020;Incumbent;Ecolo;NA;NA;NA;NA;NA;NA;NA
 BE;Annelies Verlinden;Minister of the Interior, Institutional Reforms and Democratic Renewal;1 October 2020;Incumbent;CD&V;NA;NA;NA;NA;NA;NA;NA
 BE;Meryame Kitir;Minister of Development Cooperation and Urban Policy;1 October 2020;Incumbent;Vooruit;NA;NA;NA;NA;NA;NA;NA
 BE;Tinne Van der Straeten;Minister of Energy;1 October 2020;Incumbent;Groen;NA;NA;NA;NA;NA;NA;NA
-BE;Thomas Dermine;Secretary of State for Recovery and Strategic Investments, in charge of Science PolicyDeputy to the Minister of the Economy and Employment;1 October 2020;Incumbent;Parti Socialiste (Belgium);NA;NA;NA;NA;NA;NA;NA
+BE;Thomas Dermine;Secretary of State for Recovery and Strategic Investments, in charge of Science PolicyDeputy to the Minister of the Economy and Employment;1 October 2020;Incumbent;Parti Socialiste;NA;NA;NA;NA;NA;NA;NA
 BE;Mathieu Michel (politician);Secretary of State for Digitization, in charge of Administrative Simplification, Privacy and Buildings AdministrationDeputy to the Prime Minister;1 October 2020;Incumbent;Mouvement Réformateur;NA;NA;NA;NA;NA;NA;NA
 BE;Sarah Schlitz;Secretary of State for Gender Equality, Equal Opportunities and DiversityDeputy to the Minister of Mobility;1 October 2020;Incumbent;Ecolo;NA;NA;NA;NA;NA;NA;NA
 BE;Sammy Mahdi;Secretary of State for Asylum and Migration, in charge of the National LotteryDeputy to the Minister of the Interior, Institutional Reforms and Democratic Renewal;1 October 2020;Incumbent;CD&V;NA;NA;NA;NA;NA;NA;NA
@@ -231,35 +267,26 @@ EE;Erki Savisaar;Minister of the Environment;18 November 2021;Incumbent;Centre;N
 EE;Tanel Kiik;Minister of Health and Labour;26 January 2021;Incumbent;Centre;NA;NA;NA;NA;NA;NA;NA
 EE;Signe Riisalo;Minister of Social Protection;26 January 2021;Incumbent;Reform;NA;NA;NA;NA;NA;NA;NA
 EE;Urmas Kruuse;Minister of Rural Affairs;26 January 2021;Incumbent;Reform;NA;NA;NA;NA;NA;NA;NA
-ES;Pedro Sánchez;Prime Minister;2 June 2018;NA;PSOE;NA;NA;NA;NA;NA;NA;NA
-ES;;;;NA;unaffiliated;NA;NA;NA;NA;NA;NA;NA
-ES;Carmen Calvo;Deputy Prime MinisterMinister of the Presidency, Relations with the Cortes and Equality;7 June 2018;NA;PSOE;NA;NA;NA;NA;NA;NA;NA
-ES;Josep Borrell;Minister of Foreign Affairs, European Union and Cooperation;7 June 2018;NA;PSOE;NA;NA;NA;NA;NA;NA;NA
-ES;Dolores Delgado;Minister of Justice;7 June 2018;NA;Independent;NA;NA;NA;NA;NA;NA;NA
-ES;Margarita Robles;Minister of Defence;7 June 2018;NA;Independent;NA;NA;NA;NA;NA;NA;NA
-ES;María Jesús Montero;Minister of Finance;7 June 2018;NA;PSOE;NA;NA;NA;NA;NA;NA;NA
-ES;Fernando Grande-Marlaska;Minister of the Interior;7 June 2018;NA;Independent;NA;NA;NA;NA;NA;NA;NA
-ES;José Luis Ábalos;Minister of Development;7 June 2018;NA;PSOE;NA;NA;NA;NA;NA;NA;NA
-ES;Isabel Celaá;Minister of Education and Vocational TrainingSpokesperson of the Government;7 June 2018;NA;PSOE;NA;NA;NA;NA;NA;NA;NA
-ES;Magdalena Valerio;Minister of Labour, Migration and Social Security;7 June 2018;NA;PSOE;NA;NA;NA;NA;NA;NA;NA
-ES;Reyes Maroto;Minister of Industry, Trade and Tourism;7 June 2018;NA;PSOE;NA;NA;NA;NA;NA;NA;NA
-ES;Luis Planas;Minister of Agriculture, Fisheries and Food;7 June 2018;NA;PSOE;NA;NA;NA;NA;NA;NA;NA
-ES;Meritxell Batet;Minister of Territorial Policy and Civil Service;7 June 2018;NA;PSC–PSOE;NA;NA;NA;NA;NA;NA;NA
-ES;Teresa Ribera;Minister for the Ecological Transition;7 June 2018;NA;PSOE;NA;NA;NA;NA;NA;NA;NA
-ES;Màxim Huerta;Minister of Culture and Sports;7 June 2018;NA;Independent;NA;NA;NA;NA;NA;NA;NA
-ES;Nadia Calviño;Minister of Economy and Business;7 June 2018;NA;Independent;NA;NA;NA;NA;NA;NA;NA
-ES;Carmen Montón;Minister of Health, Consumer Affairs and Social Welfare;7 June 2018;NA;PSOE;NA;NA;NA;NA;NA;NA;NA
-ES;Pedro Duque;Minister of Science, Innovation and Universities;7 June 2018;NA;Independent;NA;NA;NA;NA;NA;NA;NA
-ES;Changes June 2018[edit];Changes June 2018[edit];Changes June 2018[edit];NA;Changes June 2018[edit];NA;NA;NA;NA;NA;NA;NA
-ES;Name;Portfolio;Took office;NA;Party;NA;NA;NA;NA;NA;NA;NA
-ES;José Guirao;Minister of Culture and Sports;14 June 2018;NA;Independent;NA;NA;NA;NA;NA;NA;NA
-ES;Changes September 2018[edit];Changes September 2018[edit];Changes September 2018[edit];NA;Changes September 2018[edit];NA;NA;NA;NA;NA;NA;NA
-ES;Name;Portfolio;Took office;NA;Party;NA;NA;NA;NA;NA;NA;NA
-ES;María Luisa Carcedo;Minister of Health, Consumer Affairs and Social Welfare;12 September 2018;NA;PSOE;NA;NA;NA;NA;NA;NA;NA
-ES;Changes 2019[edit];Changes 2019[edit];Changes 2019[edit];NA;Changes 2019[edit];NA;NA;NA;NA;NA;NA;NA
-ES;Name;Portfolio;Took office;NA;Party;NA;NA;NA;NA;NA;NA;NA
-ES;Luis Planas took on the ordinary discharge of duties from 20 May 2019 to 13 January 2020.[31];Minister of Territorial Policy and Civil Service;Luis Planas took on the ordinary discharge of duties from 20 May 2019 to 13 January 2020.[31];NA;Luis Planas took on the ordinary discharge of duties from 20 May 2019 to 13 January 2020.[31];NA;NA;NA;NA;NA;NA;NA
-ES;Margarita Robles took on the ordinary discharge of duties from 30 November 2019 to 13 January 2020.[32];Minister of Foreign Affairs, European Union and Cooperation;Margarita Robles took on the ordinary discharge of duties from 30 November 2019 to 13 January 2020.[32];NA;Margarita Robles took on the ordinary discharge of duties from 30 November 2019 to 13 January 2020.[32];NA;NA;NA;NA;NA;NA;NA
+ES;Pedro Sánchez;Prime Minister;2 June 2018;8 January 2020;PSOE;NA;NA;NA;NA;NA;NA;NA
+ES;Carmen Calvo;Deputy Prime MinisterMinister of the Presidency, Relations with the Cortes and Equality;7 June 2018;13 January 2020;PSOE;NA;NA;NA;NA;NA;NA;NA
+ES;Josep Borrell;Minister of Foreign Affairs, European Union and Cooperation;7 June 2018;30 November 2019;PSOE;NA;NA;NA;NA;NA;NA;NA
+ES;Dolores Delgado;Minister of Justice;7 June 2018;13 January 2020;Independent;NA;NA;NA;NA;NA;NA;NA
+ES;Margarita Robles;Minister of Defence;7 June 2018;13 January 2020;Independent;NA;NA;NA;NA;NA;NA;NA
+ES;María Jesús Montero;Minister of Finance;7 June 2018;13 January 2020;PSOE;NA;NA;NA;NA;NA;NA;NA
+ES;Fernando Grande-Marlaska;Minister of the Interior;7 June 2018;13 January 2020;Independent;NA;NA;NA;NA;NA;NA;NA
+ES;José Luis Ábalos;Minister of Development;7 June 2018;13 January 2020;PSOE;NA;NA;NA;NA;NA;NA;NA
+ES;Isabel Celaá;Minister of Education and Vocational TrainingSpokesperson of the Government;7 June 2018;13 January 2020;PSOE;NA;NA;NA;NA;NA;NA;NA
+ES;Magdalena Valerio;Minister of Labour, Migration and Social Security;7 June 2018;13 January 2020;PSOE;NA;NA;NA;NA;NA;NA;NA
+ES;Reyes Maroto;Minister of Industry, Trade and Tourism;7 June 2018;13 January 2020;PSOE;NA;NA;NA;NA;NA;NA;NA
+ES;Luis Planas;Minister of Agriculture, Fisheries and Food;7 June 2018;13 January 2020;PSOE;NA;NA;NA;NA;NA;NA;NA
+ES;Meritxell Batet;Minister of Territorial Policy and Civil Service;7 June 2018;20 May 2019;PSC–PSOE;NA;NA;NA;NA;NA;NA;NA
+ES;Teresa Ribera;Minister for the Ecological Transition;7 June 2018;13 January 2020;PSOE;NA;NA;NA;NA;NA;NA;NA
+ES;Màxim Huerta;Minister of Culture and Sports;7 June 2018;13 June 2018;Independent;NA;NA;NA;NA;NA;NA;NA
+ES;Nadia Calviño;Minister of Economy and Business;7 June 2018;13 January 2020;Independent;NA;NA;NA;NA;NA;NA;NA
+ES;Carmen Montón;Minister of Health, Consumer Affairs and Social Welfare;7 June 2018;11 September 2018;PSOE;NA;NA;NA;NA;NA;NA;NA
+ES;Pedro Duque;Minister of Science, Innovation and Universities;7 June 2018;13 January 2020;Independent;NA;NA;NA;NA;NA;NA;NA
+ES;José Guirao;Minister of Culture and Sports;14 June 2018;13 January 2020;Independent;NA;NA;NA;NA;NA;NA;NA
+ES;María Luisa Carcedo;Minister of Health, Consumer Affairs and Social Welfare;12 September 2018;13 January 2020;PSOE;NA;NA;NA;NA;NA;NA;NA
 ES;Pedro Sánchez;Prime Minister;8 January 2020;Incumbent;PSOE;NA;NA;NA;NA;NA;NA;NA
 ES;Carmen Calvo;First Deputy Prime MinisterMinister of the Presidency, Relations with the Cortes and Democratic Memory;13 January 2020;12 July 2021;PSOE;NA;NA;NA;NA;NA;NA;NA
 ES;Pablo Iglesias;Second Deputy Prime MinisterMinister of Social Rights and 2030 Agenda;13 January 2020;31 March 2021;Podemos;NA;NA;NA;NA;NA;NA;NA
@@ -291,7 +318,6 @@ ES;Ione Belarra;Minister of Social Rights and 2030 Agenda;31 March 2021;Incumben
 ES;Nadia Calviño;First Deputy Prime Minister[d]Minister of Economic Affairs and Digital Transformation;12 July 2021;Incumbent;Independent;NA;NA;NA;NA;NA;NA;NA
 ES;Yolanda Díaz;Second Deputy Prime Minister[d]Minister of Labour and Social Economy;12 July 2021;Incumbent;PCE;NA;NA;NA;NA;NA;NA;NA
 ES;Teresa Ribera;Third Deputy Prime Minister[d]Minister for the Ecological Transition and the Demographic Challenge;12 July 2021;Incumbent;PSOE;NA;NA;NA;NA;NA;NA;NA
-ES;Discontinued on 12 July 2021.[24];Fourth Deputy Prime Minister[d];Discontinued on 12 July 2021.[24];Discontinued on 12 July 2021.[24];Discontinued on 12 July 2021.;NA;NA;NA;NA;NA;NA;NA
 ES;José Manuel Albares;Minister of Foreign Affairs, European Union and Cooperation;12 July 2021;Incumbent;PSOE;NA;NA;NA;NA;NA;NA;NA
 ES;Pilar Llop;Minister of Justice;12 July 2021;Incumbent;PSOE;NA;NA;NA;NA;NA;NA;NA
 ES;María Jesús Montero;Minister of Finance and Civil Service[d];12 July 2021;Incumbent;PSOE;NA;NA;NA;NA;NA;NA;NA
@@ -465,9 +491,32 @@ IE;Simon Harris;Minister for Further and Higher Education, Research, Innovation 
 IE;Eamon Ryan;Minister for the Environment, Climate and CommunicationsMinister for Transport;27 June 2020;present;Green Party;NA;NA;NA;NA;NA;NA;NA
 IE;Catherine Martin;Minister for Tourism, Culture, Arts, Gaeltacht, Sport and Media;27 June 2020;present;Green Party;NA;NA;NA;NA;NA;NA;NA
 IE;Roderic O'Gorman;Minister for Children, Equality, Disability, Integration and Youth;27 June 2020;present;Green Party;NA;NA;NA;NA;NA;NA;NA
-IE;Jack Chambers;Government Chief WhipMinister of State for Gaeltacht and SportMinister of State at the Department of Defence;27 June 2020;present;FF;NA;NA;NA;NA;NA;NA;NA
+IE;Jack Chambers;Government Chief WhipMinister of State for Gaeltacht and SportMinister of State at the Department of Defence;27 June 2020;present;Fianna Fáil;NA;NA;NA;NA;NA;NA;NA
 IE;Pippa Hackett;Minister of State for Land Use and Biodiversity;27 June 2020;present;Green;NA;NA;NA;NA;NA;NA;NA
-IE;Hildegarde Naughton;Minister of State for International and Road Transport and Logistics;27 June 2020;present;FG;NA;NA;NA;NA;NA;NA;NA
+IE;Hildegarde Naughton;Minister of State for International and Road Transport and Logistics;27 June 2020;present;Fine Gael;NA;NA;NA;NA;NA;NA;NA
+IE;Leo Varadkar;Taoiseach;2017-06-14;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
+IE;Leo Varadkar;Minister for Defence;2017-06-14;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
+IE;Frances Fitzgerald;Tánaiste;2017-06-14;2017-11-30;Fine Gael;NA;NA;NA;NA;2017[40];NA;NA
+IE;Frances Fitzgerald;Minister for Business, Enterprise and Innovation[a];2017-06-14;2017-11-30;Fine Gael;NA;NA;NA;NA;2017[40];NA;NA
+IE;Paschal Donohoe;Minister for Finance;2017-06-14;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
+IE;Paschal Donohoe;Minister for Public Expenditure and Reform;2017-06-14;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
+IE;Simon Coveney;Minister for Foreign Affairs and Trade;2017-06-14;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
+IE;Charles Flanagan;Minister for Justice and Equality;2017-06-14;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
+IE;Simon Harris;Minister for Health;2017-06-14;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
+IE;Heather Humphreys;Minister for Culture, Heritage and the Gaeltacht[b];2017-06-14;2020-06-27;Fine Gael;NA;NA;NA;NA;2017;NA;NA
+IE;Michael Creed;Minister for Agriculture, Food and the Marine;2017-06-14;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
+IE;Richard Bruton;Minister for Education and Skills;2017-06-14;2018-10-11;Fine Gael;NA;NA;NA;NA;2017–2018;NA;NA
+IE;Denis Naughten;Minister for Communications, Climate Action and Environment;2017-06-14;2018-10-11;Independent;NA;NA;NA;NA;2017–2018;NA;NA
+IE;Shane Ross;Minister for Transport, Tourism and Sport;2017-06-14;2020-06-27;Independent;NA;NA;NA;NA;2017–2020;NA;NA
+IE;Katherine Zappone;Minister for Children and Youth Affairs;2017-06-14;2020-06-27;Independent;NA;NA;NA;NA;2017–2020;NA;NA
+IE;Michael Ring;Minister for Rural and Community Development[c];2017-06-14;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
+IE;Regina Doherty;Minister for Employment Affairs and Social Protection[d];2017-06-14;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
+IE;Eoghan Murphy;Minister for Housing, Planning and Local Government[e];2017-06-14;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
+IE;Simon Coveney;Tánaiste;2017-11-30;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
+IE;Heather Humphreys;Minister for Business, Enterprise and Innovation;2017-11-30;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
+IE;Josepha Madigan;Minister for Culture, Heritage and the Gaeltacht;2017-11-30;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
+IE;Richard Bruton;Minister for Communications, Climate Action and Environment;2018-10-11;2020-06-27;Fine Gael;NA;NA;NA;NA;2018–2020;NA;NA
+IE;Joe McHugh;Minister for Education and Skills;2018-10-11;2020-06-27;Fine Gael;NA;NA;NA;NA;2018–2020;NA;NA
 IT;Giuseppe Conte;Prime Minister;5 September 2019;13 February 2021;Independent;NA;NA;NA;NA;NA;"Undersecretaries
 Mario Turco (M5S) – Delegated to Economic Planning and Investment
 Andrea Martella (PD) – Delegated to Publishing and Information
@@ -951,6 +1000,66 @@ PL;Jadwiga Emilewicz;Minister of Entrepreneurship and Technology;9 January 2018;
 PL;Jerzy Kwieciński;Minister of Investment and Economic Development;9 January 2018;15 November 2019;Independent;NA;NA;NA;NA;NA;NA;NA
 PL;Łukasz Szumowski;Minister of Health;9 January 2018;15 November 2019;Independent;NA;NA;NA;NA;NA;NA;NA
 PL;Jan Krzysztof Ardanowski;Minister of Agriculture and Rural Development;20 June 2018;15 November 2019;Law and Justice;NA;NA;NA;NA;NA;NA;NA
+PT;António Costa;Prime Minister;NA;NA;Socialist Party;NA;26 November 2015 – 26 October 2019;NA;NA;NA;NA;NA
+PT;Augusto Santos Silva;Minister of Foreign Affairs;NA;NA;Socialist Party;NA;26 November 2015 – 26 October 2019;NA;NA;NA;NA;NA
+PT;Maria Manuel Leitão Marques;Minister of Premiership and Administrative Modernization;NA;NA;Socialist Party;NA;26 November 2015 – 18 February 2019;NA;NA;NA;NA;NA
+PT;Mariana Vieira da Silva;Minister of Premiership and Administrative Modernization;NA;NA;Socialist Party;NA;18 February 2019 – 26 October 2019;NA;NA;NA;NA;NA
+PT;Mário Centeno;Minister of Finance;NA;NA;Independent;NA;26 November 2015 – 26 October 2019;NA;NA;NA;NA;NA
+PT;José Alberto Azeredo Lopes;Minister of National Defence;NA;NA;Independent;NA;26 November 2015 – 12 October 2018;NA;NA;NA;NA;NA
+PT;João Gomes Cravinho;Minister of National Defence;NA;NA;Independent;NA;15 October 2018 – 26 October 2019;NA;NA;NA;NA;NA
+PT;Constança Urbano de Sousa;Minister of Internal Administration;NA;NA;Independent;NA;26 November 2015 – 18 October 2017;NA;NA;NA;NA;NA
+PT;Eduardo Cabrita;Minister of Internal Administration;NA;NA;Socialist Party;NA;21 October 2017 – 26 October 2019;NA;NA;NA;NA;NA
+PT;Francisca Van Dunem;Minister of Justice;NA;NA;Independent;NA;26 November 2015 – 26 October 2019;NA;NA;NA;NA;NA
+PT;Manuel Caldeira Cabral;"Minister of Economy
+(position abolished on 15 October 2018)";NA;NA;Independent;NA;26 November 2015 – 15 October 2018;NA;NA;NA;NA;NA
+PT;Eduardo Cabrita;"Deputy Minister
+(position abolished on 15 October 2018)";NA;NA;Socialist Party;NA;26 November 2015 – 21 October 2017;NA;NA;NA;NA;NA
+PT;Pedro Siza Vieira;"Deputy Minister
+(position abolished on 15 October 2018)";NA;NA;Socialist Party;NA;21 October 2017 – 15 October 2018;NA;NA;NA;NA;NA
+PT;Pedro Siza Vieira;"Deputy Minister and of Economy
+(position created on 15 October 2018)";NA;NA;Socialist Party;NA;15 October 2018 – 26 October 2019;NA;NA;NA;NA;NA
+PT;João Soares;Minister of Culture;NA;NA;Socialist Party;NA;26 November 2015 – 8 April 2016;NA;NA;NA;NA;NA
+PT;Luís Filipe Castro Mendes;Minister of Culture;NA;NA;Independent;NA;14 April 2016 – 15 October 2018;NA;NA;NA;NA;NA
+PT;Graça Fonseca;Minister of Culture;NA;NA;Socialist Party;NA;15 October 2018 – 26 October 2019;NA;NA;NA;NA;NA
+PT;Manuel Heitor;MInister of Science, Technology and Higher Education;NA;NA;Independent;NA;26 November 2015 – 26 October 2019;NA;NA;NA;NA;NA
+PT;Tiago Brandão Rodrigues;Minister of Education;NA;NA;Independent;NA;26 November 2015 – 26 October 2019;NA;NA;NA;NA;NA
+PT;José António Vieira da Silva;Minister of Labour, Solidarity and Social Security;NA;NA;Socialist Party;NA;26 November 2015 – 26 October 2019;NA;NA;NA;NA;NA
+PT;Adalberto Campos Fernandes;Minister of Health;NA;NA;Independent;NA;26 November 2015 – 15 October 2018;NA;NA;NA;NA;NA
+PT;Marta Temido;Minister of Health;NA;NA;Independent;NA;15 October 2018 – 26 October 2019;NA;NA;NA;NA;NA
+PT;Pedro Marques;"Minister of Planning and Infrastructure
+(position abolished on 18 February 2019)";NA;NA;Socialist Party;NA;26 November 2015 – 18 February 2019;NA;NA;NA;NA;NA
+PT;Nelson de Souza;"Minister of Planning
+(position created on 18 February 2019)";NA;NA;Socialist Party;NA;18 February 2019 – 26 October 2019;NA;NA;NA;NA;NA
+PT;Pedro Nuno Santos;"Minister of Infrastructure and Housing
+(position created on 18 February 2019)";NA;NA;Socialist Party;NA;18 February 2019 – 26 October 2019;NA;NA;NA;NA;NA
+PT;João Pedro Matos Fernandes;"Minister of Environment
+(position abolished on 15 October 2018)";NA;NA;Independent;NA;26 November 2015 – 15 October 2018;NA;NA;NA;NA;NA
+PT;João Pedro Matos Fernandes;"Minister of Environment and Energy Transition
+(position created on 15 October 2018)";NA;NA;Independent;NA;15 October 2018 – 26 October 2019;NA;NA;NA;NA;NA
+PT;Luís Capoulas Santos;Minister of Agriculture;NA;NA;Socialist Party;NA;26 November 2015 – 26 October 2019;NA;NA;NA;NA;NA
+PT;Ana Paula Vitorino;Minister of Sea;NA;NA;Socialist Party;NA;26 November 2015 – 26 October 2019;NA;NA;NA;NA;NA
+PT;António Costa;Prime Minister;NA;NA;Socialist Party;NA;26 October 2019 – present;NA;NA;NA;NA;NA
+PT;Pedro Siza Vieira;Minister of State, Economy and Digital Transition;NA;NA;Socialist Party;NA;26 October 2019 – present;NA;NA;NA;NA;NA
+PT;Augusto Santos Silva;Minister of State and Foreign Affairs;NA;NA;Socialist Party;NA;26 October 2019 – present;NA;NA;NA;NA;NA
+PT;Mariana Vieira da Silva;Minister of State and the Premiership;NA;NA;Socialist Party;NA;26 October 2019 – present;NA;NA;NA;NA;NA
+PT;Mário Centeno;Minister of State and Finance;NA;NA;Independent;NA;26 October 2019 – 15 June 2020;NA;NA;NA;NA;NA
+PT;João Leão;Minister of State and Finance;NA;NA;Independent;NA;15 June 2020 – present;NA;NA;NA;NA;NA
+PT;João Gomes Cravinho;Minister of National Defence;NA;NA;Independent;NA;26 October 2019 – present;NA;NA;NA;NA;NA
+PT;Eduardo Cabrita;Minister of Internal Administration;NA;NA;Socialist Party;NA;26 October 2019 – 4 December 2021;NA;NA;NA;NA;NA
+PT;Francisca Van Dunem;Minister of Internal Administration;NA;NA;Independent;NA;4 December 2021 – present;NA;NA;NA;NA;NA
+PT;Francisca Van Dunem;Minister of Justice;NA;NA;Independent;NA;26 October 2019 – present;NA;NA;NA;NA;NA
+PT;Alexandra Leitão;Minister of Modernisation of the State and Public Administration;NA;NA;Socialist Party;NA;26 October 2019 – present;NA;NA;NA;NA;NA
+PT;Nelson de Souza;Minister of Planning;NA;NA;Socialist Party;NA;26 October 2019 – present;NA;NA;NA;NA;NA
+PT;Graça Fonseca;Minister of Culture;NA;NA;Socialist Party;NA;26 October 2019 – present;NA;NA;NA;NA;NA
+PT;Manuel Heitor;Minister of Science, Technology and Higher Education;NA;NA;Independent;NA;26 October 2019 – present;NA;NA;NA;NA;NA
+PT;Tiago Brandão Rodrigues;Minister of Education;NA;NA;Independent;NA;26 October 2019 – present;NA;NA;NA;NA;NA
+PT;Ana Mendes Godinho;Minister of Labour, Solidarity and Social Security;NA;NA;Socialist Party;NA;26 October 2019 – present;NA;NA;NA;NA;NA
+PT;Marta Temido;Minister of Health;NA;NA;Independent;NA;26 October 2019 – present;NA;NA;NA;NA;NA
+PT;João Pedro Matos Fernandes;Minister of Environment and Climate Action;NA;NA;Independent;NA;26 October 2019 – present;NA;NA;NA;NA;NA
+PT;Pedro Nuno Santos;Minister of Infrastructure and Housing;NA;NA;Socialist Party;NA;26 October 2019 – present;NA;NA;NA;NA;NA
+PT;Ana Abrunhosa;Minister of Territorial Cohesion;NA;NA;Independent;NA;26 October 2019 – present;NA;NA;NA;NA;NA
+PT;Maria do Céu Antunes;Minister of Agriculture;NA;NA;Socialist Party;NA;26 October 2019 – present;NA;NA;NA;NA;NA
+PT;Ricardo Serrão Santos;Minister of Sea;NA;NA;Socialist Party;NA;26 October 2019 – present;NA;NA;NA;NA;NA
 RO;Florin Cîțu;Prime Minister;23 December 2020;25 November 2021;PNL;NA;NA;NA;NA;NA;NA;NA
 RO;Dan Barna;Deputy Prime Minister;23 December 2020;7 September 2021;USR;NA;NA;NA;NA;NA;NA;NA
 RO;Hunor Kelemen;Deputy Prime Minister;23 December 2020;25 November 2021;UDMR;NA;NA;NA;NA;NA;NA;NA
@@ -1106,26 +1215,26 @@ SI;Marko Bandelli (resigned);Minister without Portfolio responsible for Developm
 SI;Marko Bandelli (resigned);Minister without Portfolio responsible for Development, Strategic Projects and Cohesion;2018-09-13;2020-03-13;SAB;NA;NA;NA;NA;NA;NA;NA
 SI;Iztok Purič;Minister without Portfolio responsible for Development, Strategic Projects and Cohesion;2018-09-13;2020-03-13;SAB;NA;NA;NA;NA;NA;NA;NA
 SI;Iztok Purič;Minister without Portfolio responsible for Development, Strategic Projects and Cohesion;2018-09-13;2020-03-13;SAB;NA;NA;NA;NA;NA;NA;NA
-SK;Peter Pellegrini;Prime Minister;22 March 2018;21 March 2020;Smer–SD;NA;NA;NA;NA;NA;NA;NA
-SK;Richard Raši;Deputy Prime Minister for Investments and Informatization;22 March 2018;21 March 2020;Smer–SD;NA;NA;NA;NA;NA;NA;NA
-SK;Peter Kažimír;Deputy Prime MinisterMinister of Finance;22 March 2018;11 April 2019;Smer–SD;NA;NA;NA;NA;NA;NA;NA
-SK;Peter Pellegrini (acting);Minister of Finance;11 April 2019;7 May 2019;Smer–SD;NA;NA;NA;NA;NA;NA;NA
-SK;Ladislav Kamenický [sk];Minister of Finance;7 May 2019;21 March 2020;Smer–SD;NA;NA;NA;NA;NA;NA;NA
+SK;Peter Pellegrini;Prime Minister;22 March 2018;21 March 2020;SMER;NA;NA;NA;NA;NA;NA;NA
+SK;Richard Raši;Deputy Prime Minister for Investments and Informatization;22 March 2018;21 March 2020;SMER;NA;NA;NA;NA;NA;NA;NA
+SK;Peter Kažimír;Deputy Prime MinisterMinister of Finance;22 March 2018;11 April 2019;SMER;NA;NA;NA;NA;NA;NA;NA
+SK;Peter Pellegrini (acting);Minister of Finance;11 April 2019;7 May 2019;SMER;NA;NA;NA;NA;NA;NA;NA
+SK;Ladislav Kamenický [sk];Minister of Finance;7 May 2019;21 March 2020;SMER;NA;NA;NA;NA;NA;NA;NA
 SK;Gabriela Matečná [sk];Deputy Prime MinisterMinister of Agriculture and Rural Development;22 March 2018;21 March 2020;SNS;NA;NA;NA;NA;NA;NA;NA
 SK;László Sólymos;Deputy Prime MinisterMinister of the Environment;22 March 2018;28 January 2020;Most–Híd;NA;NA;NA;NA;NA;NA;NA
-SK;Árpád Érsek;Deputy Prime MinisterMinister of the Environment;28 January 2020;21 March 2020;Most-Híd;NA;NA;NA;NA;NA;NA;NA
+SK;Árpád Érsek;Deputy Prime MinisterMinister of the Environment;28 January 2020;21 March 2020;Most–Híd;NA;NA;NA;NA;NA;NA;NA
 SK;Tomáš Drucker [sk];Minister of Interior;22 March 2018;17 April 2018;Independent(SD);NA;NA;NA;NA;NA;NA;NA
-SK;Denisa Saková;Minister of Interior;26 April 2018;21 March 2020;Smer–SD;NA;NA;NA;NA;NA;NA;NA
+SK;Denisa Saková;Minister of Interior;26 April 2018;21 March 2020;SMER;NA;NA;NA;NA;NA;NA;NA
 SK;Gábor Gál [sk];Minister of Justice;22 March 2018;21 March 2020;Most–Híd;NA;NA;NA;NA;NA;NA;NA
 SK;Miroslav Lajčák;Minister of Foreign Affairs;22 March 2018;21 March 2020;Independent(SD);NA;NA;NA;NA;NA;NA;NA
-SK;Peter Žiga;Minister of Economy;22 March 2018;21 March 2020;Smer–SD;NA;NA;NA;NA;NA;NA;NA
+SK;Peter Žiga;Minister of Economy;22 March 2018;21 March 2020;SMER;NA;NA;NA;NA;NA;NA;NA
 SK;Árpád Érsek;Minister of Transport, Construction and Regional Development;22 March 2018;21 March 2020;Most–Híd;NA;NA;NA;NA;NA;NA;NA
 SK;Peter Gajdoš [sk];Minister of Defence;22 March 2018;21 March 2020;SNS;NA;NA;NA;NA;NA;NA;NA
-SK;Ján Richter [sk];Minister of Labour, Social Affairs and Family;22 March 2018;21 March 2020;Smer–SD;NA;NA;NA;NA;NA;NA;NA
+SK;Ján Richter [sk];Minister of Labour, Social Affairs and Family;22 March 2018;21 March 2020;SMER;NA;NA;NA;NA;NA;NA;NA
 SK;Martina Lubyová [sk];Minister of Education, Science, Research and Sport;22 March 2018;21 March 2020;Independent(SNS);NA;NA;NA;NA;NA;NA;NA
-SK;Ľubica Laššáková;Minister of Culture;22 March 2018;21 March 2020;SD;NA;NA;NA;NA;NA;NA;NA
+SK;Ľubica Laššáková;Minister of Culture;22 March 2018;21 March 2020;SMER;NA;NA;NA;NA;NA;NA;NA
 SK;Andrea Kalavská [pl];Minister of Health;22 March 2018;17 December 2019;Independent(SD);NA;NA;NA;NA;NA;NA;NA
-SK;Peter Pellegrini (acting);Minister of Health;17 December 2019;21 March 2020;Smer–SD;NA;NA;NA;NA;NA;NA;NA
+SK;Peter Pellegrini (acting);Minister of Health;17 December 2019;21 March 2020;SMER;NA;NA;NA;NA;NA;NA;NA
 SK;Igor Matovič;Prime Minister;21 March 2020;1 April 2021;OĽaNO;NA;NA;NA;NA;NA;NA;NA
 SK;Štefan Hollý;Deputy Prime Minister for Legislation and Strategic Planning;21 March 2020;1 April 2021;SR;NA;NA;NA;NA;NA;NA;NA
 SK;Veronika Remišová;Deputy Prime Minister and Minister of Investments and Regional Development;21 March 2020;1 April 2021;ZĽ;NA;NA;NA;NA;NA;NA;NA
@@ -1149,18 +1258,15 @@ SK;Andrej Doležal;Minister of Transport and Construction;21 March 2020;1 April 
 SK;Natália Milanová;Minister of Culture;21 March 2020;1 April 2021;OĽaNO;NA;NA;NA;NA;NA;NA;NA
 SK;Ján Mičovský;Minister of Agriculture and Rural Development;21 March 2020;1 April 2021;OĽaNO;NA;NA;NA;NA;NA;NA;NA
 SK;Ján Budaj;Minister of the Environment;21 March 2020;1 April 2021;OĽaNO;NA;NA;NA;NA;NA;NA;NA
-SK;Source: [5][6][7][8][9][10][11][12][13][14][15];Source: [5][6][7][8][9][10][11][12][13][14][15];Source: [5][6][7][8][9][10][11][12][13][14][15];Source: [5][6][7][8][9][10][11][12][13][14][15];Source: [5][6][7][8][9][10][11][12][13][14][15];NA;NA;NA;NA;NA;NA;NA
-SK;Eduard Heger;Chairman of the Government;1 April 2021;Incumbent;OĽaNO;NA;NA;NA;NA;NA;NA;NA
-SK;Richard Sulík;First Vice-chairman of the Government for Economic Affairs and Minister of Economy;1 April 2021;Incumbent;SaS;NA;NA;NA;NA;NA;NA;NA
-SK;Igor Matovič;Vice-chairman of the Government and Minister of Finance;1 April 2021;Incumbent;OĽaNO;NA;NA;NA;NA;NA;NA;NA
-SK;Štefan Holý;Vice-chairman of the Government for Legislation and Strategic Planning;1 April 2021;Incumbent;SR;NA;NA;NA;NA;NA;NA;NA
-SK;Veronika Remišová;Vice-chairman of the Government and Minister of Investments and Regional Development;1 April 2021;8 September 2021;ZĽ;NA;NA;NA;NA;NA;NA;NA
-SK;Veronika Remišová;Vice-chairman of the Government and Minister of Investments and Regional Development;8 September 2021;Incumbent;ZĽ;NA;NA;NA;NA;NA;NA;NA
+SK;Eduard Heger;Prime Minister;1 April 2021;Incumbent;OĽaNO;NA;NA;NA;NA;NA;NA;NA
+SK;Richard Sulík;Deputy Prime Minister for Economic Affairs and Minister of Economy;1 April 2021;Incumbent;SaS;NA;NA;NA;NA;NA;NA;NA
+SK;Igor Matovič;Deputy Prime Minister and Minister of Finance;1 April 2021;Incumbent;OĽaNO;NA;NA;NA;NA;NA;NA;NA
+SK;Štefan Holý;Deputy Prime Minister for Legislation and Strategic Planning;1 April 2021;Incumbent;SR;NA;NA;NA;NA;NA;NA;NA
+SK;Veronika Remišová;Deputy Prime Minister and Minister of Investments and Regional Development;1 April 2021;Incumbent;ZĽ;NA;NA;NA;NA;NA;NA;NA
 SK;Roman Mikulec;Minister of Interior;1 April 2021;Incumbent;OĽaNO;NA;NA;NA;NA;NA;NA;NA
 SK;Vladimír Lengvarský;Minister of Health;1 April 2021;Incumbent;Independent for OĽaNO;NA;NA;NA;NA;NA;NA;NA
 SK;Jaroslav Naď;Minister of Defence;1 April 2021;Incumbent;OĽaNO;NA;NA;NA;NA;NA;NA;NA
-SK;Mária Kolíková;Minister of Justice;1 April 2021;8 September 2021;ZĽ;NA;NA;NA;NA;NA;NA;NA
-SK;Mária Kolíková;Minister of Justice;8 September 2021;Incumbent;SaS;NA;NA;NA;NA;NA;NA;NA
+SK;Mária Kolíková;Minister of Justice;1 April 2021;Incumbent;Independent for SaS[a];NA;NA;NA;NA;NA;NA;NA
 SK;Ivan Korčok;Minister of Foreign and European Affairs;1 April 2021;Incumbent;Independent for SaS;NA;NA;NA;NA;NA;NA;NA
 SK;Branislav Gröhling;Minister of Education, Science, Research and Sport;1 April 2021;Incumbent;SaS;NA;NA;NA;NA;NA;NA;NA
 SK;Milan Krajniak;Minister of Labour, Social Affairs and Family;9 April 2021;Incumbent;SR;NA;NA;NA;NA;NA;NA;NA
@@ -1169,85 +1275,3 @@ SK;Natália Milanová;Minister of Culture;1 April 2021;Incumbent;OĽaNO;NA;NA;NA
 SK;Ján Mičovský;Minister of Agriculture and Rural Development;1 April 2021;8 June 2021;OĽaNO;NA;NA;NA;NA;NA;NA;NA
 SK;Samuel Vlčan;Minister of Agriculture and Rural Development;8 June 2021;Incumbent;Independent for OĽaNO;NA;NA;NA;NA;NA;NA;NA
 SK;Ján Budaj;Minister of Environment;1 April 2021;Incumbent;OĽaNO;NA;NA;NA;NA;NA;NA;NA
-NA;Leo Varadkar;Taoiseach;2017-06-14;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
-NA;Leo Varadkar;Minister for Defence;2017-06-14;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
-NA;Frances Fitzgerald;Tánaiste;2017-06-14;2017-11-30;Fine Gael;NA;NA;NA;NA;2017[40];NA;NA
-NA;Frances Fitzgerald;Minister for Business, Enterprise and Innovation[a];2017-06-14;2017-11-30;Fine Gael;NA;NA;NA;NA;2017[40];NA;NA
-NA;Paschal Donohoe;Minister for Finance;2017-06-14;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
-NA;Paschal Donohoe;Minister for Public Expenditure and Reform;2017-06-14;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
-NA;Simon Coveney;Minister for Foreign Affairs and Trade;2017-06-14;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
-NA;Charles Flanagan;Minister for Justice and Equality;2017-06-14;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
-NA;Simon Harris;Minister for Health;2017-06-14;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
-NA;Heather Humphreys;Minister for Culture, Heritage and the Gaeltacht[b];2017-06-14;2020-06-27;Fine Gael;NA;NA;NA;NA;2017;NA;NA
-NA;Michael Creed;Minister for Agriculture, Food and the Marine;2017-06-14;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
-NA;Richard Bruton;Minister for Education and Skills;2017-06-14;2018-10-11;Fine Gael;NA;NA;NA;NA;2017–2018;NA;NA
-NA;Denis Naughten;Minister for Communications, Climate Action and Environment;2017-06-14;2018-10-11;Independent;NA;NA;NA;NA;2017–2018;NA;NA
-NA;Shane Ross;Minister for Transport, Tourism and Sport;2017-06-14;2020-06-27;Independent;NA;NA;NA;NA;2017–2020;NA;NA
-NA;Katherine Zappone;Minister for Children and Youth Affairs;2017-06-14;2020-06-27;Independent;NA;NA;NA;NA;2017–2020;NA;NA
-NA;Michael Ring;Minister for Rural and Community Development[c];2017-06-14;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
-NA;Regina Doherty;Minister for Employment Affairs and Social Protection[d];2017-06-14;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
-NA;Eoghan Murphy;Minister for Housing, Planning and Local Government[e];2017-06-14;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
-NA;Simon Coveney;Tánaiste;2017-11-30;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
-NA;Heather Humphreys;Minister for Business, Enterprise and Innovation;2017-11-30;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
-NA;Josepha Madigan;Minister for Culture, Heritage and the Gaeltacht;2017-11-30;2020-06-27;Fine Gael;NA;NA;NA;NA;2017–2020;NA;NA
-NA;Richard Bruton;Minister for Communications, Climate Action and Environment;2018-10-11;2020-06-27;Fine Gael;NA;NA;NA;NA;2018–2020;NA;NA
-NA;Joe McHugh;Minister for Education and Skills;2018-10-11;2020-06-27;Fine Gael;NA;NA;NA;NA;2018–2020;NA;NA
-NA;António Costa;Prime Minister;NA;NA;Socialist Party;NA;26 November 2015 – 26 October 2019;NA;NA;NA;NA;NA
-NA;Augusto Santos Silva;Minister of Foreign Affairs;NA;NA;Socialist Party;NA;26 November 2015 – 26 October 2019;NA;NA;NA;NA;NA
-NA;Maria Manuel Leitão Marques;Minister of Premiership and Administrative Modernization;NA;NA;Socialist Party;NA;26 November 2015 – 18 February 2019;NA;NA;NA;NA;NA
-NA;Mariana Vieira da Silva;Minister of Premiership and Administrative Modernization;NA;NA;Socialist Party;NA;18 February 2019 – 26 October 2019;NA;NA;NA;NA;NA
-NA;Mário Centeno;Minister of Finance;NA;NA;Independent;NA;26 November 2015 – 26 October 2019;NA;NA;NA;NA;NA
-NA;José Alberto Azeredo Lopes;Minister of National Defence;NA;NA;Independent;NA;26 November 2015 – 12 October 2018;NA;NA;NA;NA;NA
-NA;João Gomes Cravinho;Minister of National Defence;NA;NA;Independent;NA;15 October 2018 – 26 October 2019;NA;NA;NA;NA;NA
-NA;Constança Urbano de Sousa;Minister of Internal Administration;NA;NA;Independent;NA;26 November 2015 – 18 October 2017;NA;NA;NA;NA;NA
-NA;Eduardo Cabrita;Minister of Internal Administration;NA;NA;Socialist Party;NA;21 October 2017 – 26 October 2019;NA;NA;NA;NA;NA
-NA;Francisca Van Dunem;Minister of Justice;NA;NA;Independent;NA;26 November 2015 – 26 October 2019;NA;NA;NA;NA;NA
-NA;Manuel Caldeira Cabral;"Minister of Economy
-(position abolished on 15 October 2018)";NA;NA;Independent;NA;26 November 2015 – 15 October 2018;NA;NA;NA;NA;NA
-NA;Eduardo Cabrita;"Deputy Minister
-(position abolished on 15 October 2018)";NA;NA;Socialist Party;NA;26 November 2015 – 21 October 2017;NA;NA;NA;NA;NA
-NA;Pedro Siza Vieira;"Deputy Minister
-(position abolished on 15 October 2018)";NA;NA;Socialist Party;NA;21 October 2017 – 15 October 2018;NA;NA;NA;NA;NA
-NA;Pedro Siza Vieira;"Deputy Minister and of Economy
-(position created on 15 October 2018)";NA;NA;Socialist Party;NA;15 October 2018 – 26 October 2019;NA;NA;NA;NA;NA
-NA;João Soares;Minister of Culture;NA;NA;Socialist Party;NA;26 November 2015 – 8 April 2016;NA;NA;NA;NA;NA
-NA;Luís Filipe Castro Mendes;Minister of Culture;NA;NA;Independent;NA;14 April 2016 – 15 October 2018;NA;NA;NA;NA;NA
-NA;Graça Fonseca;Minister of Culture;NA;NA;Socialist Party;NA;15 October 2018 – 26 October 2019;NA;NA;NA;NA;NA
-NA;Manuel Heitor;MInister of Science, Technology and Higher Education;NA;NA;Independent;NA;26 November 2015 – 26 October 2019;NA;NA;NA;NA;NA
-NA;Tiago Brandão Rodrigues;Minister of Education;NA;NA;Independent;NA;26 November 2015 – 26 October 2019;NA;NA;NA;NA;NA
-NA;José António Vieira da Silva;Minister of Labour, Solidarity and Social Security;NA;NA;Socialist Party;NA;26 November 2015 – 26 October 2019;NA;NA;NA;NA;NA
-NA;Adalberto Campos Fernandes;Minister of Health;NA;NA;Independent;NA;26 November 2015 – 15 October 2018;NA;NA;NA;NA;NA
-NA;Marta Temido;Minister of Health;NA;NA;Independent;NA;15 October 2018 – 26 October 2019;NA;NA;NA;NA;NA
-NA;Pedro Marques;"Minister of Planning and Infrastructure
-(position abolished on 18 February 2019)";NA;NA;Socialist Party;NA;26 November 2015 – 18 February 2019;NA;NA;NA;NA;NA
-NA;Nelson de Souza;"Minister of Planning
-(position created on 18 February 2019)";NA;NA;Socialist Party;NA;18 February 2019 – 26 October 2019;NA;NA;NA;NA;NA
-NA;Pedro Nuno Santos;"Minister of Infrastructure and Housing
-(position created on 18 February 2019)";NA;NA;Socialist Party;NA;18 February 2019 – 26 October 2019;NA;NA;NA;NA;NA
-NA;João Pedro Matos Fernandes;"Minister of Environment
-(position abolished on 15 October 2018)";NA;NA;Independent;NA;26 November 2015 – 15 October 2018;NA;NA;NA;NA;NA
-NA;João Pedro Matos Fernandes;"Minister of Environment and Energy Transition
-(position created on 15 October 2018)";NA;NA;Independent;NA;15 October 2018 – 26 October 2019;NA;NA;NA;NA;NA
-NA;Luís Capoulas Santos;Minister of Agriculture;NA;NA;Socialist Party;NA;26 November 2015 – 26 October 2019;NA;NA;NA;NA;NA
-NA;Ana Paula Vitorino;Minister of Sea;NA;NA;Socialist Party;NA;26 November 2015 – 26 October 2019;NA;NA;NA;NA;NA
-NA;António Costa;Prime Minister;NA;NA;Socialist Party;NA;26 October 2019 – present;NA;NA;NA;NA;NA
-NA;Pedro Siza Vieira;Minister of State, Economy and Digital Transition;NA;NA;Socialist Party;NA;26 October 2019 – present;NA;NA;NA;NA;NA
-NA;Augusto Santos Silva;Minister of State and Foreign Affairs;NA;NA;Socialist Party;NA;26 October 2019 – present;NA;NA;NA;NA;NA
-NA;Mariana Vieira da Silva;Minister of State and the Premiership;NA;NA;Socialist Party;NA;26 October 2019 – present;NA;NA;NA;NA;NA
-NA;Mário Centeno;Minister of State and Finance;NA;NA;Independent;NA;26 October 2019 – 15 June 2020;NA;NA;NA;NA;NA
-NA;João Leão;Minister of State and Finance;NA;NA;Independent;NA;15 June 2020 – present;NA;NA;NA;NA;NA
-NA;João Gomes Cravinho;Minister of National Defence;NA;NA;Independent;NA;26 October 2019 – present;NA;NA;NA;NA;NA
-NA;Eduardo Cabrita;Minister of Internal Administration;NA;NA;Socialist Party;NA;26 October 2019 – present;NA;NA;NA;NA;NA
-NA;Francisca Van Dunem;Minister of Justice;NA;NA;Independent;NA;26 October 2019 – present;NA;NA;NA;NA;NA
-NA;Alexandra Leitão;Minister of Modernisation of the State and Public Administration;NA;NA;Socialist Party;NA;26 October 2019 – present;NA;NA;NA;NA;NA
-NA;Nelson de Souza;Minister of Planning;NA;NA;Socialist Party;NA;26 October 2019 – present;NA;NA;NA;NA;NA
-NA;Graça Fonseca;Minister of Culture;NA;NA;Socialist Party;NA;26 October 2019 – present;NA;NA;NA;NA;NA
-NA;Manuel Heitor;Minister of Science, Technology and Higher Education;NA;NA;Independent;NA;26 October 2019 – present;NA;NA;NA;NA;NA
-NA;Tiago Brandão Rodrigues;Minister of Education;NA;NA;Independent;NA;26 October 2019 – present;NA;NA;NA;NA;NA
-NA;Ana Mendes Godinho;Minister of Labour, Solidarity and Social Security;NA;NA;Socialist Party;NA;26 October 2019 – present;NA;NA;NA;NA;NA
-NA;Marta Temido;Minister of Health;NA;NA;Independent;NA;26 October 2019 – present;NA;NA;NA;NA;NA
-NA;João Pedro Matos Fernandes;Minister of Environment and Climate Action;NA;NA;Independent;NA;26 October 2019 – present;NA;NA;NA;NA;NA
-NA;Pedro Nuno Santos;Minister of Infrastructure and Housing;NA;NA;Socialist Party;NA;26 October 2019 – present;NA;NA;NA;NA;NA
-NA;Ana Abrunhosa;Minister of Territorial Cohesion;NA;NA;Independent;NA;26 October 2019 – present;NA;NA;NA;NA;NA
-NA;Maria do Céu Antunes;Minister of Agriculture;NA;NA;Socialist Party;NA;26 October 2019 – present;NA;NA;NA;NA;NA
-NA;Ricardo Serrão Santos;Minister of Sea;NA;NA;Socialist Party;NA;26 October 2019 – present;NA;NA;NA;NA;NA

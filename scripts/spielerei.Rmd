@@ -19,7 +19,7 @@ library(ggtext)
 https://blog.datawrapper.de/gendercolor/
 
 ```{r}
-male_female <- read_csv2("../temp.csv") %>% 
+male_female <- read_csv2("../data/list_council_meetings_participants.csv") %>% 
   mutate(female_male = case_when(str_detect(name, pattern = "^Mr") ~ "male",
                                  str_detect(name, pattern = "^Ms") ~ "female",
                                  TRUE ~ NA_character_)) %>% 
@@ -67,7 +67,7 @@ ggplot(male_female_plot)+
        caption = "Data: lists of participants to council meetings since July 2019\nhttps://www.consilium.europa.eu/en/meetings/calendar/",
        title = "Ratio of <i style='color:#9370db;'>women</i> to <i style='color:#1fc3aa;'>men</i> in meetings of the Council of the EU")
 
-ggsave("../misc/graph_genderratio.png", dpi = 300, width = 11, height = 8, bg = "white")
+#ggsave("../misc/graph_genderratio.png", dpi = 300, width = 11, height = 8, bg = "white")
   
 ```
 

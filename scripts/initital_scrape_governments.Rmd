@@ -37,12 +37,14 @@ ministers_at1 <- read_html(url) %>%
   html_table(fill = TRUE) %>% 
   clean_names() %>% 
   filter(portrait == "", name != "") %>% 
-  select(name, portfolio = office, took_office, left_office, party) %>% 
-  mutate(cntry = "AT")
+  select(name, portfolio = office, took_office, left_office, party = party_2) %>% 
+  mutate(left_office = case_when(left_office == "" ~ "	11 October 2021 (2021-10-11)",
+                                 TRUE ~ left_office),
+         cntry = "AT")
 
 url <- "https://en.wikipedia.org/wiki/Schallenberg_government"
 
-minsters_at2 <- read_html(url) %>% 
+ministers_at2 <- read_html(url) %>% 
   html_node(".wikitable") %>% 
   html_table(fill = TRUE) %>% 
   clean_names() %>% 
@@ -50,8 +52,19 @@ minsters_at2 <- read_html(url) %>%
   select(name, portfolio = office, took_office, left_office, party) %>% 
   mutate(took_office = str_remove(took_office, pattern = "^.*\\("),
          took_office = str_remove(took_office, pattern = "\\)"),
+         left_office = "2021-12-06",
          cntry = "AT")
 
+url <- "https://en.wikipedia.org/wiki/Nehammer_government"
+
+ministers_at3 <- read_html(url) %>% 
+  html_node(".wikitable") %>% 
+  html_table(fill = TRUE) %>% 
+  clean_names() %>% 
+  filter(portrait == "", name != "") %>% 
+  select(name, portfolio = office, took_office, left_office, party) %>% 
+  mutate(left_office = "incumbent",
+         cntry = "AT")
 ```
 
 
@@ -106,6 +119,10 @@ ministers_be4 <- read_html(url) %>%
   select(name = minister, portfolio, party = party_2, took_office, left_office) %>% 
   mutate(name = str_remove(name,"[:blank:]\\[.*\\]"),
          cntry = "BE")
+
+ministers_be <- bind_rows(ministers_be1, ministers_be2, ministers_be3, ministers_be4) %>% 
+  mutate(party = str_remove(party, pattern = " \\(Belgium\\)"))
+rm(ministers_be1, ministers_be2, ministers_be3, ministers_be4)
 ```
 
 
@@ -510,7 +527,8 @@ ministers_ir2 <- read_html(url) %>%
                                  name == "Josepha Madigan" ~ "2017-11-30",
                                  (name == "Richard Bruton" & portfolio == "Minister for Communications, Climate Action and Environment") ~ "2018-10-11",
                                  name == "Joe McHugh" ~ "2018-10-11",
-                                 TRUE ~ "2017-06-14"))
+                                 TRUE ~ "2017-06-14")) %>% 
+  mutate(cntry = "IE")
 
 
 ```
@@ -799,7 +817,8 @@ ministers_pt1 <- read_html(url) %>%
   html_node(".wikitable") %>% 
   html_table(fill = TRUE) %>% 
   clean_names() %>% 
-  select(name = name, portfolio = ministry, party = party_2, in_office = term) 
+  select(name = name, portfolio = ministry, party = party_2, in_office = term) %>% 
+  mutate(cntry = "PT")
 
 url <- "https://en.wikipedia.org/wiki/XXII_Constitutional_Government_of_Portugal"
 
@@ -807,7 +826,8 @@ ministers_pt2 <- read_html(url) %>%
   html_node(".wikitable") %>% 
   html_table(fill = TRUE) %>% 
   clean_names() %>% 
-  select(name = name, portfolio = ministry, party = party_2, in_office = term) 
+  select(name = name, portfolio = ministry, party = party_2, in_office = term) %>% 
+  mutate(cntry = "PT")
 
 
 ```
@@ -866,7 +886,11 @@ ministers_sk1 <- read_html(url) %>%
   clean_names() %>% 
   select(name, portfolio = office, party = political_party, 
          took_office = assumed_office, left_office) %>% 
-  mutate(cntry = "SK")
+  mutate(party = case_when(party == "Smer–SD" ~ "SMER",
+                           party == "SD" ~ "SMER",
+                           TRUE ~ party),
+         party = str_replace(party, pattern = "-", replacement = "–"),
+         cntry = "SK")
 
 url <- "https://en.wikipedia.org/wiki/Matovi%C4%8D%27s_Cabinet"
 
@@ -878,6 +902,7 @@ ministers_sk2 <- read_html(url) %>%
   clean_names() %>% 
   select(name, portfolio = position, party = party_1, 
          took_office, left_office) %>% 
+  filter(name != "Source: [5][6][7][8][9][10][11][12][13][14][15]") %>% 
   mutate(cntry = "SK")
 
 url <- "https://en.wikipedia.org/wiki/Heger%27s_Cabinet"
@@ -965,8 +990,10 @@ ministers_es1 <- read_html(url) %>%
   as.data.frame() %>% 
   as_tibble() %>% 
   slice(3:n()) %>% 
-  select(portfolio = X1, name = X2, party = X4, took_office = X5) %>% 
-  mutate(cntry = "ES")
+  select(portfolio = X1, name = X2, party = X4, took_office = X5, left_office = X6) %>% 
+  mutate(cntry = "ES") %>% 
+  filter(party != name) %>% 
+  filter(portfolio != "Portfolio")
 
 
 url <- "https://en.wikipedia.org/wiki/S%C3%A1nchez_II_Government"
@@ -995,7 +1022,8 @@ ministers_es2 <- t %>%
          party = str_remove(party, pattern = "\\[.+$"),
          party = case_when(str_detect(party, pattern = "\\)") ~ str_extract(party, pattern = "\\([:alnum:]+\\)$") %>% 
                              str_remove_all(pattern = "[\\(\\)]"),
-                           TRUE ~ party))
+                           TRUE ~ party)) %>% 
+  filter(party != "Discontinued on 12 July 2021.")
 
 ```
 

@@ -15,7 +15,7 @@ library(fuzzyjoin)
 ```
 
 ```{r}
-list_participants <- read_csv2("../temp.csv") %>% 
+list_participants <- read_csv2("../data/list_council_meetings_participants.csv") %>% 
   mutate(isocntry = countrycode::countrycode(cntry, origin = 'country.name', destination = 'iso3c'),
          matchprep = str_remove_all(name,pattern = "^M[rs]"),
          matchprep = str_remove_all(matchprep, pattern = "[^[:alnum:]]"),
@@ -26,7 +26,7 @@ list_ministers <- read_csv2("../data/list_ministers_assigned.csv") %>%
          matchprep = str_to_lower(matchprep))
 
 fuzzyjoin::stringdist_left_join(list_participants, list_ministers, by = c("matchprep" = "matchprep")) %>% 
-  filter(is.na(name_minister))
+  filter(is.na(name_minister)) %>% write_excel_csv2("../temp.csv")
 
 
 ```
