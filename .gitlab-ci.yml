@@ -24,6 +24,6 @@ run:
   script:
       - Rscript scripts/list_council_website.R
   artifacts: 
-    paths:
-    - test.txt
+      paths:
+      - test.txt
 
