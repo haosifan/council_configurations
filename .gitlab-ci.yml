@@ -23,4 +23,7 @@ run:
   image: rocker/r-ver:4.0.4
   script:
       - Rscript scripts/list_council_website.R
+  artifacts: 
+    paths:
+    - log/test.txt
 

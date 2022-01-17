@@ -62,6 +62,7 @@ if (equal_govs == TRUE) {
 } else {
   of <- eu_govs
   nf <- f_wikicheck()
-  diffdf(of, nf, suppress_warnings = TRUE, file = paste0("../log/log_", Sys.Date(),".txt"))
+  #diffdf(of, nf, suppress_warnings = TRUE, file = paste0("../log/log_", Sys.Date(),".txt"))
+  diffdf(of, nf, suppress_warnings = TRUE, file = paste0("log/test.txt"))
 }
 ```
