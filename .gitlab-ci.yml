@@ -1,15 +1,5 @@
 # Example from https://blog.rmhogervorst.nl/blog/2020/09/24/running-an-r-script-on-a-schedule-gitlab/
 
- before_script:
-  - eval $(ssh-agent -s)
-  - mkdir -p ~/.ssh/
-  - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
-  - chmod 644 ~/.ssh/known_hosts
-  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
-  - git config --global user.email "git-bot@ci.uni-due.de"
-  - git config --global user.name "CI/CD Pipeline"
-  - git remote set-url origin git@git.uni-due.de:sjsthaus/council_configurations.git
-
 stages:
   - check_govs
   - git
@@ -27,6 +17,16 @@ git:
  variables:
   GIT_CLEAN_FLAGS: none
  
+  before_script:
+  - eval $(ssh-agent -s)
+  - mkdir -p ~/.ssh/
+  - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+  - chmod 644 ~/.ssh/known_hosts
+  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+  - git config --global user.email "git-bot@ci.uni-due.de"
+  - git config --global user.name "CI/CD Pipeline"
+  - git remote set-url origin git@git.uni-due.de:sjsthaus/council_configurations.git
+
  script:
   - git add .
   - git commit -am "[skip ci] Check for new governments in place $(date +"%D")"
