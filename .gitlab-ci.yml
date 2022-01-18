@@ -1,29 +1,61 @@
 # Example from https://blog.rmhogervorst.nl/blog/2020/09/24/running-an-r-script-on-a-schedule-gitlab/
 
-# A workflow for gitlab ci
-variables:
-  APT_PKGS: "libcurl4-openssl-dev libssl-dev libxt6 libxml2-dev zlib1g-dev"
-  #RENV_CONFIG_REPOS_OVERRIDE: "http://cran.r-project.org"
-  RENV_PATHS_CACHE: ${CI_PROJECT_DIR}/cache
-  RENV_PATHS_LIBRARY: ${CI_PROJECT_DIR}/renv/library
+stages:
+  - check_govs
+  - git
 
-before_script:
-  - apt-get update
-  - apt-get install -y --no-install-recommends ${APT_PKGS}
-  - export PATH="/usr/local/lib/R/site-library/littler/examples/:${PATH}"
-  - echo "options(Ncpus = $(nproc --all))" >> /usr/local/lib/R/etc/Rprofile.site
-  - R -e  'install.packages(c("dplyr","readr","diffdf","rvest"))'
-  - mkdir -p ~/.local/share/renv
- # - R -e 'renv::restore()'
+
+check_govs:
+  stage: check_govs
+
+  # A workflow for gitlab ci
+  variables:
+    APT_PKGS: "libcurl4-openssl-dev libssl-dev libxt6 libxml2-dev zlib1g-dev"
+    #RENV_CONFIG_REPOS_OVERRIDE: "http://cran.r-project.org"
+    RENV_PATHS_CACHE: ${CI_PROJECT_DIR}/cache
+    RENV_PATHS_LIBRARY: ${CI_PROJECT_DIR}/renv/library
+
+  before_script:
+    - apt-get update
+    - apt-get install -y --no-install-recommends ${APT_PKGS}
+    - export PATH="/usr/local/lib/R/site-library/littler/examples/:${PATH}"
+    - echo "options(Ncpus = $(nproc --all))" >> /usr/local/lib/R/etc/Rprofile.site
+    - R -e  'install.packages(c("dplyr","readr","diffdf","rvest"))'
+  # - mkdir -p ~/.local/share/renv
+  # - R -e 'renv::restore()'
   
-# setup steps
-run:
-  tags:
-      - docker
-  image: rocker/r-ver:4.0.4
-  script:
-      - Rscript scripts/list_council_website.R
-  artifacts: 
+  # setup steps
+  run:
+    tags:
+       - docker
+    image: rocker/r-ver:4.0.4
+    script:
+        - Rscript scripts/list_council_website.R
+    artifacts: 
       paths:
       - log/test.txt
+
+git:
+ stage: git
+
+ allow_failure: true
+ 
+ variables:
+  GIT_CLEAN_FLAGS: none
+ 
+ before_script:
+  - eval $(ssh-agent -s)
+  - mkdir -p ~/.ssh/
+  - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+  - chmod 644 ~/.ssh/known_hosts
+  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+  - git config --global user.email "git-bot@ci.uni-due.de"
+  - git config --global user.name "CI/CD Pipeline"
+  - git remote set-url origin git@git.uni-due.de:sjsthaus/council_configurations.git
+ 
+ script:
+  - git add .
+  - git commit -am "[skip ci] Check for new governments in place $(date +"%D")"
+  - git push origin HEAD:master --force
+
 
