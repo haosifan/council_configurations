@@ -9,7 +9,7 @@ before_script:
   - apt-get install -y --no-install-recommends ${APT_PKGS}
   - export PATH="/usr/local/lib/R/site-library/littler/examples/:${PATH}"
   - echo "options(Ncpus = $(nproc --all))" >> /usr/local/lib/R/etc/Rprofile.site
-  - R -e  'install.packages(c("dplyr","readr","diffdf","rvest","emayili"))'
+  - R -e  'install.packages(c("dplyr","readr","diffdf","xml2","rvest","emayili"))'
   - mkdir -p ~/.local/share/renv
  # - R -e 'renv::restore()'
   
