@@ -1,8 +1,8 @@
 # Example from https://blog.rmhogervorst.nl/blog/2020/09/24/running-an-r-script-on-a-schedule-gitlab/
 
-stages:
-  - check_govs
-  - git
+#stages:
+#  - check_govs
+#  - git
 
 before_script:
   - apt-get update
