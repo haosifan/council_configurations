@@ -4,6 +4,7 @@ library(dplyr)
 library(readr)
 library(diffdf)
 library(rvest)
+library(emayili)
 
 
 ## ----f_wikitemplate-------------------------------------------------------------------------------------------------
@@ -52,5 +53,19 @@ if (equal_govs == TRUE) {
   nf <- f_wikicheck()
   #diffdf(of, nf, suppress_warnings = TRUE, file = paste0("log/log_", Sys.Date(),".txt"))
   diffdf(of, nf, suppress_warnings = TRUE, file = "log/test.txt")
+  
+  email <- envelope()
+  email <- email %>%
+    from("stefan.haussner@uni-due.de") %>%
+    to("stefan.haussner@uni-due.de")
+  email <- email %>% subject("Test Council Configurations")
+  email <- email %>% text("Hello! \ This is a test!")
+  
+  smtp <- server(
+    host = "smtp.gmail.com",
+    port = 465,
+    username = "sjsthaus")
+  smtp(email, details = TRUE)
+  
 }
 
